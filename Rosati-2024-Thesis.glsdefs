@@ -1,0 +1,112 @@
+\glsdefs@newdocentry{Java}%
+{%
+name={Java},%
+sort={Java},%
+type={main},%
+first={Java},%
+firstplural={Javas},%
+text={Java},%
+plural={Javas},%
+description={\blindtext },%
+descriptionplural={\blindtext },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Oracle}%
+{%
+name={Oracle},%
+sort={Oracle},%
+type={main},%
+first={Oracle},%
+firstplural={Oracles},%
+text={Oracle},%
+plural={Oracles},%
+description={\blindtext },%
+descriptionplural={\blindtext },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Microsoft}%
+{%
+name={Microsoft},%
+sort={Microsoft},%
+type={main},%
+first={Microsoft},%
+firstplural={Microsofts},%
+text={Microsoft},%
+plural={Microsofts},%
+description={\blindtext },%
+descriptionplural={\blindtext },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{svm}%
+{%
+name={SVM},%
+sort={SVM},%
+type={acronym},%
+first={Support Vector Machine\glsspace (SVM)},%
+firstplural={Support Vector Machine\acrpluralsuffix \glsspace (SVM\acrpluralsuffix )},%
+text={SVM},%
+plural={SVM\acrpluralsuffix },%
+description={Support Vector Machine},%
+descriptionplural={Support Vector Machine\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Support Vector Machine},%
+longplural={Support Vector Machines},%
+short={SVM},%
+shortplural={SVMs},%
+counter={page},%
+parent={},%
+%
+}%
+

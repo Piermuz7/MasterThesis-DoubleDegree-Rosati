@@ -1,0 +1,90 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Scarselli2009}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=447de7983619243dc5bf3af69d609b20}{%
+           family={Scarselli},
+           familyi={S\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d25d4f83ae540b2b728a5423e9fbe85b}{%
+           family={Gori},
+           familyi={G\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1abb4d2c7b43e8f49a10c2dfb0b3305}{%
+           family={Tsoi},
+           familyi={T\bibinitperiod},
+           given={Ah\bibnamedelima Chung},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10950c9e6d0e741519372f893853f1c9}{%
+           family={Hagenbuchner},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b56d5f9b0efe692c5e81a88da3a2f2b7}{%
+           family={Monfardini},
+           familyi={M\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{e0bddd4250509618ebb1318d9844ce78}
+      \strng{fullhash}{1ce29035cf9078f0d21a0ddd34800b9d}
+      \strng{bibnamehash}{1ce29035cf9078f0d21a0ddd34800b9d}
+      \strng{authorbibnamehash}{1ce29035cf9078f0d21a0ddd34800b9d}
+      \strng{authornamehash}{e0bddd4250509618ebb1318d9844ce78}
+      \strng{authorfullhash}{1ce29035cf9078f0d21a0ddd34800b9d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many underlying relationships among data in several areas of science and engineering, e.g., computer vision, molecular chemistry, molecular biology, pattern recognition, and data mining, can be represented in terms of graphs. In this paper, we propose a new neural network model, called graph neural network (GNN) model, that extends existing neural network methods for processing the data represented in graph domains. This GNN model, which can directly process most of the practically useful types of graphs, e.g., acyclic, cyclic, directed, and undirected, implements a function τ (G,n) ∈ Rm that maps a graph G and one of its nodes n into an m-dimensional Euclidean space. A supervised learning algorithm is derived to estimate the parameters of the proposed GNN model. The computational cost of the proposed algorithm is also considered. Some experimental results are shown to validate the proposed learning algorithm, and to demonstrate its generalization capabilities. © 2008 IEEE.}
+      \field{issn}{10459227}
+      \field{issue}{1}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{month}{1}
+      \field{title}{The graph neural network model}
+      \field{volume}{20}
+      \field{year}{2009}
+      \field{pages}{61\bibrangedash 80}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TNN.2008.2005605
+      \endverb
+      \keyw{Graph neural networks (GNNs),Graph processing,Graphical domains,Recursive neural networks}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
