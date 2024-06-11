@@ -19,6 +19,841 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Bizer2023}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c0ab52e226557a243a4a5277aec8acdc}{%
+           family={Bizer},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c040f12898283360a9825ed80f52e777}{%
+           family={Heath},
+           familyi={H\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d469e0df304c98f67b55d087ea6187a1}{%
+           family={Berners-Lee},
+           familyi={B\bibinithyphendelim L\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{4171b215a738570aeb0161fcbb04938b}
+      \strng{fullhash}{119c89bf63ca82bd819dbc4a7a4326c7}
+      \strng{bibnamehash}{119c89bf63ca82bd819dbc4a7a4326c7}
+      \strng{authorbibnamehash}{119c89bf63ca82bd819dbc4a7a4326c7}
+      \strng{authornamehash}{4171b215a738570aeb0161fcbb04938b}
+      \strng{authorfullhash}{119c89bf63ca82bd819dbc4a7a4326c7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Linking the World’s Information: Essays on Tim Berners-Lee’s Invention of the World Wide Web}
+      \field{edition}{1}
+      \field{isbn}{9798400707940}
+      \field{title}{Linked Data - The Story So Far}
+      \field{year}{2023}
+      \field{pages}{115\bibrangedash 143}
+      \range{pages}{29}
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3591366.3591378
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3591366.3591378
+      \endverb
+    \endentry
+    \entry{Bonatti2017}{inbook}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=dc5b42f67dd8f52c7c01bc8cff0068b9}{%
+           family={Bonatti},
+           familyi={B\bibinitperiod},
+           given={Piero},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ddbf3af24e3802f8842794c8c86b60c}{%
+           family={Kirrane},
+           familyi={K\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2be0ec850b04b1f5e9fe3aca6bf5226}{%
+           family={Polleres},
+           familyi={P\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc54b330cc33b172e08abeb58605049e}{%
+           family={Wenning},
+           familyi={W\bibinitperiod},
+           given={Rigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=1035a571249f3d1e010125101ce5ac1c}{%
+           family={Tonetta},
+           familyi={T\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d7ecc4dd1a94df894c724fe3a8e5b141}{%
+           family={Schoitsch},
+           familyi={S\bibinitperiod},
+           given={Erwin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=53cb1ef47fe59c575e5bcddc62d58b42}{%
+           family={Bitsch},
+           familyi={B\bibinitperiod},
+           given={Friedemann},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{85cfcf8f4c0109246b6a35d4b66df47a}
+      \strng{fullhash}{cc596a29bdf5a14f77316c90cfa2dbbd}
+      \strng{bibnamehash}{cc596a29bdf5a14f77316c90cfa2dbbd}
+      \strng{authorbibnamehash}{cc596a29bdf5a14f77316c90cfa2dbbd}
+      \strng{authornamehash}{85cfcf8f4c0109246b6a35d4b66df47a}
+      \strng{authorfullhash}{cc596a29bdf5a14f77316c90cfa2dbbd}
+      \strng{editorbibnamehash}{a2e2a5f30321410cd206931c51cd3883}
+      \strng{editornamehash}{ccee70c746b4763cb2c135d89831838a}
+      \strng{editorfullhash}{a2e2a5f30321410cd206931c51cd3883}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The European General Data Protection Regulation defines a set of obligations for personal data controllers and processors. Primary obligations include: obtaining explicit consent from the data subject for the processing of personal data, providing full transparency with respect to the processing, and enabling data rectification and erasure (albeit only in certain circumstances). At the core of any transparency architecture is the logging of events in relation to the processing and sharing of personal data. The logs should enable verification that data processors abide by the access and usage control policies that have been associated with the data based on the data subject's consent and the applicable regulations. In this position paper, we: (i) identify the requirements that need to be satisfied by such a transparency architecture, (ii) examine the suitability of existing logging mechanisms in light of said requirements, and (iii) present a number of open challenges and opportunities.}
+      \field{booktitle}{Computer Safety, Reliability, and Security}
+      \field{isbn}{978-3-319-66284-8}
+      \field{title}{Transparent Personal Data Processing: The Road Ahead}
+      \field{year}{2017}
+      \field{pages}{337\bibrangedash 349}
+      \range{pages}{13}
+    \endentry
+    \entry{Deborah2004}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2f919e7c0a21f2f5eb2021e732e42711}{%
+           family={Deborah},
+           familyi={D\bibinitperiod},
+           given={L.\bibnamedelimi McGuinness},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee480b6d2fd2c627ffb033d94c9691af}{%
+           family={Harmelen\bibnamedelima Frank},
+           familyi={H\bibinitperiod\bibinitdelim F\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{2978fba5ed082666175dce0d76bd5df0}
+      \strng{fullhash}{2978fba5ed082666175dce0d76bd5df0}
+      \strng{bibnamehash}{2978fba5ed082666175dce0d76bd5df0}
+      \strng{authorbibnamehash}{2978fba5ed082666175dce0d76bd5df0}
+      \strng{authornamehash}{2978fba5ed082666175dce0d76bd5df0}
+      \strng{authorfullhash}{2978fba5ed082666175dce0d76bd5df0}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The OWL Web Ontology Language is designed for use by applications that need to process the content of information instead of just presenting information to humans. OWL facilitates greater machine interpretability of Web content than that supported by XML, RDF, and RDF Schema (RDF-S) by providing additional vocabulary along with a formal semantics. OWL has three increasingly-expressive sublanguages: OWL Lite, OWL DL, and OWL Full.}
+      \field{title}{OWL Web Ontology Language Overview}
+      \field{year}{2004}
+      \verb{urlraw}
+      \verb http://www.w3.org/TR/2003/PR-owl-features-20031215/
+      \endverb
+      \verb{url}
+      \verb http://www.w3.org/TR/2003/PR-owl-features-20031215/
+      \endverb
+    \endentry
+    \entry{Fernandez2011}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=462d87942086f19e5053c4acdda8472e}{%
+           family={Fernández},
+           familyi={F\bibinitperiod},
+           given={Miriam},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=193ff56861fe0a1142780938dc3ac715}{%
+           family={Cantador},
+           familyi={C\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac71a73da3b0bd23a865ce0bf066f7ef}{%
+           family={López},
+           familyi={L\bibinitperiod},
+           given={Vanesa},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a61d6e33971a2a89f93a2b1113955d61}{%
+           family={Vallet},
+           familyi={V\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27f68737cb3395ff156325e510de28c0}{%
+           family={Castells},
+           familyi={C\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32f2e25e4d849ddcc3a9cc11337f4ad6}{%
+           family={Motta},
+           familyi={M\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59327ba5d5f512c04b499559b6a0d47d}
+      \strng{fullhash}{983ab8d5845646b687c196328a6134cb}
+      \strng{bibnamehash}{983ab8d5845646b687c196328a6134cb}
+      \strng{authorbibnamehash}{983ab8d5845646b687c196328a6134cb}
+      \strng{authornamehash}{59327ba5d5f512c04b499559b6a0d47d}
+      \strng{authorfullhash}{983ab8d5845646b687c196328a6134cb}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Currently, techniques for content description and query processing in Information Retrieval (IR) are based on keywords, and therefore provide limited capabilities to capture the conceptualizations associated with user needs and contents. Aiming to solve the limitations of keyword-based models, the idea of conceptual search, understood as searching by meanings rather than literal strings, has been the focus of a wide body of research in the IR field. More recently, it has been used as a prototypical scenario (or even envisioned as a potential "killer app") in the Semantic Web (SW) vision, since its emergence in the late nineties. However, current approaches to semantic search developed in the SW area have not yet taken full advantage of the acquired knowledge, accumulated experience, and technological sophistication achieved through several decades of work in the IR field. Starting from this position, this work investigates the definition of an ontology-based IR model, oriented to the exploitation of domain Knowledge Bases to support semantic search capabilities in large document repositories, stressing on the one hand the use of fully fledged ontologies in the semantic-based perspective, and on the other hand the consideration of unstructured content as the target search space. The major contribution of this work is an innovative, comprehensive semantic search model, which extends the classic IR model, addresses the challenges of the massive and heterogeneous Web environment, and integrates the benefits of both keyword and semantic-based search. Additional contributions include: an innovative rank fusion technique that minimizes the undesired effects of knowledge sparseness on the yet juvenile SW, and the creation of a large-scale evaluation benchmark, based on TREC IR evaluation standards, which allows a rigorous comparison between IR and SW approaches. Conducted experiments show that our semantic search model obtained comparable and better performance results (in terms of MAP and P@10 values) than the best TREC automatic system. © 2010 Elsevier B.V. All rights reserved.}
+      \field{issn}{15708268}
+      \field{issue}{4}
+      \field{journaltitle}{Journal of Web Semantics}
+      \field{month}{12}
+      \field{title}{Semantically enhanced Information Retrieval: An ontology-based approach}
+      \field{volume}{9}
+      \field{year}{2011}
+      \field{pages}{434\bibrangedash 452}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.websem.2010.11.003
+      \endverb
+      \keyw{Information Retrieval,Semantic Web,Semantic search}
+    \endentry
+    \entry{Francis2018}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=fc9931b30bb3393a9e60514e90139510}{%
+           family={Francis},
+           familyi={F\bibinitperiod},
+           given={Nadime},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86bf31b4f157017436ed9fb6023ec8ca}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Alastair},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc5fe1a24439ad6b97eae55ca70033ad}{%
+           family={Guagliardo},
+           familyi={G\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=931db7d26f75777de801bc1858e3ebae}{%
+           family={Libkin},
+           familyi={L\bibinitperiod},
+           given={Leonid},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2448e765907e336b42503ef5181866f1}{%
+           family={Lindaaker},
+           familyi={L\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f2de4fad67143c7e42ca23b5081e234}{%
+           family={Marsault},
+           familyi={M\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08f838be08287bafe82e8baa6c98e89d}{%
+           family={Plantikow},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3dfaf4ef8c4f1fd20666ec4c619ba5af}{%
+           family={Rydberg},
+           familyi={R\bibinitperiod},
+           given={Mats},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3eae824625f74f671ce3b090ba521c6c}{%
+           family={Selmer},
+           familyi={S\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e616cabb1eb74ff4903753889e5e92}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{53e7edfd3561bb5b26caefe7f3a584df}
+      \strng{fullhash}{00a2ad39f3b5c57ac3676442081683dc}
+      \strng{bibnamehash}{00a2ad39f3b5c57ac3676442081683dc}
+      \strng{authorbibnamehash}{00a2ad39f3b5c57ac3676442081683dc}
+      \strng{authornamehash}{53e7edfd3561bb5b26caefe7f3a584df}
+      \strng{authorfullhash}{00a2ad39f3b5c57ac3676442081683dc}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Cypher property graph query language is an evolving language, originally designed and implemented as part of the Neo4j graph database, and it is currently used by several commercial database products and researchers. We describe Cypher 9, which is the first version of the language governed by the openCypher Implementers Group. We first introduce the language by example, and describe its uses in industry. We then provide a formal semantic definition of the core read-query features of Cypher, including its variant of the property graph data model, and its "ASCII Art" graph pattern matching mechanism for expressing subgraphs of interest to an application. We compare the features of Cypher to other property graph query languages, and describe extensions, at an advanced stage of development, which will form part of Cypher 10, turning the language into a compositional language which supports graph projections and multiple named graphs.}
+      \field{isbn}{9781450317436}
+      \field{issn}{07308078}
+      \field{journaltitle}{Proceedings of the ACM SIGMOD International Conference on Management of Data}
+      \field{month}{5}
+      \field{title}{Cypher: An evolving query language for property graphs}
+      \field{year}{2018}
+      \field{pages}{1433\bibrangedash 1445}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3183713.3190657
+      \endverb
+    \endentry
+    \entry{Antoniou2008}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=703f01bb613f0f2dd501efab06d3c890}{%
+           family={{G. (Grigoris) Antoniou and Frank. Van Harmelen}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{703f01bb613f0f2dd501efab06d3c890}
+      \strng{fullhash}{703f01bb613f0f2dd501efab06d3c890}
+      \strng{bibnamehash}{703f01bb613f0f2dd501efab06d3c890}
+      \strng{authorbibnamehash}{703f01bb613f0f2dd501efab06d3c890}
+      \strng{authornamehash}{703f01bb613f0f2dd501efab06d3c890}
+      \strng{authorfullhash}{703f01bb613f0f2dd501efab06d3c890}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{2nd ed. The substantially updated second edition of a widely used guide to the key ideas, languages, and technologies of the Semantic Web, featuring additional coverage of new application areas, new tools, and other recent developments. Brief Contents -- Contents -- List of Figures -- Series Foreword -- Preface -- 1 The Semantic Web Vision -- 2 Structured Web Documents: XML -- 3 Describing Web Resources: RDF -- 4 Web Ontology Language: OWL -- 5 Logic and Inference: Rules -- 6 Applications -- 7 Ontology Engineering -- 8 Conclusion and Outlook -- A Abstract OWL Syntax -- Index}
+      \field{isbn}{9780262012423}
+      \field{title}{A semantic Web primer}
+      \field{year}{2008}
+      \field{pages}{264}
+      \range{pages}{1}
+    \endentry
+    \entry{Hogan2021}{article}{}
+      \name{author}{18}{}{%
+        {{un=0,uniquepart=base,hash=56f2d88e83f41f6e1f0d9a0197c4c7eb}{%
+           family={Hogan},
+           familyi={H\bibinitperiod},
+           given={Aidan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=019293949e6289df4e3b751f3f9ecf4e}{%
+           family={Blomqvist},
+           familyi={B\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac9f2c71e19d14efaa82ad1908d35843}{%
+           family={Cochez},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b900f8333251448c0db95783a03e42d0}{%
+           family={D'Amato},
+           familyi={D\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42945c403f20700ebbebb90b8531c982}{%
+           family={Melo},
+           familyi={M\bibinitperiod},
+           given={Gerard\bibnamedelima De},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5feae03b05f14f0a5fd1f3e07badd8e6}{%
+           family={Gutierrez},
+           familyi={G\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ddbf3af24e3802f8842794c8c86b60c}{%
+           family={Kirrane},
+           familyi={K\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75f24fe7a15315f35934fc2dfdbc6aa2}{%
+           family={Gayo},
+           familyi={G\bibinitperiod},
+           given={José\bibnamedelimb Emilio\bibnamedelima Labra},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe24dce481a67e247581d4b20435709}{%
+           family={Navigli},
+           familyi={N\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aabe7235b5cda4ebcca85f21cf40b60}{%
+           family={Neumaier},
+           familyi={N\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4ea58f1dc4bfe0f1f28fd990982868e}{%
+           family={Ngomo},
+           familyi={N\bibinitperiod},
+           given={Axel\bibnamedelimb Cyrille\bibnamedelima Ngonga},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2be0ec850b04b1f5e9fe3aca6bf5226}{%
+           family={Polleres},
+           familyi={P\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95ae583344f22f1d58dae51c33b60901}{%
+           family={Rashid},
+           familyi={R\bibinitperiod},
+           given={Sabbir\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1bff37423f112cd817f8975c889c0791}{%
+           family={Rula},
+           familyi={R\bibinitperiod},
+           given={Anisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c1975136125fdac517346a463335503}{%
+           family={Schmelzeisen},
+           familyi={S\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d2c4c78dacb7d5c0f840ed22b1fd0c8}{%
+           family={Sequeda},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3489f3873d85937d1977e3a21e5e76a7}{%
+           family={Staab},
+           familyi={S\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2472f33c293d18b30767d8cd170089fd}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{d5ce211d54ee18055922d1ccf1a63ea0}
+      \strng{fullhash}{dfe027f701b4f1db6d1ca5782d0375a5}
+      \strng{bibnamehash}{dfe027f701b4f1db6d1ca5782d0375a5}
+      \strng{authorbibnamehash}{dfe027f701b4f1db6d1ca5782d0375a5}
+      \strng{authornamehash}{d5ce211d54ee18055922d1ccf1a63ea0}
+      \strng{authorfullhash}{dfe027f701b4f1db6d1ca5782d0375a5}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we provide a comprehensive introduction to knowledge graphs, which have recently garnered significant attention from both industry and academia in scenarios that require exploiting diverse, dynamic, large-scale collections of data. After some opening remarks, we motivate and contrast various graph-based data models, as well as languages used to query and validate knowledge graphs. We explain how knowledge can be represented and extracted using a combination of deductive and inductive techniques. We conclude with high-level future research directions for knowledge graphs.}
+      \field{issn}{15577341}
+      \field{issue}{4}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{month}{7}
+      \field{title}{Knowledge graphs}
+      \field{volume}{54}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1145/3447772
+      \endverb
+      \keyw{Embeddings,Graph algorithms,Graph databases,Graph neural networks,Graph query languages,Knowledge graphs,Ontologies,Rule mining,Shapes}
+    \endentry
+    \entry{Kapanipathi2020}{article}{}
+      \name{author}{30}{}{%
+        {{un=0,uniquepart=base,hash=39e52e141a4c6b3ccbae17613c42d305}{%
+           family={Kapanipathi},
+           familyi={K\bibinitperiod},
+           given={Pavan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6579e6eafeb754dcd11b86a3895310b6}{%
+           family={Abdelaziz},
+           familyi={A\bibinitperiod},
+           given={Ibrahim},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfcc9a153b673e0d8a01e654b89b29aa}{%
+           family={Ravishankar},
+           familyi={R\bibinitperiod},
+           given={Srinivas},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcdf7cf3f3cfe87d0f08f8f4d98b1137}{%
+           family={Roukos},
+           familyi={R\bibinitperiod},
+           given={Salim},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a263cec8e9c2448c55c8a3ccad6ea03d}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1623273efad3aca25e2c9cb374ad2e2a}{%
+           family={Astudillo},
+           familyi={A\bibinitperiod},
+           given={Ramon},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=561a89f49dcedc04b1b459a57d087b7a}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca6353e6404f26e7a979f8d7433ee9fa}{%
+           family={Cornelio},
+           familyi={C\bibinitperiod},
+           given={Cristina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=288776bbe18f59a6c19647c1fa16a7c1}{%
+           family={Dana},
+           familyi={D\bibinitperiod},
+           given={Saswati},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a26b52e478d6baff0da0f3f34302804}{%
+           family={Fokoue},
+           familyi={F\bibinitperiod},
+           given={Achille},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a59d3b9430b2ffb86741a36f3a9183e}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Dinesh},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9ecaa7cc8a1dbcf2d0816e34fd8bc07}{%
+           family={Gliozzo},
+           familyi={G\bibinitperiod},
+           given={Alfio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92ae5867927b61661c3d3bdaf322d1c7}{%
+           family={Gurajada},
+           familyi={G\bibinitperiod},
+           given={Sairam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e84bfd3ad1f52b77be27a7705392fc43}{%
+           family={Karanam},
+           familyi={K\bibinitperiod},
+           given={Hima},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e24b06310e9af51910d4945ccef604fc}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Naweed},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebeaa071daabcd836fe8ce294483da48}{%
+           family={Khandelwal},
+           familyi={K\bibinitperiod},
+           given={Dinesh},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a470ff47a10618cc3a8a28e105ae17dc}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Young-Suk},
+           giveni={Y\bibinithyphendelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8820673f62adf33c74365bc576fda374}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yunyao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c3f0afd4ef0282df8ae243b0ef07974}{%
+           family={Luus},
+           familyi={L\bibinitperiod},
+           given={Francois},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de0d4a0a64efb01f7939d4758b4a88b5}{%
+           family={Makondo},
+           familyi={M\bibinitperiod},
+           given={Ndivhuwo},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f90a6b92dd25c18b3e8c87cc918532f9}{%
+           family={Mihindukulasooriya},
+           familyi={M\bibinitperiod},
+           given={Nandana},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47018ed878c62b243fe67d1229865f99}{%
+           family={Naseem},
+           familyi={N\bibinitperiod},
+           given={Tahira},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8726fd73a3bc365cf19bb252ded963ed}{%
+           family={Neelam},
+           familyi={N\bibinitperiod},
+           given={Sumit},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cca4707fa68c79d531c33d107a5d031e}{%
+           family={Popa},
+           familyi={P\bibinitperiod},
+           given={Lucian},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53eb96aa8dbc8d49bc3c789610fa860d}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Revanth},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f858f7e911e129ebb7005af66081dd02}{%
+           family={Riegel},
+           familyi={R\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56e7966cc31b61f6e1703221e9a04f82}{%
+           family={Rossiello},
+           familyi={R\bibinitperiod},
+           given={Gaetano},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6028f0a7359c3b953575996d43ccf81a}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Udit},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d6c7d20f3a099b36a8238d696d48cd3}{%
+           family={Bhargav},
+           familyi={B\bibinitperiod},
+           given={G\bibnamedelima P\bibnamedelima Shrivatsa},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=895459f795b2530f8583442ac07ff7c5}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Mo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bb6cd5e6c5a7d119850d53d4c29097d0}
+      \strng{fullhash}{1614f91eb03a07ee4dc5025e38221326}
+      \strng{bibnamehash}{85e5f836bbca797e1b0f205d5ee1864a}
+      \strng{authorbibnamehash}{85e5f836bbca797e1b0f205d5ee1864a}
+      \strng{authornamehash}{bb6cd5e6c5a7d119850d53d4c29097d0}
+      \strng{authorfullhash}{1614f91eb03a07ee4dc5025e38221326}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge base question answering (KBQA)is an important task in Natural Language Processing. Existing approaches face significant challenges including complex question understanding, necessity for reasoning, and lack of large end-to-end training datasets. In this work, we propose Neuro-Symbolic Question Answering (NSQA), a modular KBQA system, that leverages (1) Abstract Meaning Representation (AMR) parses for task-independent question understanding; (2) a simple yet effective graph transformation approach to convert AMR parses into candidate logical queries that are aligned to the KB; (3) a pipeline-based approach which integrates multiple, reusable modules that are trained specifically for their individual tasks (semantic parser, entity andrelationship linkers, and neuro-symbolic reasoner) and do not require end-to-end training data. NSQA achieves state-of-the-art performance on two prominent KBQA datasets based on DBpedia (QALD-9 and LC-QuAD1.0). Furthermore, our analysis emphasizes that AMR is a powerful tool for KBQA systems.}
+      \field{month}{12}
+      \field{title}{Leveraging Abstract Meaning Representation for Knowledge Base Question Answering}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2012.01707
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2012.01707
+      \endverb
+    \endentry
+    \entry{Paulheim2017}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4fd4dfc5ed27cd65c69fa6d692f4c161}{%
+           family={Paulheim},
+           familyi={P\bibinitperiod},
+           given={Heiko},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOS Press}%
+      }
+      \strng{namehash}{4fd4dfc5ed27cd65c69fa6d692f4c161}
+      \strng{fullhash}{4fd4dfc5ed27cd65c69fa6d692f4c161}
+      \strng{bibnamehash}{4fd4dfc5ed27cd65c69fa6d692f4c161}
+      \strng{authorbibnamehash}{4fd4dfc5ed27cd65c69fa6d692f4c161}
+      \strng{authornamehash}{4fd4dfc5ed27cd65c69fa6d692f4c161}
+      \strng{authorfullhash}{4fd4dfc5ed27cd65c69fa6d692f4c161}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term Knowledge Graph in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO, and Freebase being among the most prominent ones. Those graphs are often constructed from semi-structured knowledge, such as Wikipedia, or harvested from the web with a combination of statistical and linguistic methods. The result are large-scale knowledge graphs that try to make a good trade-off between completeness and correctness. In order to further increase the utility of such knowledge graphs, various refinement methods have been proposed, which try to infer and add missing knowledge to the graph, or identify erroneous pieces of information. In this article, we provide a survey of such knowledge graph refinement approaches, with a dual look at both the methods being proposed as well as the evaluation methodologies used.}
+      \field{issn}{22104968}
+      \field{issue}{3}
+      \field{journaltitle}{Semantic Web}
+      \field{title}{Knowledge graph refinement: A survey of approaches and evaluation methods}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{pages}{489\bibrangedash 508}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.3233/SW-160218
+      \endverb
+      \keyw{Knowledge graphs,completion,correction,error detection,evaluation,refinement}
+    \endentry
+    \entry{Jorge2009}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a991f832b9236d272602bb0cce8717ce}{%
+           family={Pérez},
+           familyi={P\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9282d63c7c5bda72aad9b39bc68fddeb}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5feae03b05f14f0a5fd1f3e07badd8e6}{%
+           family={Gutierrez},
+           familyi={G\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d05db17dcccd9f3ea9a9bcb5a4019d18}
+      \strng{fullhash}{9fca1e4ef52a32d40484eff4b3346ac3}
+      \strng{bibnamehash}{9fca1e4ef52a32d40484eff4b3346ac3}
+      \strng{authorbibnamehash}{9fca1e4ef52a32d40484eff4b3346ac3}
+      \strng{authornamehash}{d05db17dcccd9f3ea9a9bcb5a4019d18}
+      \strng{authorfullhash}{9fca1e4ef52a32d40484eff4b3346ac3}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SPARQL is the standard language for querying RDF data. In this article, we address systematically the formal study of the database aspects of SPARQL, concentrating in its graph pattern matching facility. We provide a compositional semantics for the core part of SPARQL, and study the complexity of the evaluation of several fragments of the language. Among other complexity results, we show that the evaluation of general SPARQL patterns is PSPACE-complete. We identify a large class of SPARQL patterns, defined by imposing a simple and natural syntactic restriction, where the query evaluation problem can be solved more efficiently. This restriction gives rise to the class of well-designed patterns. We show that the evaluation problem is coNP-complete for well-designed patterns. Moreover, we provide several rewriting rules for well-designed patterns whose application may have a considerable impact in the cost of evaluating SPARQL queries. © 2009 ACM.}
+      \field{issn}{03625915}
+      \field{issue}{3}
+      \field{journaltitle}{ACM Transactions on Database Systems}
+      \field{month}{8}
+      \field{title}{Semantics and complexity of SPARQL}
+      \field{volume}{34}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1145/1567274.1567278
+      \endverb
+      \keyw{Complexity,Query language,RDF,SPARQL,Semantic Web}
+    \endentry
+    \entry{pujara2013knowledge}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=603e425c04181fb9cb012633c322ac6d}{%
+           family={Pujara},
+           familyi={P\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af92e5da928a8a416c661b6ca3829723}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88e86bf57e4d0841ba9010d52469237c}{%
+           family={Getoor},
+           familyi={G\bibinitperiod},
+           given={Lise},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be006ecd16e3b55e58d8a895354f80e8}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d8e1e5e0dd9bd1a7770745135bcd3796}
+      \strng{fullhash}{6a3f87913ecc3f91b70606a7fc386a17}
+      \strng{bibnamehash}{6a3f87913ecc3f91b70606a7fc386a17}
+      \strng{authorbibnamehash}{6a3f87913ecc3f91b70606a7fc386a17}
+      \strng{authornamehash}{d8e1e5e0dd9bd1a7770745135bcd3796}
+      \strng{authorfullhash}{6a3f87913ecc3f91b70606a7fc386a17}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Semantic Web--ISWC 2013: 12th International Semantic Web Conference, Sydney, NSW, Australia, October 21-25, 2013, Proceedings, Part I 12}
+      \field{title}{Knowledge graph identification}
+      \field{year}{2013}
+      \field{pages}{542\bibrangedash 557}
+      \range{pages}{16}
+    \endentry
     \entry{Scarselli2009}{article}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=447de7983619243dc5bf3af69d609b20}{%
@@ -83,6 +918,425 @@
       \verb 10.1109/TNN.2008.2005605
       \endverb
       \keyw{Graph neural networks (GNNs),Graph processing,Graphical domains,Recursive neural networks}
+    \endentry
+    \entry{singhal2012introducing}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e842c74a8f00853e7e3ea135b41b55bd}{%
+           family={Singhal},
+           familyi={S\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{fullhash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{bibnamehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{authorbibnamehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{authornamehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{authorfullhash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Official google blog}
+      \field{number}{16}
+      \field{title}{Introducing the knowledge graph: things, not strings}
+      \field{volume}{5}
+      \field{year}{2012}
+      \field{pages}{3}
+      \range{pages}{1}
+    \endentry
+    \entry{Tchechmedjiev2019}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=481c02172e78dc137bc6e575cb03fcd5}{%
+           family={Tchechmedjiev},
+           familyi={T\bibinitperiod},
+           given={Andon},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4324253df183ab6a846df79383a55536}{%
+           family={Fafalios},
+           familyi={F\bibinitperiod},
+           given={Pavlos},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cf57ff30b9f417c2235cda77e31d15e}{%
+           family={Boland},
+           familyi={B\bibinitperiod},
+           given={Katarina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a118a87e7a14d90167424077d9b7e1e3}{%
+           family={Gasquet},
+           familyi={G\bibinitperiod},
+           given={Malo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa3026b5e4b05801dda814b3a7007b6}{%
+           family={Zloch},
+           familyi={Z\bibinitperiod},
+           given={Matthaus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8c802debe23cd53409045a1997648cf}{%
+           family={Zapilko},
+           familyi={Z\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0eeb68cbb49d4e3b58ba0660fb2f6599}{%
+           family={Dietze},
+           familyi={D\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33b076ff1dd5d96077bd88f62e61a84}{%
+           family={Todorov},
+           familyi={T\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45a14a4ed27f4e27a824084c123e0d9c}{%
+           family={Zloch},
+           familyi={Z\bibinitperiod},
+           given={Matthäus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{63171e2594d34852ec83ad2590430c39}
+      \strng{fullhash}{86753f693720d99272cdcf4b5dbfa853}
+      \strng{bibnamehash}{86753f693720d99272cdcf4b5dbfa853}
+      \strng{authorbibnamehash}{86753f693720d99272cdcf4b5dbfa853}
+      \strng{authornamehash}{63171e2594d34852ec83ad2590430c39}
+      \strng{authorfullhash}{86753f693720d99272cdcf4b5dbfa853}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Various research areas at the intersection of computer and social sciences require a ground truth of contextualized claims labelled with their truth values in order to facilitate supervision, validation or reproducibility of approaches dealing, for example, with fact-checking or analysis of societal debates. So far, no reasonably large, up-to-date and queryable corpus of structured information about claims and related metadata is publicly available. In an attempt to fill this gap, we introduce ClaimsKG, a knowledge graph of fact-checked claims, which facilitates structured queries about their truth values, authors, dates, journalistic reviews and other kinds of metadata. ClaimsKG is generated through a semi-automated pipeline, which harvests data from popular fact-checking websites on a regular basis, annotates claims with related entities from DBpedia, and lifts the data to RDF using an RDF/S model that makes use of established vocabularies. In order to harmonise data originating from diverse fact-checking sites, we introduce normalised ratings as well as a simple claims coreference resolution strategy. The current knowledge graph, extensible to new information, consists of 28,383 claims published since 1996, amounting to 6,606,032 triples.}
+      \field{title}{ClaimsKG: A Knowledge Graph of Fact-Checked Claims}
+      \field{year}{2019}
+      \field{pages}{309\bibrangedash 324}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-030-30796-7_20ï
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-02404153
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-02404153
+      \endverb
+      \keyw{Claims,Fact-checking,Knowledge Graphs,Societal debates}
+    \endentry
+    \entry{Uschold1996}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=43ce48ece7fbfefcc05e550adb670c1d}{%
+           family={Uschold},
+           familyi={U\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=616604c7891ff52e572ad0cae8d13659}{%
+           family={Gruninger},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1df4b6446ee9900f00edd4f51b69bdb}
+      \strng{fullhash}{a1df4b6446ee9900f00edd4f51b69bdb}
+      \strng{bibnamehash}{a1df4b6446ee9900f00edd4f51b69bdb}
+      \strng{authorbibnamehash}{a1df4b6446ee9900f00edd4f51b69bdb}
+      \strng{authornamehash}{a1df4b6446ee9900f00edd4f51b69bdb}
+      \strng{authorfullhash}{a1df4b6446ee9900f00edd4f51b69bdb}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is intended to serve as a comprehensive introduction to the emerging geld concerned with the design and use of ontologies. We observe that disparate backgrounds, languages, tools, and techniques are a major barrier to eeective communication among people, organisations, and/or software systems. We show how the development and implementation of an explicit account of a shared understanding (i.e. anòntology') in a given subject area, can improve such communication, which in turn, can give rise to greater reuse and sharing, inter-operability, and more reliable software. After motivating their need, we clarify just what ontologies are and what purposes they serve. We outline a methodology for developing and evaluating ontologies, rst discussing informal techniques, concerning such issues as scoping, handling ambiguity, reaching agreement and producing deenitions. We then consider the beneets of and describe, a more formal approach. We re-visit the scoping phase, and discuss the role of formal languages and techniques in the speciication, implementation and evaluation of ontologies. Finally, we review the state of the art and practice in this emerging geld, considering various case studies, software tools for ontology development, key research issues and future prospects.}
+      \field{issue}{2}
+      \field{journaltitle}{Knowledge Engineering Review}
+      \field{title}{Ontologies: Principles, Methods and Applications}
+      \field{volume}{11}
+      \field{year}{1996}
+    \endentry
+    \entry{Wang2017}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e2068259fc5297e154f92a417136c922}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Quan},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd2b0f5b4fe73348f6c0b8fdfe0ce772}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Zhendong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc58cd6a24a023ce7177d8f199d47875}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbbe0aee45b05ee2e216204167adfdac}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{a4dce556535a9cd3d6fbcf51fe9c9a92}
+      \strng{fullhash}{c9468d4be8f286ca970a8c0e0cc5de45}
+      \strng{bibnamehash}{c9468d4be8f286ca970a8c0e0cc5de45}
+      \strng{authorbibnamehash}{c9468d4be8f286ca970a8c0e0cc5de45}
+      \strng{authornamehash}{a4dce556535a9cd3d6fbcf51fe9c9a92}
+      \strng{authorfullhash}{c9468d4be8f286ca970a8c0e0cc5de45}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge graph (KG) embedding is to embed components of a KG including entities and relations into continuous vector spaces, so as to simplify the manipulation while preserving the inherent structure of the KG. It can benefit a variety of downstream tasks such as KG completion and relation extraction, and hence has quickly gained massive attention. In this article, we provide a systematic review of existing techniques, including not only the state-of-The-Arts but also those with latest trends. Particularly, we make the review based on the type of information used in the embedding task. Techniques that conduct embedding using only facts observed in the KG are first introduced. We describe the overall framework, specific model design, typical training procedures, as well as pros and cons of such techniques. After that, we discuss techniques that further incorporate additional information besides facts. We focus specifically on the use of entity types, relation paths, textual descriptions, and logical rules. Finally, we briefly introduce how KG embedding can be applied to and benefit a wide variety of downstream tasks such as KG completion, relation extraction, question answering, and so forth.}
+      \field{issn}{10414347}
+      \field{issue}{12}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{month}{12}
+      \field{title}{Knowledge graph embedding: A survey of approaches and applications}
+      \field{volume}{29}
+      \field{year}{2017}
+      \field{pages}{2724\bibrangedash 2743}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TKDE.2017.2754499
+      \endverb
+      \keyw{Knowledge graph embedding,Latent factor models,Statistical relational learning,Tensor/matrix factorization models}
+    \endentry
+    \entry{Wu2021}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c97b91ddf59fcb75f2d1b52080711566}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zonghan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=019bcbde9904047f7c02c1ae64e1d46e}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Shirui},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60aaf7ecf6263904f7e30d9a299a044d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Fengwen},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7b6aa3c68f9430695b34429c0871856}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Guodong},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59f3e845390faff6c808a1556b2ac0ef}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chengqi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed7b2de2f08bfa6638d5d174d55d839b}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Philip\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{0d8fc377d7726031a0daf3b3b9ab64b3}
+      \strng{fullhash}{0f1e0d108c1e93aa577ae493dc7dd45b}
+      \strng{bibnamehash}{0f1e0d108c1e93aa577ae493dc7dd45b}
+      \strng{authorbibnamehash}{0f1e0d108c1e93aa577ae493dc7dd45b}
+      \strng{authornamehash}{0d8fc377d7726031a0daf3b3b9ab64b3}
+      \strng{authorfullhash}{0f1e0d108c1e93aa577ae493dc7dd45b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep learning has revolutionized many machine learning tasks in recent years, ranging from image classification and video processing to speech recognition and natural language understanding. The data in these tasks are typically represented in the Euclidean space. However, there is an increasing number of applications, where data are generated from non-Euclidean domains and are represented as graphs with complex relationships and interdependency between objects. The complexity of graph data has imposed significant challenges on the existing machine learning algorithms. Recently, many studies on extending deep learning approaches for graph data have emerged. In this article, we provide a comprehensive overview of graph neural networks (GNNs) in data mining and machine learning fields. We propose a new taxonomy to divide the state-of-The-Art GNNs into four categories, namely, recurrent GNNs, convolutional GNNs, graph autoencoders, and spatial-Temporal GNNs. We further discuss the applications of GNNs across various domains and summarize the open-source codes, benchmark data sets, and model evaluation of GNNs. Finally, we propose potential research directions in this rapidly growing field.}
+      \field{issn}{21622388}
+      \field{issue}{1}
+      \field{journaltitle}{IEEE Transactions on Neural Networks and Learning Systems}
+      \field{month}{1}
+      \field{title}{A Comprehensive Survey on Graph Neural Networks}
+      \field{volume}{32}
+      \field{year}{2021}
+      \field{pages}{4\bibrangedash 24}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1109/TNNLS.2020.2978386
+      \endverb
+      \keyw{Deep learning,graph autoencoder (GAE),graph convolutional networks (GCNs),graph neural networks (GNNs),graph representation learning,network embedding}
+    \endentry
+    \entry{Yasunaga2021}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f95714ad66afcfa71b317b3bec07d01d}{%
+           family={Yasunaga},
+           familyi={Y\bibinitperiod},
+           given={Michihiro},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f136c99c06f10d114554179d4722b864}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Hongyu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed22853aa493ba4023443a010c9f6f8b}{%
+           family={Bosselut},
+           familyi={B\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86c032bbc45c3b616f0a1170befc0e82}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Percy},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e7e08a193d7fcd9f584a831f4e7ee906}
+      \strng{fullhash}{31093619f9a2c6a54c9e56f98f98f488}
+      \strng{bibnamehash}{31093619f9a2c6a54c9e56f98f98f488}
+      \strng{authorbibnamehash}{31093619f9a2c6a54c9e56f98f98f488}
+      \strng{authornamehash}{e7e08a193d7fcd9f584a831f4e7ee906}
+      \strng{authorfullhash}{31093619f9a2c6a54c9e56f98f98f488}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The problem of answering questions using knowledge from pre-trained language models (LMs) and knowledge graphs (KGs) presents two challenges: given a QA context (question and answer choice), methods need to (i) identify relevant knowledge from large KGs, and (ii) perform joint reasoning over the QA context and KG. In this work, we propose a new model, QA-GNN, which addresses the above challenges through two key innovations: (i) relevance scoring, where we use LMs to estimate the importance of KG nodes relative to the given QA context, and (ii) joint reasoning, where we connect the QA context and KG to form a joint graph, and mutually update their representations through graph neural networks. We evaluate our model on QA benchmarks in the commonsense (CommonsenseQA, OpenBookQA) and biomedical (MedQA-USMLE) domains. QA-GNN outperforms existing LM and LM+KG models, and exhibits capabilities to perform interpretable and structured reasoning, e.g., correctly handling negation in questions.}
+      \field{month}{4}
+      \field{title}{QA-GNN: Reasoning with Language Models and Knowledge Graphs for Question Answering}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2104.06378
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2104.06378
+      \endverb
+    \endentry
+    \entry{Zhang2021}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=3fa0b98bdb0330cc0ea22e655fd964c2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17cb5f39e75e54113cdf0eaa8f846568}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Shumin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a921c7917808e511798fc1d34abd9af9}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Mingyang},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cce05cab2c437e9c128f853684ee3137}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b8805250fb5a57cfbae360547a18706}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d1fce80b100a38e606bc7f2e0c6fccd}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Feiyu},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8fe2d7a8f566f42e1585eb10778e6b5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiangwen},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=824b2f383c5e03f7427dc3096f342870}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Huajun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{6842b5fbca42689fb0276e5d0ca4a2a4}
+      \strng{fullhash}{5229fdbbda4c36b762e6d44d3885780d}
+      \strng{bibnamehash}{5229fdbbda4c36b762e6d44d3885780d}
+      \strng{authorbibnamehash}{5229fdbbda4c36b762e6d44d3885780d}
+      \strng{authornamehash}{6842b5fbca42689fb0276e5d0ca4a2a4}
+      \strng{authorfullhash}{5229fdbbda4c36b762e6d44d3885780d}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge Graphs (KGs), representing facts as triples, have been widely adopted in many applications. Reasoning tasks such as link prediction and rule induction are important for the development of KGs. Knowledge Graph Embeddings (KGEs) embedding entities and relations of a KG into continuous vector spaces, have been proposed for these reasoning tasks and proven to be efficient and robust. But the plausibility and feasibility of applying and deploying KGEs in real-work applications has not been well-explored. In this paper, we discuss and report our experiences of deploying KGEs in a real domain application: e-commerce. We first identity three important desiderata for e-commerce KG systems: 1) attentive reasoning, reasoning over a few target relations of more concerns instead of all; 2) explanation, providing explanations for a prediction to help both users and business operators understand why the prediction is made; 3) transferable rules, generating reusable rules to accelerate the deployment of a KG to new systems. While non existing KGE could meet all these desiderata, we propose a novel one, an explainable knowledge graph attention network that make prediction through modeling correlations between triples rather than purely relying on its head entity, relation and tail entity embeddings. It could automatically selects attentive triples for prediction and records the contribution of them at the same time, from which explanations could be easily provided and transferable rules could be efficiently produced. We empirically show that our method is capable of meeting all three desiderata in our e-commerce application and outperform typical baselines on datasets from real domain applications.}
+      \field{isbn}{9781450395656}
+      \field{journaltitle}{ACM International Conference Proceeding Series}
+      \field{month}{12}
+      \field{title}{Knowledge Graph Embedding in E-commerce Applications: Attentive Reasoning, Explanations, and Transferable Rules}
+      \field{year}{2021}
+      \field{pages}{71\bibrangedash 79}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3502223.3502232
+      \endverb
+      \keyw{E-commerce,Explainable AI,Knowledge Graphs,Reasoning,Representation Learning,Rules}
     \endentry
   \enddatalist
 \endrefsection

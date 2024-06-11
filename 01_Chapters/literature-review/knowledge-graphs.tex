@@ -1,0 +1,82 @@
+TODO: change intro
+
+TODO: reread every section and change (modifying, adding something)
+
+\glspl{kg} have came up as a key technology in the field of data management and \gls{ai}, enabling sophisticated data integration, retrieval and analysis, and analysis. This literature review provides an in-depth examination of KGs, their theoretical foundations, practical applications and recent advances.
+\subsection*{Theoretical Foundations of Knowledge Graphs}
+\subsubsection*{Definition and Structure}
+\glspl{kg} are directed graph-based data structures that represent real-world entities and their interrelations, providing a way to model complex domains and their underlying semantics. A KG consists of nodes (entities) and edges (relationships), forming a network of interconnected information. This structure allows \glspl{kg} to capture rich contextual information and provide a semantic framework for data (\cite{Hogan2021}).
+
+A \gls{kg} refers to a semantic network graph which is consisted of diverse entities, concepts, and relationships in the real world. It is used to formally describe various things and their associations in the real world.
+\glspl{kg} are generally represented in triples $\gls{kg}=\{\mathnormal{E,R,F}\}$.
+    \begin{itemize}
+        \item $E$ represents the entity set $\{\mathnormal{e_1, e_2, ... ,e_E} \}$, and the entity $e$ is the most basic element in the \gls{kg}, referring to the items that exist objectively and can be distinguished from each other.
+        \item $R$ represents the relation set $\{\mathnormal{r_1, r_2, ... ,r_R}\}$, and the relation $r$ is an edge in the \gls{kg}, representing a specific connection between different entities.
+        \item $F$ represents the fact set $\{\mathnormal{f_1,f_2, ... ,f_F}\}$, and each $\mathnormal{f}$ is defined as a triple $(\mathnormal{h,r,t}) \in \mathnormal{f}$, in which $\mathnormal{h}$ denotes the head entity, $\mathnormal{r}$ stands for the relationship, and $\mathnormal{t}$ indicates the tail entity.
+    \end{itemize}
+
+\subsubsection*{Ontologies and Semantic Web Technologies}
+An ontology is a formal representation of knowledge in a domain, specifying the concepts, relationships, and constraints that exist within that domain. The term ``ontology'' can be used to the shared understanding of soma domain of interest (\cite{Uschold1996}).
+Ontologies play a critical role in defining the schema and semantics of \glspl{kg}. They specify the types of entities, relationships, and constraints, thereby providing a formalized structure for the data. The Semantic Web technologies, particularly the \gls{rdf} and the \gls{owl}, are fundamental to the development and functioning of \glspl{kg} (\cite{Antoniou2008}).
+\begin{itemize}
+    \item \gls{rdf} is a standard model for data interchange on the web. It uses triples (subject-predicate-object) to represent information, providing a flexible and extensible framework for creating and managing \glspl{kg} (W3C CITATION).
+    \item \gls{owl} is used to explicitly represent the meaning of terms in vocabularies and the relationships between those terms. It enables more complex and expressive representations compared to \gls{rdfs} (\cite{Deborah2004}).
+\end{itemize}
+\subsubsection*{Query Languages}
+\gls{sparql} is the standard query language for retrieving and manipulating data stored in \gls{rdf} format. It allows users to write complex queries to extract specific information from a KG, making it a powerful tool for data analysis and knowledge discovery (\cite{Jorge2009}).
+
+Cypher is another query language for graph databases, such as Neo4j, that allows users to interact with graph data using a pattern-matching syntax. Cypher queries are used to traverse the graph, retrieve specific patterns, and perform operations on the data (\cite{Francis2018}).
+
+\subsection*{Applications of Knowledge Graphs}
+
+\subsubsection*{General Applications}
+\glspl{kg} have been adopted across various domains due to their ability to integrate heterogeneous data sources, provide semantic context, and enable advanced querying and reasoning.
+\begin{itemize}
+    \item In healthcare, \glspl{kg} are used to integrate patient records, clinical trials, research data, and medical ontologies, enabling personalized medicine and decision support systems. They help in identifying relationships between diseases, treatments, and patient outcomes (\cite{Kapanipathi2020}).
+    \item Financial institutions leverage \glspl{kg} to connect data from various sources, such as market data, regulatory information, and customer transactions. This integration facilitates risk management, fraud detection, and compliance monitoring (\cite{Tchechmedjiev2019}).
+    \item In e-commerce, \glspl{kg} enhance product recommendation systems by linking customer preferences, purchase history, and product information. They enable more personalized and relevant recommendations, improving customer satisfaction and sales (\cite{Zhang2021}).
+\end{itemize}
+
+\subsubsection*{Enterprise Knowledge Management}
+Within enterprises, \glspl{kg} are used to manage and utilize internal knowledge effectively. They integrate data from different departments, such as human resources, finance, and operations, providing a unified view of the organization's information. This integration supports decision-making, collaboration, and innovation (\cite{pujara2013knowledge}).
+
+\subsubsection*{Search and Information Retrieval}
+\glspl{kg} significantly enhance search engines by providing semantic search capabilities. They enable the understanding of user queries in context, allowing for more accurate and relevant search results. Google's Knowledge Graph is a prominent example, enhancing search results with information about entities and their relationships (\cite{singhal2012introducing}).
+
+\subsection*{Recent Advancements in Knowledge Graphs}
+
+\subsubsection*{Integration with Machine Learning}
+Recent research has focused on integrating \glspl{kg} with \gls{ml} and \gls{dl} techniques to enhance their capabilities and applications. These integrations have led to significant advancements in various areas, including \gls{nlp}, recommendation systems, and predictive analytics.
+\begin{itemize}
+    \item \textbf{\glspl{kge}}: \gls{kge} techniques represent entities and relationships in a continuous vector space, enabling the use of machine learning algorithms for tasks such as link prediction, entity classification, and clustering. Popular methods include TransE, TransH, and TransR, each providing different ways to model relationships in the embedding space (\cite{Wang2017}).
+    \item \textbf{\glspl{gnn}}: \glspl{gnn} are \gls{dl} models designed to operate on graph-structured data. They leverage the relational nature of graphs to perform tasks such as node classification, link prediction, and graph classification. \glspl{gnn} have been successfully applied to enhance the capabilities of \glspl{kg} in various domains (\cite{Wu2021}).
+    
+    \glspl{gnn} are described in Sec. \ref{sec:graph-neural-networks}.
+\end{itemize}
+
+\subsubsection*{Natural Language Processing and Question Answering}
+\glspl{kg} have been instrumental in advancing \gls{nlp} applications, particularly in question answering systems. By providing structured and semantically rich information, \glspl{kg} enable systems to understand and generate human language more effectively.
+\begin{itemize}
+    \item \textbf{Question Answering Systems}: \glspl{kg} support question answering systems by enabling them to retrieve and reason over structured data. These systems can answer complex queries by traversing the graph and applying logical inferences based on the relationships between entities (\cite{Yasunaga2021}).
+    \item \textbf{Semantic Search and Text Analysis}: \glspl{kg} enhance text analysis and semantic search by providing contextual information about entities mentioned in the text. This contextual understanding improves the accuracy of information retrieval and the relevance of search results (\cite{Fernandez2011}).
+\end{itemize}
+
+\subsection*{Challenges and Future Directions}
+
+\subsubsection*{Scalability and Performance}
+As \glspl{kg} grow in size and complexity, scalability and performance become critical challenges. Efficient storage, querying, and updating of large \glspl{kg} require advanced techniques and architectures. Research in distributed computing, graph databases, and parallel processing is ongoing to address these issues (CITATION).
+
+\subsubsection*{Data Quality and Integration}
+
+Ensuring the accuracy and consistency of data in \glspl{kg} is essential for their reliability. Data quality issues, such as inconsistencies, duplications, and inaccuracies, can significantly impact the performance of applications relying on \glspl{kg}. Developing methods for automatic data cleaning, validation, and integration is an active area of research (\cite{Paulheim2017}).
+
+\subsubsection*{Privacy and Security}
+
+The integration of sensitive data into \glspl{kg} raises concerns about privacy and security. Protecting personal and confidential information while allowing for meaningful data analysis is a significant challenge. Research is focusing on developing techniques for secure data sharing, access control, and anonymization within \glspl{kg} (\cite{Bonatti2017}).
+
+\subsubsection*{Interoperability and Standardization}
+
+Interoperability and standardization are crucial for the widespread adoption of \glspl{kg}. Ensuring that different \glspl{kg} can work together seamlessly and that their data can be easily integrated requires the development of common standards and protocols. Efforts such as the \gls{lod} initiative and W3C standards aim to address these challenges (\cite{Bizer2023}).
+
+\subsection*{Conclusion}
+Knowledge Graphs represent a transformative technology for data integration, retrieval, and analysis, offering significant benefits across various domains. Their ability to provide semantic context and capture complex relationships makes them invaluable for applications in healthcare, finance, e-commerce, and enterprise knowledge management. Recent advancements in machine learning, particularly in the integration with GNNs, have further enhanced the capabilities of \glspl{kg}, opening new avenues for research and application. However, challenges related to scalability, data quality, privacy, and interoperability remain and must be addressed to fully realize the potential of \glspl{kg}. Continued research and development in these areas will be crucial for the future evolution and adoption of \glspl{kg}.

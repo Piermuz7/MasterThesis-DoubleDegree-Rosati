@@ -2792,8 +2792,44 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Scarselli2009</bcf:citekey>
+    <bcf:citekey order="2">Hogan2021</bcf:citekey>
+    <bcf:citekey order="3">Uschold1996</bcf:citekey>
+    <bcf:citekey order="4">Antoniou2008</bcf:citekey>
+    <bcf:citekey order="5">Deborah2004</bcf:citekey>
+    <bcf:citekey order="6">Jorge2009</bcf:citekey>
+    <bcf:citekey order="7">Francis2018</bcf:citekey>
+    <bcf:citekey order="8">Kapanipathi2020</bcf:citekey>
+    <bcf:citekey order="9">Tchechmedjiev2019</bcf:citekey>
+    <bcf:citekey order="10">Zhang2021</bcf:citekey>
+    <bcf:citekey order="11">pujara2013knowledge</bcf:citekey>
+    <bcf:citekey order="12">singhal2012introducing</bcf:citekey>
+    <bcf:citekey order="13">Wang2017</bcf:citekey>
+    <bcf:citekey order="14">Wu2021</bcf:citekey>
+    <bcf:citekey order="15">Yasunaga2021</bcf:citekey>
+    <bcf:citekey order="16">Fernandez2011</bcf:citekey>
+    <bcf:citekey order="17">Paulheim2017</bcf:citekey>
+    <bcf:citekey order="18">Bonatti2017</bcf:citekey>
+    <bcf:citekey order="19">Bizer2023</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="2">Scarselli2009</bcf:citekey>
+    <bcf:citekey order="20">Scarselli2009</bcf:citekey>
+    <bcf:citekey order="21">Hogan2021</bcf:citekey>
+    <bcf:citekey order="22">Uschold1996</bcf:citekey>
+    <bcf:citekey order="23">Antoniou2008</bcf:citekey>
+    <bcf:citekey order="24">Deborah2004</bcf:citekey>
+    <bcf:citekey order="25">Jorge2009</bcf:citekey>
+    <bcf:citekey order="26">Francis2018</bcf:citekey>
+    <bcf:citekey order="27">Kapanipathi2020</bcf:citekey>
+    <bcf:citekey order="28">Tchechmedjiev2019</bcf:citekey>
+    <bcf:citekey order="29">Zhang2021</bcf:citekey>
+    <bcf:citekey order="30">pujara2013knowledge</bcf:citekey>
+    <bcf:citekey order="31">singhal2012introducing</bcf:citekey>
+    <bcf:citekey order="32">Wang2017</bcf:citekey>
+    <bcf:citekey order="33">Wu2021</bcf:citekey>
+    <bcf:citekey order="34">Yasunaga2021</bcf:citekey>
+    <bcf:citekey order="35">Fernandez2011</bcf:citekey>
+    <bcf:citekey order="36">Paulheim2017</bcf:citekey>
+    <bcf:citekey order="37">Bonatti2017</bcf:citekey>
+    <bcf:citekey order="38">Bizer2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
