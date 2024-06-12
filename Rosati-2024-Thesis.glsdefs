@@ -558,3 +558,115 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{recnn}%
+{%
+name={RecNN},%
+sort={RecNN},%
+type={acronym},%
+first={Recursive Neural Network\glsspace (RecNN)},%
+firstplural={Recursive Neural Network\acrpluralsuffix \glsspace (RecNN\acrpluralsuffix )},%
+text={RecNN},%
+plural={RecNN\acrpluralsuffix },%
+description={Recursive Neural Network},%
+descriptionplural={Recursive Neural Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Recursive Neural Network},%
+longplural={Recursive Neural Networks},%
+short={RecNN},%
+shortplural={RecNNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gcn}%
+{%
+name={GCN},%
+sort={GCN},%
+type={acronym},%
+first={Graph Convolutional Network\glsspace (GCN)},%
+firstplural={Graph Convolutional Network\acrpluralsuffix \glsspace (GCN\acrpluralsuffix )},%
+text={GCN},%
+plural={GCN\acrpluralsuffix },%
+description={Graph Convolutional Network},%
+descriptionplural={Graph Convolutional Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graph Convolutional Network},%
+longplural={Graph Convolutional Networks},%
+short={GCN},%
+shortplural={GCNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gat}%
+{%
+name={GAT},%
+sort={GAT},%
+type={acronym},%
+first={Graph Attention Network\glsspace (GAT)},%
+firstplural={Graph Attention Network\acrpluralsuffix \glsspace (GAT\acrpluralsuffix )},%
+text={GAT},%
+plural={GAT\acrpluralsuffix },%
+description={Graph Attention Network},%
+descriptionplural={Graph Attention Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graph Attention Network},%
+longplural={Graph Attention Networks},%
+short={GAT},%
+shortplural={GATs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mpnn}%
+{%
+name={MPNN},%
+sort={MPNN},%
+type={acronym},%
+first={Message Passing Neural Network\glsspace (MPNN)},%
+firstplural={Message Passing Neural Network\acrpluralsuffix \glsspace (MPNN\acrpluralsuffix )},%
+text={MPNN},%
+plural={MPNN\acrpluralsuffix },%
+description={Message Passing Neural Network},%
+descriptionplural={Message Passing Neural Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Message Passing Neural Network},%
+longplural={Message Passing Neural Networks},%
+short={MPNN},%
+shortplural={MPNNs},%
+counter={page},%
+parent={},%
+%
+}%
+

@@ -147,6 +147,169 @@
       \field{pages}{337\bibrangedash 349}
       \range{pages}{13}
     \endentry
+    \entry{Bruna2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c83b564e32475f10dcc91be7e66d3e81}{%
+           family={Bruna},
+           familyi={B\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9fec85bbce1b087a6ebefe26e73f7bf}{%
+           family={Zaremba},
+           familyi={Z\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b31b3f03b1e1ee0eec6ff58f9a9df960}{%
+           family={Szlam},
+           familyi={S\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e943572d925293c5f4fab4dfa7adc78e}
+      \strng{fullhash}{d02494bc1b8f17d758dbf6ebc90838de}
+      \strng{bibnamehash}{d02494bc1b8f17d758dbf6ebc90838de}
+      \strng{authorbibnamehash}{d02494bc1b8f17d758dbf6ebc90838de}
+      \strng{authornamehash}{e943572d925293c5f4fab4dfa7adc78e}
+      \strng{authorfullhash}{d02494bc1b8f17d758dbf6ebc90838de}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Convolutional Neural Networks are extremely efficient architectures in image and audio recognition tasks, thanks to their ability to exploit the local translational invariance of signal classes over their domain. In this paper we consider possible generalizations of CNNs to signals defined on more general domains without the action of a translation group. In particular, we propose two constructions, one based upon a hierarchical clustering of the domain, and another based on the spectrum of the graph Laplacian. We show through experiments that for low-dimensional graphs it is possible to learn convolutional layers with a number of parameters independent of the input size, resulting in efficient deep architectures.}
+      \field{month}{12}
+      \field{title}{Spectral Networks and Locally Connected Networks on Graphs}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1312.6203
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1312.6203
+      \endverb
+    \endentry
+    \entry{Chen2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=916b50b17e2bbb295f7b575d3da19425}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jianfei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a47a154652ccc647a0e6adf1570095a}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da5283630e781fb48ecf4859f54bca52}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Le},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d822c997b2ed38e8e6392246eec3a29}
+      \strng{fullhash}{d9dc4dc0b6fa3c1cd35cb9f2f0ddc817}
+      \strng{bibnamehash}{d9dc4dc0b6fa3c1cd35cb9f2f0ddc817}
+      \strng{authorbibnamehash}{d9dc4dc0b6fa3c1cd35cb9f2f0ddc817}
+      \strng{authornamehash}{7d822c997b2ed38e8e6392246eec3a29}
+      \strng{authorfullhash}{d9dc4dc0b6fa3c1cd35cb9f2f0ddc817}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graph convolutional networks (GCNs) are powerful deep neural networks for graph-structured data. However, GCN computes the representation of a node recursively from its neighbors, making the receptive field size grow exponentially with the number of layers. Previous attempts on reducing the receptive field size by subsampling neighbors do not have a convergence guarantee, and their receptive field size per node is still in the order of hundreds. In this paper, we develop control variate based algorithms which allow sampling an arbitrarily small neighbor size. Furthermore, we prove new theoretical guarantee for our algorithms to converge to a local optimum of GCN. Empirical results show that our algorithms enjoy a similar convergence with the exact algorithm using only two neighbors per node. The runtime of our algorithms on a large Reddit dataset is only one seventh of previous neighbor sampling algorithms.}
+      \field{month}{10}
+      \field{title}{Stochastic Training of Graph Convolutional Networks with Variance Reduction}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1710.10568
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1710.10568
+      \endverb
+    \endentry
+    \entry{Chiang2019}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8e6b99db00c3729150cacdb24ff660f1}{%
+           family={Chiang},
+           familyi={C\bibinitperiod},
+           given={Wei\bibnamedelima Lin},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2af761d9bef859ea29248418adce0dd7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40d065205716f92199ccec87c23fba98}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xuanqing},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02404a92b0be3f52ec5ac08e41c13445}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Samy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d9bec203d7a6cdf2651ad8a4cf990c6}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={Si},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c8ef4ae60ab2e95fc732266ac98756a}{%
+           family={Hsieh},
+           familyi={H\bibinitperiod},
+           given={Cho\bibnamedelima Jui},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{0f714cd94b776c49f38d1cec7d148cdd}
+      \strng{fullhash}{8de68df2d40358dc5d4a2ecd69436ecc}
+      \strng{bibnamehash}{8de68df2d40358dc5d4a2ecd69436ecc}
+      \strng{authorbibnamehash}{8de68df2d40358dc5d4a2ecd69436ecc}
+      \strng{authornamehash}{0f714cd94b776c49f38d1cec7d148cdd}
+      \strng{authorfullhash}{8de68df2d40358dc5d4a2ecd69436ecc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graph convolutional network (GCN) has been successfully applied to many graph-based applications; however, training a large-scale GCN remains challenging. Current SGD-based algorithms suffer from either a high computational cost that exponentially grows with number of GCN layers, or a large space requirement for keeping the entire graph and the embedding of each node in memory. In this paper, we propose Cluster-GCN, a novel GCN algorithm that is suitable for SGD-based training by exploiting the graph clustering structure. Cluster-GCN works as the following: at each step, it samples a block of nodes that associate with a dense subgraph identified by a graph clustering algorithm, and restricts the neighborhood search within this subgraph. This simple but effective strategy leads to significantly improved memory and computational efficiency while being able to achieve comparable test accuracy with previous algorithms. To test the scalability of our algorithm, we create a new Amazon2M data with 2 million nodes and 61 million edges which is more than 5 times larger than the previous largest publicly available dataset (Reddit). For training a 3-layer GCN on this data, Cluster-GCN is faster than the previous state-of-the-art VR-GCN (1523 seconds vs 1961 seconds) and using much less memory (2.2GB vs 11.2GB). Furthermore, for training 4 layer GCN on this data, our algorithm can finish in around 36 minutes while all the existing GCN training algorithms fail to train due to the out-of-memory issue. Furthermore, Cluster-GCN allows us to train much deeper GCN without much time and memory overhead, which leads to improved prediction accuracy-using a 5-layer Cluster-GCN, we achieve state-of-the-art test F1 score 99.36 on the PPI dataset, while the previous best result was 98.71 by [16].}
+      \field{isbn}{9781450362016}
+      \field{journaltitle}{Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{month}{7}
+      \field{title}{Cluster-GCN: An efficient algorithm for training deep and large graph convolutional networks}
+      \field{year}{2019}
+      \field{pages}{257\bibrangedash 266}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3292500.3330925
+      \endverb
+    \endentry
     \entry{Deborah2004}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2f919e7c0a21f2f5eb2021e732e42711}{%
@@ -182,6 +345,50 @@
       \endverb
       \verb{url}
       \verb http://www.w3.org/TR/2003/PR-owl-features-20031215/
+      \endverb
+    \endentry
+    \entry{Defferrard2016}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1c45ec3985cdb526e1b18bf4041b4c22}{%
+           family={Defferrard},
+           familyi={D\bibinitperiod},
+           given={Michaël},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26bf36a5046daec764f03647500c3871}{%
+           family={Bresson},
+           familyi={B\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4945596e71bcffbc9d1b4af0d5e16f1}{%
+           family={Vandergheynst},
+           familyi={V\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08ab1a63b0c357f6c1df04bd4deec745}
+      \strng{fullhash}{9c0e667960f917ece13a407278f995f6}
+      \strng{bibnamehash}{9c0e667960f917ece13a407278f995f6}
+      \strng{authorbibnamehash}{9c0e667960f917ece13a407278f995f6}
+      \strng{authornamehash}{08ab1a63b0c357f6c1df04bd4deec745}
+      \strng{authorfullhash}{9c0e667960f917ece13a407278f995f6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work, we are interested in generalizing convolutional neural networks (CNNs) from low-dimensional regular grids, where image, video and speech are represented, to high-dimensional irregular domains, such as social networks, brain connectomes or words' embedding, represented by graphs. We present a formulation of CNNs in the context of spectral graph theory, which provides the necessary mathematical background and efficient numerical schemes to design fast localized convolutional filters on graphs. Importantly, the proposed technique offers the same linear computational complexity and constant learning complexity as classical CNNs, while being universal to any graph structure. Experiments on MNIST and 20NEWS demonstrate the ability of this novel deep learning system to learn local, stationary, and compositional features on graphs.}
+      \field{title}{Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://github.com/mdeff/cnn_graph
+      \endverb
+      \verb{url}
+      \verb https://github.com/mdeff/cnn_graph
       \endverb
     \endentry
     \entry{Fernandez2011}{article}{}
@@ -250,6 +457,50 @@
       \verb 10.1016/j.websem.2010.11.003
       \endverb
       \keyw{Information Retrieval,Semantic Web,Semantic search}
+    \endentry
+    \entry{Fout2017}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=5679b1b6b017b7b38e193df4c906e448}{%
+           family={Fout},
+           familyi={F\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e81d3835d88a7cb87bf3f0d7e32d15db}{%
+           family={Byrd},
+           familyi={B\bibinitperiod},
+           given={Jonathon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d7a817654a00d07f28a89d90fad42b6f}{%
+           family={Shariat},
+           familyi={S\bibinitperiod},
+           given={Basir},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7f90707488abd2a2b8ef897e7232b65}{%
+           family={Ben-Hur},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={Asa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{998816d276a75efb02b704124b4b17f1}
+      \strng{fullhash}{c88e36f9414f0c801a671fd3b41dc599}
+      \strng{bibnamehash}{c88e36f9414f0c801a671fd3b41dc599}
+      \strng{authorbibnamehash}{c88e36f9414f0c801a671fd3b41dc599}
+      \strng{authornamehash}{998816d276a75efb02b704124b4b17f1}
+      \strng{authorfullhash}{c88e36f9414f0c801a671fd3b41dc599}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the prediction of interfaces between proteins, a challenging problem with important applications in drug discovery and design, and examine the performance of existing and newly proposed spatial graph convolution operators for this task. By performing convolution over a local neighborhood of a node of interest, we are able to stack multiple layers of convolution and learn effective latent representations that integrate information across the graph that represent the three dimensional structure of a protein of interest. An architecture that combines the learned features across pairs of proteins is then used to classify pairs of amino acid residues as part of an interface or not. In our experiments, several graph convolution operators yielded accuracy that is better than the state-of-the-art SVM method in this task.}
+      \field{title}{Protein Interface Prediction using Graph Convolutional Networks}
+      \field{year}{2017}
     \endentry
     \entry{Francis2018}{article}{}
       \name{author}{10}{}{%
@@ -371,6 +622,94 @@
       \field{year}{2008}
       \field{pages}{264}
       \range{pages}{1}
+    \endentry
+    \entry{Gilmer2017}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=4f550339f0337905aa634f39e1ba4833}{%
+           family={Gilmer},
+           familyi={G\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa3475bbb938eec3f9f0d7c8d44f1e86}{%
+           family={Schoenholz},
+           familyi={S\bibinitperiod},
+           given={Samuel\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9632c2c29a574cd09a5a7503be60435}{%
+           family={Riley},
+           familyi={R\bibinitperiod},
+           given={Patrick\bibnamedelima F},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=494b568c5dc85ba8f3f409635f9c5f25}{%
+           family={Vinyals},
+           familyi={V\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2367e57c17225a47853346440e87b35}{%
+           family={Dahl},
+           familyi={D\bibinitperiod},
+           given={George\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c654290e16b9e71825428d767650ff2a}
+      \strng{fullhash}{a97dbeb15b563be460fc056e7a076a4b}
+      \strng{bibnamehash}{a97dbeb15b563be460fc056e7a076a4b}
+      \strng{authorbibnamehash}{a97dbeb15b563be460fc056e7a076a4b}
+      \strng{authornamehash}{c654290e16b9e71825428d767650ff2a}
+      \strng{authorfullhash}{a97dbeb15b563be460fc056e7a076a4b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supervised learning on molecules has incredible potential to be useful in chemistry, drug discovery , and materials science. Luckily, several promising and closely related neural network models invariant to molecular symmetries have already been described in the literature. These models learn a message passing algorithm and aggregation procedure to compute a function of their entire input graph. At this point, the next step is to find a particularly effective variant of this general approach and apply it to chemical prediction benchmarks until we either solve them or reach the limits of the approach. In this paper , we reformulate existing models into a single common framework we call Message Passing Neural Networks (MPNNs) and explore additional novel variations within this framework. Using MPNNs we demonstrate state of the art results on an important molecular property prediction benchmark; these results are strong enough that we believe future work should focus on datasets with larger molecules or more accurate ground truth labels.}
+      \field{title}{Neural Message Passing for Quantum Chemistry}
+      \field{year}{2017}
+    \endentry
+    \entry{Hamilton2017}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2abce6c40b4cc1a3d89f175883b24536}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima L},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b37c8aefa150635663b2a6525952a7a}{%
+           family={Ying},
+           familyi={Y\bibinitperiod},
+           given={Rex},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{272631a74039af14ab15f43cfaad8c7f}
+      \strng{fullhash}{f818fe3ba25dc2399831a69d9b62c7f0}
+      \strng{bibnamehash}{f818fe3ba25dc2399831a69d9b62c7f0}
+      \strng{authorbibnamehash}{f818fe3ba25dc2399831a69d9b62c7f0}
+      \strng{authornamehash}{272631a74039af14ab15f43cfaad8c7f}
+      \strng{authorfullhash}{f818fe3ba25dc2399831a69d9b62c7f0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.}
+      \field{title}{Inductive Representation Learning on Large Graphs}
+      \field{year}{2017}
     \endentry
     \entry{Hogan2021}{article}{}
       \name{author}{18}{}{%
@@ -511,6 +850,44 @@
       \verb 10.1145/3447772
       \endverb
       \keyw{Embeddings,Graph algorithms,Graph databases,Graph neural networks,Graph query languages,Knowledge graphs,Ontologies,Rule mining,Shapes}
+    \endentry
+    \entry{Jin2018}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1b4ff42a6b4aab3a2d6ca92ae02b805a}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Wengong},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de391703fb0c2fdf733b3a0095bc32ce}{%
+           family={Barzilay},
+           familyi={B\bibinitperiod},
+           given={Regina},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=521085652a07e67bdff5323e2febc138}{%
+           family={Jaakkola},
+           familyi={J\bibinitperiod},
+           given={Tommi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{783d51c5994de42803c489579f1c7d93}
+      \strng{fullhash}{079298939281158af5eff8edbe3d0e02}
+      \strng{bibnamehash}{079298939281158af5eff8edbe3d0e02}
+      \strng{authorbibnamehash}{079298939281158af5eff8edbe3d0e02}
+      \strng{authornamehash}{783d51c5994de42803c489579f1c7d93}
+      \strng{authorfullhash}{079298939281158af5eff8edbe3d0e02}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We seek to automate the design of molecules based on specific chemical properties. In computational terms, this task involves continuous embedding and generation of molecular graphs. Our primary contribution is the direct realization of molecular graphs, a task previously approached by generating linear SMILES strings instead of graphs. Our junction tree variational autoencoder generates molecular graphs in two phases, by first generating a tree-structured scaffold over chemical substructures, and then combining them into a molecule with a graph message passing network. This approach allows us to incrementally expand molecules while maintaining chemical validity at every step. We evaluate our model on multiple tasks ranging from molecular generation to optimization. Across these tasks, our model out-performs previous state-of-the-art baselines by a significant margin.}
+      \field{title}{Junction Tree Variational Autoencoder for Molecular Graph Generation}
+      \field{year}{2018}
     \endentry
     \entry{Kapanipathi2020}{article}{}
       \name{author}{30}{}{%
@@ -719,6 +1096,45 @@
       \verb http://arxiv.org/abs/2012.01707
       \endverb
     \endentry
+    \entry{Kipf2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=26d8bcbda6afaf96334bf47c8fb88a75}{%
+           family={Kipf},
+           familyi={K\bibinitperiod},
+           given={Thomas\bibnamedelima N.},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53d2880ad8047b61cdae2c6b2803e763}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{fullhash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{bibnamehash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{authorbibnamehash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{authornamehash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{authorfullhash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin.}
+      \field{month}{9}
+      \field{title}{Semi-Supervised Classification with Graph Convolutional Networks}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1609.02907
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1609.02907
+      \endverb
+    \endentry
     \entry{Paulheim2017}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4fd4dfc5ed27cd65c69fa6d692f4c161}{%
@@ -853,6 +1269,57 @@
       \field{year}{2013}
       \field{pages}{542\bibrangedash 557}
       \range{pages}{16}
+    \endentry
+    \entry{Sahu2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=2ec66fed3d53dcb48e73c6087ddbdb83}{%
+           family={Sahu},
+           familyi={S\bibinitperiod},
+           given={Sunil\bibnamedelima Kumar},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2fdda8ea1fe86fd54269686b333e15e}{%
+           family={Christopoulou},
+           familyi={C\bibinitperiod},
+           given={Fenia},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=178ae3a32e06734b86a89c12931c95c8}{%
+           family={Miwa},
+           familyi={M\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3780b2d12b907a7196c92d8269005aba}{%
+           family={Ananiadou},
+           familyi={A\bibinitperiod},
+           given={Sophia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c2440ab99ce2fb832ad7182f7417fa53}
+      \strng{fullhash}{770f770096b06d1c3b7c96f03f1fbff2}
+      \strng{bibnamehash}{770f770096b06d1c3b7c96f03f1fbff2}
+      \strng{authorbibnamehash}{770f770096b06d1c3b7c96f03f1fbff2}
+      \strng{authornamehash}{c2440ab99ce2fb832ad7182f7417fa53}
+      \strng{authorfullhash}{770f770096b06d1c3b7c96f03f1fbff2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Inter-sentence relation extraction deals with a number of complex semantic relationships in documents, which require local, non-local, syntactic and semantic dependencies. Existing methods do not fully exploit such dependencies. We present a novel inter-sentence relation extraction model that builds a labelled edge graph convolutional neural network model on a document-level graph. The graph is constructed using various inter- and intra-sentence dependencies to capture local and non-local dependency information. In order to predict the relation of an entity pair, we utilise multi-instance learning with bi-affine pairwise scoring. Experimental results show that our model achieves comparable performance to the state-of-the-art neural models on two biochemistry datasets. Our analysis shows that all the types in the graph are effective for inter-sentence relation extraction.}
+      \field{month}{6}
+      \field{title}{Inter-sentence Relation Extraction with Document-level Graph Convolutional Neural Network}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1906.04684
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1906.04684
+      \endverb
     \endentry
     \entry{Scarselli2009}{article}{}
       \name{author}{5}{}{%
@@ -1072,14 +1539,77 @@
       \field{volume}{11}
       \field{year}{1996}
     \endentry
+    \entry{Velickovic2018}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=b1208a71c9b067bcef8fb29c15a09b5d}{%
+           family={Veličković},
+           familyi={V\bibinitperiod},
+           given={Petar},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c30bc5878e196747275a7ff581c6ed22}{%
+           family={Cucurull},
+           familyi={C\bibinitperiod},
+           given={Guillem},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a0765951987db22af274a31732111fa}{%
+           family={Casanova},
+           familyi={C\bibinitperiod},
+           given={Arantxa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e0f06556535de7b7d9d04d390dc4ac3}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Adriana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1dc447055a5e64105a2984bf8306851}{%
+           family={Liò},
+           familyi={L\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a923132f6a9d7d93c40facfd855c7dc4}
+      \strng{fullhash}{e36c8bf9f36dc60726c1c2afa402755c}
+      \strng{bibnamehash}{e36c8bf9f36dc60726c1c2afa402755c}
+      \strng{authorbibnamehash}{e36c8bf9f36dc60726c1c2afa402755c}
+      \strng{authornamehash}{a923132f6a9d7d93c40facfd855c7dc4}
+      \strng{authorfullhash}{e36c8bf9f36dc60726c1c2afa402755c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).}
+      \field{month}{10}
+      \field{title}{Graph Attention Networks}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1710.10903
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1710.10903
+      \endverb
+    \endentry
     \entry{Wang2017}{article}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=e2068259fc5297e154f92a417136c922}{%
+        {{un=1,uniquepart=given,hash=e2068259fc5297e154f92a417136c922}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Quan},
            giveni={Q\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=dd2b0f5b4fe73348f6c0b8fdfe0ce772}{%
            family={Mao},
            familyi={M\bibinitperiod},
@@ -1112,7 +1642,6 @@
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Knowledge graph (KG) embedding is to embed components of a KG including entities and relations into continuous vector spaces, so as to simplify the manipulation while preserving the inherent structure of the KG. It can benefit a variety of downstream tasks such as KG completion and relation extraction, and hence has quickly gained massive attention. In this article, we provide a systematic review of existing techniques, including not only the state-of-The-Arts but also those with latest trends. Particularly, we make the review based on the type of information used in the embedding task. Techniques that conduct embedding using only facts observed in the KG are first introduced. We describe the overall framework, specific model design, typical training procedures, as well as pros and cons of such techniques. After that, we discuss techniques that further incorporate additional information besides facts. We focus specifically on the use of entity types, relation paths, textual descriptions, and logical rules. Finally, we briefly introduce how KG embedding can be applied to and benefit a wide variety of downstream tasks such as KG completion, relation extraction, question answering, and so forth.}
@@ -1129,6 +1658,67 @@
       \verb 10.1109/TKDE.2017.2754499
       \endverb
       \keyw{Knowledge graph embedding,Latent factor models,Statistical relational learning,Tensor/matrix factorization models}
+    \endentry
+    \entry{Wang2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=1,uniquepart=given,hash=8fde8559617f603b3e2b3cf30cb48e9b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=cf3f1b6bfe8e9131a8c719c1af0dce5d}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xiangnan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00b734eb3fb588e4c6c94e4271080d0b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9090db11da70fe0d8b95cbf3d73a6216}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Fuli},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2485f7cdced8c69ee540130a17724964}{%
+           family={Chua},
+           familyi={C\bibinitperiod},
+           given={Tat\bibnamedelima Seng},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{35ac326fad78d42d0760cfb75887ea69}
+      \strng{fullhash}{1b11f8d5d6c1713fec5d7a2c2aca4a3d}
+      \strng{bibnamehash}{1b11f8d5d6c1713fec5d7a2c2aca4a3d}
+      \strng{authorbibnamehash}{1b11f8d5d6c1713fec5d7a2c2aca4a3d}
+      \strng{authornamehash}{35ac326fad78d42d0760cfb75887ea69}
+      \strng{authorfullhash}{1b11f8d5d6c1713fec5d7a2c2aca4a3d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learning vector representations (aka. embeddings) of users and items lies at the core of modern recommender systems. Ranging from early matrix factorization to recently emerged deep learning based methods, existing efforts typically obtain a user's (or an item's) embedding by mapping from pre-existing features that describe the user (or the item), such as ID and attributes. We argue that an inherent drawback of such methods is that, the collaborative signal, which is latent in user-item interactions, is not encoded in the embedding process. As such, the resultant embeddings may not be sufficient to capture the collaborative filtering effect. In this work, we propose to integrate the user-item interactions - more specifically the bipartite graph structure - into the embedding process. We develop a new recommendation framework Neural Graph Collaborative Filtering (NGCF), which exploits the user-item graph structure by propagating embeddings on it. This leads to the expressive modeling of high-order connectivity in user-item graph, effectively injecting the collaborative signal into the embedding process in an explicit manner. We conduct extensive experiments on three public benchmarks, demonstrating significant improvements over several state-of-the-art models like HOP-Rec [39] and Collaborative Memory Network [5]. Further analysis verifies the importance of embedding propagation for learning better user and item representations, justifying the rationality and effectiveness of NGCF. Codes are available at https://github.com/xiangwang1223/neural_graph_collaborative_filtering.}
+      \field{isbn}{9781450361729}
+      \field{journaltitle}{SIGIR 2019 - Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval}
+      \field{month}{7}
+      \field{title}{Neural graph collaborative filtering}
+      \field{year}{2019}
+      \field{pages}{165\bibrangedash 174}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3331184.3331267
+      \endverb
+      \keyw{Collaborative Filtering,Embedding Propagation,Graph Neural Network,High-order Connectivity,Recommendation}
     \endentry
     \entry{Wu2021}{article}{}
       \name{author}{6}{}{%
@@ -1256,6 +1846,130 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/2104.06378
+      \endverb
+    \endentry
+    \entry{Ying2018}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6b37c8aefa150635663b2a6525952a7a}{%
+           family={Ying},
+           familyi={Y\bibinitperiod},
+           given={Rex},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b8a48b9ddb1c09f1c48bd467d99488a}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Ruining},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=806c56ba82f07f26518a4de5caf6b2b6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kaifeng},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2146d3b9f777d15a77c7ff17474e9ad9}{%
+           family={Eksombatchai},
+           familyi={E\bibinitperiod},
+           given={Pong},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2abce6c40b4cc1a3d89f175883b24536}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{abe60498875b44b92d8ff87a690002b1}
+      \strng{fullhash}{7aa9b85fe91011148b5ed02b4ca83c49}
+      \strng{bibnamehash}{7aa9b85fe91011148b5ed02b4ca83c49}
+      \strng{authorbibnamehash}{7aa9b85fe91011148b5ed02b4ca83c49}
+      \strng{authornamehash}{abe60498875b44b92d8ff87a690002b1}
+      \strng{authorfullhash}{7aa9b85fe91011148b5ed02b4ca83c49}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent advancements in deep neural networks for graph-structured data have led to state-of-the-art performance on recommender system benchmarks. However, making these methods practical and scalable to web-scale recommendation tasks with billions of items and hundreds of millions of users remains a challenge. Here we describe a large-scale deep recommendation engine that we developed and deployed at Pinterest. We develop a data-efficient Graph Convolutional Network (GCN) algorithm PinSage, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information. Compared to prior GCN approaches, we develop a novel method based on highly efficient random walks to structure the convolutions and design a novel training strategy that relies on harder-and-harder training examples to improve robustness and convergence of the model. We deploy PinSage at Pinterest and train it on 7.5 billion examples on a graph with 3 billion nodes representing pins and boards, and 18 billion edges. According to offline metrics, user studies and A/B tests, PinSage generates higher-quality recommendations than comparable deep learning and graph-based alternatives. To our knowledge, this is the largest application of deep graph embeddings to date and paves the way for a new generation of web-scale recommender systems based on graph convolutional architectures.}
+      \field{isbn}{9781450355520}
+      \field{journaltitle}{Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{month}{7}
+      \field{title}{Graph convolutional neural networks for web-scale recommender systems}
+      \field{year}{2018}
+      \field{pages}{974\bibrangedash 983}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3219819.3219890
+      \endverb
+    \endentry
+    \entry{Zeng2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=46def165a2f198288abcb663a8e78ea2}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Hanqing},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e29833ee1707ffa6672202116aaf88ed}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Hongkuan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39c6ce66605b1beb12aa301eb7b7d6a0}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Ajitesh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c75dbe2e68808251371edb193c33d2e}{%
+           family={Kannan},
+           familyi={K\bibinitperiod},
+           given={Rajgopal},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=276a91bbb61cbdced5c5649eafd6d5da}{%
+           family={Prasanna},
+           familyi={P\bibinitperiod},
+           given={Viktor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e59af265112a7a7f24e94ae87864826}
+      \strng{fullhash}{c8c189742224f6f71275f1ec12047b7e}
+      \strng{bibnamehash}{c8c189742224f6f71275f1ec12047b7e}
+      \strng{authorbibnamehash}{c8c189742224f6f71275f1ec12047b7e}
+      \strng{authornamehash}{9e59af265112a7a7f24e94ae87864826}
+      \strng{authorfullhash}{c8c189742224f6f71275f1ec12047b7e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graph Convolutional Networks (GCNs) are powerful models for learning representations of attributed graphs. To scale GCNs to large graphs, state-of-the-art methods use various layer sampling techniques to alleviate the "neighbor explosion" problem during minibatch training. We propose GraphSAINT, a graph sampling based inductive learning method that improves training efficiency and accuracy in a fundamentally different way. By changing perspective, GraphSAINT constructs minibatches by sampling the training graph, rather than the nodes or edges across GCN layers. Each iteration, a complete GCN is built from the properly sampled subgraph. Thus, we ensure fixed number of well-connected nodes in all layers. We further propose normalization technique to eliminate bias, and sampling algorithms for variance reduction. Importantly, we can decouple the sampling from the forward and backward propagation, and extend GraphSAINT with many architecture variants (e.g., graph attention, jumping connection). GraphSAINT demonstrates superior performance in both accuracy and training time on five large graphs, and achieves new state-of-the-art F1 scores for PPI (0.995) and Reddit (0.970).}
+      \field{month}{7}
+      \field{title}{GraphSAINT: Graph Sampling Based Inductive Learning Method}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.04931
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.04931
       \endverb
     \endentry
     \entry{Zhang2021}{article}{}

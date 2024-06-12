@@ -1,0 +1,239 @@
+TODO: change, reread
+
+\acrlongpl{gnn} have become a cornerstone in the realm of deep learning, particularly for tasks involving non-Euclidean data structures. These models have significantly impacted various domains, such as social network analysis, bioinformatics, recommendation systems, and \gls{nlp}. This literature review explores the development, key architectures, methodologies, applications, challenges, and future directions of \glspl{gnn}.
+
+\subsection*{Historical Context and Evolution}
+
+\subsubsection*{Early Work and Foundations}
+
+The early works on neural networks for structured data laid the groundwork for \gls{gnn}. The concept of \glspl{recnn} for processing tree-like structures and graph-based methods in machine learning were the precursors to modern \glspl{gnn}. However, these early models were limited by their computational inefficiencies and inability to scale.
+
+\subsubsection*{Spectral Approaches}
+
+The breakthrough in spectral approaches marked a significant evolution in \glspl{gnn}. \cite{Bruna2013} introduced a method leveraging spectral graph theory to define convolution operations on graphs. This approach was refined by \cite{Defferrard2016}, leading to more efficient models. \cite{Kipf2017} simplified this concept further, making it more accessible and practical, thus popularizing the \gls{gcn}.
+
+\subsection*{Key Architectures and Methodologies}
+
+\subsubsection*{Graph Convolutional Networks (GCNs)}
+
+\glspl{gcn} represent one of the most influential architectures in the \gls{gnn} landscape. They generalize the convolution operation to graph data, enabling the aggregation of feature information from a node's neighbors.
+
+Mathematical Formulation:
+
+A \gls{gcn} layer can be represented as:
+
+\[ H^{(l+1)} = \sigma\left(\tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2} H^{(l)} W^{(l)}\right) \]
+
+where:
+\begin{itemize}
+    \item \( \tilde{A} = A + I \) is the adjacency matrix with added self-loops.
+    \item \( \tilde{D} \) is the degree matrix of \( \tilde{A} \).
+    \item \( H^{(l)} \) and \( H^{(l+1)} \) are the input and output feature matrices for layer \( l \).
+    \item \( W^{(l)} \) is the trainable weight matrix.
+    \item \( \sigma \) is an activation function like ReLU.
+\end{itemize}
+
+
+Advantages:
+\begin{itemize}
+    \item Simplicity and effectiveness for semi-supervised learning tasks.
+    \item Captures local neighborhood structures well.
+\end{itemize}
+
+
+Limitations:
+\begin{itemize}
+    \item Limited expressiveness due to fixed aggregation scheme.
+    \item Struggles with capturing long-range dependencies.
+\end{itemize}
+
+\subsubsection*{\glspl{gat}}
+
+\cite{Velickovic2018} introduced \glspl{gat}, which incorporate attention mechanisms to dynamically weigh the importance of neighboring nodes.
+
+Attention Mechanism:
+
+\[ e_{ij} = \text{LeakyReLU}\left(a^T [W h_i \| W h_j]\right) \]
+
+where \( e_{ij} \) is the attention score, \( a \) is the learnable attention vector, and \( \| \) denotes concatenation.
+
+\[ \alpha_{ij} = \frac{\exp(e_{ij})}{\sum_{k \in \mathcal{N}(i)} \exp(e_{ik})} \]
+
+The node features are updated as:
+
+\[ h_i' = \sigma\left(\sum_{j \in \mathcal{N}(i)} \alpha_{ij} W h_j\right) \]
+
+Advantages:
+\begin{itemize}
+    \item Handles heterogeneous graphs by assigning different importances to neighbors.
+    \item Enhanced interpretability through attention weights.
+\end{itemize}
+
+
+Limitations:
+\begin{itemize}
+    \item Computationally expensive due to the attention mechanism.
+    \item Can become inefficient for very large graphs.
+\end{itemize}
+
+\subsubsection*{GraphSAGE}
+
+GraphSAGE (\cite{Hamilton2017}) introduced an inductive approach that can generalize to unseen nodes by sampling and aggregating features from a node's local neighborhood.
+
+Sampling and Aggregation:
+
+GraphSAGE samples a fixed-size set of neighbors and uses aggregation functions such as mean, LSTM, or pooling to update node embeddings:
+
+\[ h_i' = \sigma\left(W \cdot \text{AGG}\left(\{h_j, \forall j \in \mathcal{N}(i)\}\right)\right) \]
+
+Advantages:
+\begin{itemize}
+    \item Scalable to large graphs.
+    \item Supports inductive learning.
+\end{itemize}
+
+
+Limitations:
+\begin{itemize}
+    \item Information loss due to fixed-size sampling.
+    \item Requires carefully designed aggregation functions.
+\end{itemize}
+
+
+\subsubsection*{\glspl{mpnn}}
+
+\glspl{mpnn} (\cite{Gilmer2017}) formalized the message-passing framework for \glspl{gnn}. In each layer, nodes exchange messages with their neighbors and update their states.
+
+General Framework:
+
+\begin{enumerate}
+    \item Message Function: \( m_{ij}^{(l)} = M(h_i^{(l)}, h_j^{(l)}, e_{ij}) \)
+    \item Update Function: \( h_i^{(l+1)} = U\left(h_i^{(l)}, \sum_{j \in \mathcal{N}(i)} m_{ij}^{(l)}\right) \)
+\end{enumerate}
+
+where \( h_i \) and \( h_j \) are node features, and \( e_{ij} \) are edge features.
+
+Advantages:
+\begin{itemize}
+    \item General and flexible framework.
+    \item Can model complex dependencies and interactions.
+\end{itemize}
+
+
+Limitations:
+\begin{itemize}
+    \item High computational cost for dense graphs.
+    \item Complexity in designing effective message and update functions.
+\end{itemize}
+
+\subsection*{Training Techniques and Challenges}
+
+\subsubsection*{Mini-Batch Training}
+
+To manage large graphs, mini-batch training techniques are employed. Subgraphs or neighborhoods are sampled in each training iteration to reduce memory consumption and improve efficiency.
+
+\subsubsection*{Graph Partitioning}
+
+Graph partitioning techniques like METIS and Louvain divide large graphs into smaller subgraphs that can be processed independently. This helps in parallelizing computations and managing memory usage.
+
+Challenges:
+\begin{itemize}
+    \item Maintaining the integrity of graph structure during partitioning.
+    \item Ensuring balanced computational load across partitions.
+\end{itemize}
+
+\subsubsection*{Optimization Algorithms}
+
+Specialized optimizers, such as Adam and RMSprop, are used to stabilize training. Regularization techniques like dropout and weight decay help prevent overfitting.
+
+\subsection*{Applications of \glspl{gnn}}
+
+\subsubsection*{Social Network Analysis}
+
+\glspl{gnn} are extensively used in social network analysis for tasks such as community detection, link prediction, and influence maximization. They model complex interactions and dependencies among users, providing insights into social dynamics.
+
+Examples:
+\begin{itemize}
+    \item Community Detection: Using \glspl{gnn} to identify overlapping communities in social networks (\cite{Chen2017}).
+    \item Link Prediction: Predicting future connections by learning node embeddings (\cite{Zeng2019}).
+\end{itemize}
+
+
+\subsubsection*{Biological Networks}
+
+In bioinformatics, \glspl{gnn} are used to analyze molecular structures, predict protein functions, and understand biological processes. They model intricate interactions between biological entities, aiding in drug discovery and genomics.
+
+Examples:
+\begin{itemize}
+    \item Protein-Protein Interaction: Predicting interactions between proteins by modeling their structural properties (\cite{Fout2017}).
+    \item Drug Discovery: Identifying potential drug compounds by analyzing molecular graphs (\cite{Jin2018}).
+\end{itemize}
+
+\subsubsection*{Recommendation Systems}
+
+\glspl{gnn} enhance recommendation systems by modeling user-item interactions. They improve the accuracy and relevance of recommendations by capturing complex relationships.
+
+Examples:
+\begin{itemize}
+    \item Collaborative Filtering: Enhancing collaborative filtering with \glspl{gnn} to model user-item interactions (\cite{Wang2019}).
+    \item Content-Based Recommendations: Using \glspl{gnn} to model item features and user preferences for personalized recommendations (\cite{Ying2018}).
+\end{itemize}
+
+
+\subsubsection*{\acrlong{nlp}}
+
+\glspl{gnn} are applied in \glspl{nlp} for tasks like semantic parsing, machine translation, and text classification. By representing sentences or documents as graphs, \glspl{gnn} capture relationships between words or entities.
+
+Examples:
+\begin{itemize}
+    \item Semantic Parsing: Modeling the syntactic structure of sentences for accurate semantic parsing (\cite{Zeng2019}).
+    \item Relation Extraction: Extracting relationships between entities in text using \glspl{gnn} to model dependency trees (\cite{Sahu2019}).
+\end{itemize}
+
+\subsection*{Recent Advances and Future Directions}
+
+\subsubsection*{Scalability}
+
+Scalability remains a critical challenge for \glspl{gnn}. Recent advancements focus on models and techniques that handle large-scale graphs efficiently. Methods like GraphSAINT (\cite{Zeng2019}) and Cluster-GCN (\cite{Chiang2019}) emphasize sampling and partitioning strategies to enable scalable training.
+
+Future Directions:
+\begin{itemize}
+    \item Distributed \glspl{gnn}: Developing distributed frameworks for training \glspl{gnn} on large-scale graphs.
+    \item Efficient Sampling Techniques: Improving sampling methods to balance efficiency and information retention.
+\end{itemize}
+
+
+\subsubsection*{Expressiveness}
+
+Enhancing the expressiveness of \glspl{gnn} involves designing architectures that capture more complex patterns and dependencies. Higher-order \glspl{gnn} and graph transformers are being explored to address this need.
+
+Future Directions:
+\begin{itemize}
+    \item Higher-Order \glspl{gnn}: Extending GNN architectures to capture higher-order interactions between nodes.
+    Graph Transformers: Leveraging transformer models for graph data to enhance representational power.
+\end{itemize}
+
+\subsubsection*{Interpretability}
+
+Understanding the decision-making process of \glspl{gnn} is crucial for their adoption in critical applications. Techniques like attention visualization, gradient-based methods, and node importance scores are being developed to interpret GNN predictions.
+
+Future Directions:
+\begin{itemize}
+    \item Explainable \glspl{gnn}: Designing GNN models with built-in interpretability features.
+    \item Interpretable Training Methods: Developing training techniques that enhance model transparency and explainability.
+\end{itemize}
+
+\subsection*{Challenges and Limitations}
+
+Despite the significant advancements and applications, \glspl{gnn} face several challenges and limitations:
+\begin{itemize}
+    \item Computational Complexity: \glspl{gnn} can be computationally intensive, especially for large and dense graphs, limiting their practical applicability.
+    \item Scalability Issues: Handling extremely large-scale graphs remains challenging, requiring efficient algorithms and distributed computing frameworks.
+    \item Over-smoothing: Deep \glspl{gnn} can suffer from over-smoothing, where node representations become indistinguishable after several layers, reducing model performance.
+    \item Lack of Interpretability: The black-box nature of \glspl{gnn} poses challenges in understanding their decision-making process, which is crucial for sensitive applications.
+    \item Limited Expressiveness: Some GNN architectures struggle to capture long-range dependencies and complex interactions, necessitating further research into more expressive models.
+\end{itemize}
+
+\subsection*{Conclusion}
+
+\acrlong{gnn} have revolutionized the field of \acrlong{dl} by providing powerful tools for modeling graph-structured data. They have demonstrated remarkable success across various domains, including social network analysis, bioinformatics, recommendation systems, and \gls{nlp}. Despite their advantages, \glspl{gnn} face challenges related to scalability, interpretability, and computational complexity. Ongoing research aims to address these challenges, exploring new architectures, efficient training techniques, and methods to enhance expressiveness and interpretability. The future of \glspl{gnn} looks promising, with potential breakthroughs that could further expand their applications and impact.

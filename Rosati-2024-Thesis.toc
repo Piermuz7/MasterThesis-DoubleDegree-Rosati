@@ -13,17 +13,17 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.13}%
 \contentsline {section}{\numberline {2.1}Knowledge Graphs}{2}{section.14}%
 \contentsline {section}{\numberline {2.2}Graph Neural Networks}{7}{section.32}%
-\contentsline {section}{\numberline {2.3}Building Energy Management Systems}{7}{section.33}%
-\contentsline {chapter}{\numberline {3}Conclusion}{8}{chapter.34}%
-\contentsline {chapter}{Bibliography}{8}{dummy.35}%
+\contentsline {section}{\numberline {2.3}Building Energy Management Systems}{14}{section.58}%
+\contentsline {chapter}{\numberline {3}Conclusion}{15}{chapter.59}%
+\contentsline {chapter}{Bibliography}{15}{dummy.60}%
 \vspace {1em}
-\contentsline {chapter}{Glossary}{10}{dummy.37}%
+\contentsline {chapter}{Glossary}{18}{dummy.62}%
 \vspace {1em}
-\contentsline {chapter}{Abbreviations}{10}{dummy.38}%
+\contentsline {chapter}{Abbreviations}{18}{dummy.63}%
 \vspace {1em}
-\contentsline {chapter}{List of Figures}{10}{dummy.39}%
+\contentsline {chapter}{List of Figures}{18}{dummy.64}%
 \vspace {1em}
-\contentsline {chapter}{List of Tables}{12}{dummy.41}%
+\contentsline {chapter}{List of Tables}{20}{dummy.66}%
 \vspace {1em}
-\contentsline {chapter}{Acknowledgements}{13}{dummy.43}%
+\contentsline {chapter}{Acknowledgements}{21}{dummy.68}%
 \vspace {1em}
