@@ -1,12 +1,22 @@
 TODO: change, reread
 
-\acrlongpl{gnn} have become a cornerstone in the realm of deep learning, particularly for tasks involving non-Euclidean data structures. These models have significantly impacted various domains, such as social network analysis, bioinformatics, recommendation systems, and \gls{nlp}. This literature review explores the development, key architectures, methodologies, applications, challenges, and future directions of \glspl{gnn}.
+\acrlongpl{gnn} have become fundamental to \acrlong{dl} field, particularly for tasks involving non-Euclidean data structures. These models have had a significant impact on several domains, such as social network analysis, bioinformatics, recommender systems and \gls{nlp}. This literature review explores the development, key architectures, methodologies, applications and
+methodologies, applications, challenges and future directions of \glspl{gnn}.
 
 \subsection*{Historical Context and Evolution}
 
 \subsubsection*{Early Work and Foundations}
 
-The early works on neural networks for structured data laid the groundwork for \gls{gnn}. The concept of \glspl{recnn} for processing tree-like structures and graph-based methods in machine learning were the precursors to modern \glspl{gnn}. However, these early models were limited by their computational inefficiencies and inability to scale.
+Graphs have received success because the achievements of Neural Networks, for \gls{ml} tasks such as object detection and speech recognition. Graphs are used to represent real-world datasets like protein-protein interaction networks, social networks, traffic forecasting, e-commerce, geographical maps, \glspl{kg} and so on. In \acrlong{dl}, if we think of images, they are represented as a grid in Euclidean space. At this point, a \gls{cnn} takes the image as input and is able to extract features for achieving the task in question.
+\gls{dl} has achieved much success due mainly to the advancement of computational resources and the availability of data made available. 
+Nowadays, however there is a continuous increase in applications and domains that use complex structures such as graphs (\cite{Wu2021}).
+The complexity of graphs implied not insignificant problems on existing \gls{ml} algorithms because a graph may have a variable number of nodes or edges; or it might have nodes that may have a different number of neighbours.
+This last point is very important in some operation like convolution, that is easy for image but difficult for graphs.
+Another motivation comes from graph representation learning, which aims to learn to represent graph nodes, edges or subgraphs by low-dimensional vectors (\cite{Zhou2020}).
+Existing word embedding methods like DeepWalk, node2vec, LINE, TADW have achieved very good results but they have 2 important drawbacks. The first one is that there are no shared parameters in the encoder, which implies computationally inefficency (n. of parameters grows linearly with the n. of nodes);
+The second drawback is that there's a lack of generalization because they cannot deal with dynamic graphs or generalize to new graphs.
+
+Inspired by \glspl{cnn} and \glspl{rnn}, \glspl{gnn} have developed in order to operate on non-Euclidian space.
 
 \subsubsection*{Spectral Approaches}
 
@@ -209,7 +219,7 @@ Enhancing the expressiveness of \glspl{gnn} involves designing architectures tha
 
 Future Directions:
 \begin{itemize}
-    \item Higher-Order \glspl{gnn}: Extending GNN architectures to capture higher-order interactions between nodes.
+    \item Higher-Order \glspl{gnn}: Extending \gls{gnn} architectures to capture higher-order interactions between nodes.
     Graph Transformers: Leveraging transformer models for graph data to enhance representational power.
 \end{itemize}
 
@@ -219,7 +229,7 @@ Understanding the decision-making process of \glspl{gnn} is crucial for their ad
 
 Future Directions:
 \begin{itemize}
-    \item Explainable \glspl{gnn}: Designing GNN models with built-in interpretability features.
+    \item Explainable \glspl{gnn}: Designing \gls{gnn} models with built-in interpretability features.
     \item Interpretable Training Methods: Developing training techniques that enhance model transparency and explainability.
 \end{itemize}
 
@@ -231,7 +241,7 @@ Despite the significant advancements and applications, \glspl{gnn} face several 
     \item Scalability Issues: Handling extremely large-scale graphs remains challenging, requiring efficient algorithms and distributed computing frameworks.
     \item Over-smoothing: Deep \glspl{gnn} can suffer from over-smoothing, where node representations become indistinguishable after several layers, reducing model performance.
     \item Lack of Interpretability: The black-box nature of \glspl{gnn} poses challenges in understanding their decision-making process, which is crucial for sensitive applications.
-    \item Limited Expressiveness: Some GNN architectures struggle to capture long-range dependencies and complex interactions, necessitating further research into more expressive models.
+    \item Limited Expressiveness: Some \gls{gnn} architectures struggle to capture long-range dependencies and complex interactions, necessitating further research into more expressive models.
 \end{itemize}
 
 \subsection*{Conclusion}

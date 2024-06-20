@@ -455,6 +455,7 @@
     \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
     
     \markboth{}{} % Add "Acknowledgements" to fancy header
+    \chapter*{Acknowledgements}
 }
 %----------------------------------------------------------------------------------------
 

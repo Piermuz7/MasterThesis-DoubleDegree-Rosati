@@ -147,6 +147,56 @@
       \field{pages}{337\bibrangedash 349}
       \range{pages}{13}
     \endentry
+    \entry{Bordes2013}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f1733e10bf044cbd7be63e10e5689d78}{%
+           family={Bordes},
+           familyi={B\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26e026be6d5366fce878100ba03d68c1}{%
+           family={Usunier},
+           familyi={U\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2adf15bc75b1f81cef80be72a41d9d6b}{%
+           family={Garcia-Durán},
+           familyi={G\bibinithyphendelim D\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=417a25f3511d7c21e76d4a15e67dd679}{%
+           family={Weston},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bfc27968b4f5e8322fb9415a66f1aae}{%
+           family={Yakhnenko},
+           familyi={Y\bibinitperiod},
+           given={Oksana},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{339de127d2ac97fb73a98efe7d8dc83f}
+      \strng{fullhash}{b52eb6677718b34c9ca83324bd43a4f8}
+      \strng{bibnamehash}{b52eb6677718b34c9ca83324bd43a4f8}
+      \strng{authorbibnamehash}{b52eb6677718b34c9ca83324bd43a4f8}
+      \strng{authornamehash}{339de127d2ac97fb73a98efe7d8dc83f}
+      \strng{authorfullhash}{b52eb6677718b34c9ca83324bd43a4f8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the problem of embedding entities and relationships of multi-relational data in low-dimensional vector spaces. Our objective is to propose a canonical model which is easy to train, contains a reduced number of parameters and can scale up to very large databases. Hence, we propose TransE, a method which models relationships by interpreting them as translations operating on the low-dimensional embeddings of the entities. Despite its simplicity, this assumption proves to be powerful since extensive experiments show that TransE significantly outperforms state-of-the-art methods in link prediction on two knowledge bases. Besides, it can be successfully trained on a large scale data set with 1M entities, 25k relationships and more than 17M training samples.}
+      \field{title}{Translating Embeddings for Modeling Multi-relational Data}
+      \field{year}{2013}
+    \endentry
     \entry{Bruna2013}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=c83b564e32475f10dcc91be7e66d3e81}{%
@@ -196,6 +246,106 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1312.6203
+      \endverb
+    \endentry
+    \entry{Chaudhri2022}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=00e628cd44183c8b7774a1904199c7be}{%
+           family={Chaudhri},
+           familyi={C\bibinitperiod},
+           given={Vinay\bibnamedelima K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=585e7d3a4cf1624fd916c6c2b8ac9136}{%
+           family={Baru},
+           familyi={B\bibinitperiod},
+           given={Chaitanya},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f5e30c4b2e2d8dbb7f8bc9730646574b}{%
+           family={Chittar},
+           familyi={C\bibinitperiod},
+           given={Naren},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fb05cb08a8960aeecf7fa6c8a880f1c}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Xin\bibnamedelima Luna},
+           giveni={X\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd2d0e3751337a87c4d64076368e0fb}{%
+           family={Genesereth},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b03c1c11511fa3c1c6224a741f227be4}{%
+           family={Hendler},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0d31f5d176c659833a81c1fe3de7302}{%
+           family={Kalyanpur},
+           familyi={K\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ef67f8a5050ae70229240f255d2ee45}{%
+           family={Lenat},
+           familyi={L\bibinitperiod},
+           given={Douglas\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d2c4c78dacb7d5c0f840ed22b1fd0c8}{%
+           family={Sequeda},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e45ed1115b5773b6355eb03f326041a4}{%
+           family={Vrandečić},
+           familyi={V\bibinitperiod},
+           given={Denny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3bb8bbc6e6ba11f233f270fb5436546}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Kuansan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons Inc}%
+      }
+      \strng{namehash}{a2245e3c101a2b5a283fdb646887dae3}
+      \strng{fullhash}{e39e1ec6ff9d2e140bd29e75afbe1e60}
+      \strng{bibnamehash}{e39e1ec6ff9d2e140bd29e75afbe1e60}
+      \strng{authorbibnamehash}{e39e1ec6ff9d2e140bd29e75afbe1e60}
+      \strng{authornamehash}{a2245e3c101a2b5a283fdb646887dae3}
+      \strng{authorfullhash}{e39e1ec6ff9d2e140bd29e75afbe1e60}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge graphs (KGs) have emerged as a compelling abstraction for organizing the world’s structured knowledge and for integrating information extracted from multiple data sources. They are also beginning to play a central role in representing information extracted by AI systems, and for improving the predictions of AI systems by giving them knowledge expressed in KGs as input. The goals of this article are to (a) introduce KGs and discuss important areas of application that have gained recent prominence; (b) situate KGs in the context of the prior work in AI; and (c) present a few contrasting perspectives that help in better understanding KGs in relation to related technologies.}
+      \field{issn}{23719621}
+      \field{issue}{1}
+      \field{journaltitle}{AI Magazine}
+      \field{month}{3}
+      \field{title}{Knowledge graphs: Introduction, history, and perspectives}
+      \field{volume}{43}
+      \field{year}{2022}
+      \field{pages}{17\bibrangedash 29}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/aaai.12033
       \endverb
     \endentry
     \entry{Chen2017}{article}{}
@@ -308,6 +458,54 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1145/3292500.3330925
+      \endverb
+    \endentry
+    \entry{Cyganiak14RCA}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ff065518eacac535eec041c322c21896}{%
+           family={Cyganiak},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d91ccb882c2defa0b7d5801d3486fe95}{%
+           family={Lanthaler},
+           familyi={L\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad0aae768a1174aba9738b6d2719985b}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {W3C}%
+      }
+      \strng{namehash}{239617b5251160922f9c0eb4e93d3c6d}
+      \strng{fullhash}{5046a570263d636dd662bcf6bb4ba7e6}
+      \strng{bibnamehash}{5046a570263d636dd662bcf6bb4ba7e6}
+      \strng{authorbibnamehash}{5046a570263d636dd662bcf6bb4ba7e6}
+      \strng{authornamehash}{239617b5251160922f9c0eb4e93d3c6d}
+      \strng{authorfullhash}{5046a570263d636dd662bcf6bb4ba7e6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{{RDF} 1.1 Concepts and Abstract Syntax}
+      \field{type}{W3C Recommendation}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/
       \endverb
     \endentry
     \entry{Deborah2004}{misc}{}
@@ -1096,6 +1294,44 @@
       \verb http://arxiv.org/abs/2012.01707
       \endverb
     \endentry
+    \entry{Kejriwal2022}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8a9721a2ee408f62c28c8648a3c89490}{%
+           family={Kejriwal},
+           familyi={K\bibinitperiod},
+           given={Mayank},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{8a9721a2ee408f62c28c8648a3c89490}
+      \strng{fullhash}{8a9721a2ee408f62c28c8648a3c89490}
+      \strng{bibnamehash}{8a9721a2ee408f62c28c8648a3c89490}
+      \strng{authorbibnamehash}{8a9721a2ee408f62c28c8648a3c89490}
+      \strng{authornamehash}{8a9721a2ee408f62c28c8648a3c89490}
+      \strng{authorfullhash}{8a9721a2ee408f62c28c8648a3c89490}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge graphs (KGs) have rapidly emerged as an important area in AI over the last ten years. Building on a storied tradition of graphs in the AI community, a KG may be simply defined as a directed, labeled, multi-relational graph with some form of semantics. In part, this has been fueled by increased publication of structured datasets on the Web, and well-publicized successes of large-scale projects such as the Google Knowledge Graph and the Amazon Product Graph. However, another factor that is less discussed, but which has been equally instrumental in the success of KGs, is the cross-disciplinary nature of academic KG research. Arguably, because of the diversity of this research, a synthesis of how different KG research strands all tie together could serve a useful role in enabling more ‘moonshot’ research and large-scale collaborations. This review of the KG research landscape attempts to provide such a synthesis by first showing what the major strands of research are, and how those strands map to different communities, such as Natural Language Processing, Databases and Semantic Web. A unified framework is suggested in which to view the distinct, but overlapping, foci of KG research within these communities.}
+      \field{issn}{20782489}
+      \field{issue}{4}
+      \field{journaltitle}{Information (Switzerland)}
+      \field{month}{4}
+      \field{title}{Knowledge Graphs: A Practical Review of the Research Landscape}
+      \field{volume}{13}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/info13040161
+      \endverb
+      \keyw{applications,data mining,graph databases,knowledge graphs,knowledge representation,natural language processing,semantic web}
+    \endentry
     \entry{Kipf2017}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=26d8bcbda6afaf96334bf47c8fb88a75}{%
@@ -1134,6 +1370,114 @@
       \verb{url}
       \verb http://arxiv.org/abs/1609.02907
       \endverb
+    \endentry
+    \entry{Lin2015}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e2994df0daa7033ced5356a51eed0321}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yankai},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b9a54b9d83697231299711961622ab8}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faa6f5041a22004ca0dd547c03476790}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Maosong},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=621013bf54d3546375ad71f17f020b5b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ece2de24c4f96348551e3079ead1fcbe}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f8ea2ca3c913483883f66e2f1f82347a}
+      \strng{fullhash}{571cee062bd130e98a492da5a6abd12c}
+      \strng{bibnamehash}{571cee062bd130e98a492da5a6abd12c}
+      \strng{authorbibnamehash}{571cee062bd130e98a492da5a6abd12c}
+      \strng{authornamehash}{f8ea2ca3c913483883f66e2f1f82347a}
+      \strng{authorfullhash}{571cee062bd130e98a492da5a6abd12c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge graph completion aims to perform link prediction between entities. In this paper, we consider the approach of knowledge graph embeddings. Recently, models such as TransE and TransH build entity and relation embeddings by regarding a relation as translation from head entity to tail entity. We note that these models simply put both entities and relations within the same semantic space. In fact, an entity may have multiple aspects and various relations may focus on different aspects of entities, which makes a common space insufficient for modeling. In this paper, we propose TransR to build entity and relation embeddings in separate entity space and relation spaces. Afterwards, we learn embeddings by first projecting entities from entity space to corresponding relation space and then building translations between projected entities. In experiments , we evaluate our models on three tasks including link prediction, triple classification and rela-tional fact extraction. Experimental results show significant and consistent improvements compared to state-of-the-art baselines including TransE and TransH. The source code of this paper can be obtained from https: //github.com/mrlyk423/relation extraction.}
+      \field{title}{Learning Entity and Relation Embeddings for Knowledge Graph Completion}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb www.aaai.org
+      \endverb
+      \verb{url}
+      \verb www.aaai.org
+      \endverb
+      \keyw{NLP and Knowledge Representation Track}
+    \endentry
+    \entry{manic2016building}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cf84f0e168933e459a4dece1d450b65a}{%
+           family={Manic},
+           familyi={M\bibinitperiod},
+           given={Milos},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ba88d72ef2f94595e31e1ea56666405}{%
+           family={Wijayasekara},
+           familyi={W\bibinitperiod},
+           given={Dumidu},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8a86a36126958584ead762bae2b189e}{%
+           family={Amarasinghe},
+           familyi={A\bibinitperiod},
+           given={Kasun},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee7aeb8b3252ad39cafc59d245226f79}{%
+           family={Rodriguez-Andina},
+           familyi={R\bibinithyphendelim A\bibinitperiod},
+           given={Juan\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f3383225913a7fd15b04ee56ccb6a80d}
+      \strng{fullhash}{02c765ad85c03829d1009156ecaaf05c}
+      \strng{bibnamehash}{02c765ad85c03829d1009156ecaaf05c}
+      \strng{authorbibnamehash}{02c765ad85c03829d1009156ecaaf05c}
+      \strng{authornamehash}{f3383225913a7fd15b04ee56ccb6a80d}
+      \strng{authorfullhash}{02c765ad85c03829d1009156ecaaf05c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Industrial Electronics Magazine}
+      \field{number}{1}
+      \field{title}{Building energy management systems: The age of intelligent and adaptive buildings}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{25\bibrangedash 39}
+      \range{pages}{15}
     \endentry
     \entry{Paulheim2017}{article}{}
       \name{author}{1}{}{%
@@ -1379,6 +1723,7 @@
       \field{title}{The graph neural network model}
       \field{volume}{20}
       \field{year}{2009}
+      \true{nocite}
       \field{pages}{61\bibrangedash 80}
       \range{pages}{20}
       \verb{doi}
@@ -1720,6 +2065,56 @@
       \endverb
       \keyw{Collaborative Filtering,Embedding Propagation,Graph Neural Network,High-order Connectivity,Recommendation}
     \endentry
+    \entry{Wang2014}{misc}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=d23f8780b31a9738eb2ec5f9c954bcb4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=8523cf05a337ae3f69b20974da48ce9a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jianwen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4435206f0ab50c344ea575c22c9465fb}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jianlin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05694d0c858ee219eae7bb764b27b7f6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bcc0ee0115ca53333821bd83b79eadf2}
+      \strng{fullhash}{75e9f72d345c40d5f36d96336a6504ea}
+      \strng{bibnamehash}{75e9f72d345c40d5f36d96336a6504ea}
+      \strng{authorbibnamehash}{75e9f72d345c40d5f36d96336a6504ea}
+      \strng{authornamehash}{bcc0ee0115ca53333821bd83b79eadf2}
+      \strng{authorfullhash}{75e9f72d345c40d5f36d96336a6504ea}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We deal with embedding a large scale knowledge graph composed of entities and relations into a continuous vector space. TransE is a promising method proposed recently, which is very efficient while achieving state-of-the-art predictive performance. We discuss some mapping properties of relations which should be considered in embedding, such as reflexive , one-to-many, many-to-one, and many-to-many. We note that TransE does not do well in dealing with these properties. Some complex models are capable of preserving these mapping properties but sacrifice efficiency in the process. To make a good trade-off between model capacity and efficiency, in this paper we propose TransH which models a relation as a hyperplane together with a translation operation on it. In this way, we can well preserve the above mapping properties of relations with almost the same model complexity of TransE. Additionally, as a practical knowledge graph is often far from completed, how to construct negative examples to reduce false negative labels in training is very important. Utilizing the one-to-many/many-to-one mapping property of a relation, we propose a simple trick to reduce the possibility of false negative labeling. We conduct extensive experiments on link prediction, triplet classification and fact extraction on benchmark datasets like WordNet and Freebase. Experiments show TransH delivers significant improvements over TransE on predictive accuracy with comparable capability to scale up.}
+      \field{title}{Knowledge Graph Embedding by Translating on Hyperplanes}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb www.aaai.org
+      \endverb
+      \verb{url}
+      \verb www.aaai.org
+      \endverb
+      \keyw{Knowledge Representation and Reasoning}
+    \endentry
     \entry{Wu2021}{article}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=c97b91ddf59fcb75f2d1b52080711566}{%
@@ -2051,6 +2446,130 @@
       \verb 10.1145/3502223.3502232
       \endverb
       \keyw{E-commerce,Explainable AI,Knowledge Graphs,Reasoning,Representation Learning,Rules}
+    \endentry
+    \entry{Zhou2020}{misc}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=873b7b14d7a3c7290a8ad393066ee9a3}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85909d8a0dae0f58235434d6a4c3a425}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Ganqu},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbc192d3823d1022eb9ca28a4f81d27a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Shengding},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27c7fad66da172aaa64e08e3539ff172}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhengyan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29ccf7aa9391a3e9e13ba3b57f4c48eb}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b9a54b9d83697231299711961622ab8}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b089f6bd0b31a94e61b42f89d966b1e1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d35819f1b7580b5294fc7d3dc3d24550}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Changcheng},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faa6f5041a22004ca0dd547c03476790}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Maosong},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{52ac8b06238656e0c352b6e46f10dece}
+      \strng{fullhash}{26b43ae59077cc1dba8f7bd57dea2b48}
+      \strng{bibnamehash}{26b43ae59077cc1dba8f7bd57dea2b48}
+      \strng{authorbibnamehash}{26b43ae59077cc1dba8f7bd57dea2b48}
+      \strng{authornamehash}{52ac8b06238656e0c352b6e46f10dece}
+      \strng{authorfullhash}{26b43ae59077cc1dba8f7bd57dea2b48}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Lots of learning tasks require dealing with graph data which contains rich relation information among elements. Modeling physics systems, learning molecular fingerprints, predicting protein interface, and classifying diseases demand a model to learn from graph inputs. In other domains such as learning from non-structural data like texts and images, reasoning on extracted structures (like the dependency trees of sentences and the scene graphs of images) is an important research topic which also needs graph reasoning models. Graph neural networks (GNNs) are neural models that capture the dependence of graphs via message passing between the nodes of graphs. In recent years, variants of GNNs such as graph convolutional network (GCN), graph attention network (GAT), graph recurrent network (GRN) have demonstrated ground-breaking performances on many deep learning tasks. In this survey, we propose a general design pipeline for GNN models and discuss the variants of each component, systematically categorize the applications, and propose four open problems for future research.}
+      \field{issn}{26666510}
+      \field{journaltitle}{AI Open}
+      \field{month}{1}
+      \field{title}{Graph neural networks: A review of methods and applications}
+      \field{volume}{1}
+      \field{year}{2020}
+      \field{pages}{57\bibrangedash 81}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.aiopen.2021.01.001
+      \endverb
+      \keyw{Deep learning,Graph neural network}
+    \endentry
+    \entry{Zou2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7ff3406b3ef241e685952a0ffd371c74}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Xiaohan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Physics Publishing}%
+      }
+      \strng{namehash}{7ff3406b3ef241e685952a0ffd371c74}
+      \strng{fullhash}{7ff3406b3ef241e685952a0ffd371c74}
+      \strng{bibnamehash}{7ff3406b3ef241e685952a0ffd371c74}
+      \strng{authorbibnamehash}{7ff3406b3ef241e685952a0ffd371c74}
+      \strng{authornamehash}{7ff3406b3ef241e685952a0ffd371c74}
+      \strng{authorfullhash}{7ff3406b3ef241e685952a0ffd371c74}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Knowledge graphs, representation of information as a semantic graph, have caused wide concern in both industrial and academic world. Their property of providing semantically structured information has brought important possible solutions for many tasks including question answering, recommendation and information retrieval, and is considered to offer great promise for building more intelligent machines by many researchers. Although knowledge graphs have already supported multiple "Big Data" applications in all sorts of commercial and scientific domains since Google coined this term in 2012, there was no previous study give a systemically review of the application of knowledge graphs. Therefore, unlike other related work which focuses on the construction techniques of knowledge graphs, this present paper aims at providing a first survey on these applications stemming from different domains. This paper also points out that while important advancements of applying knowledge graphs' great ability of providing semantically structured information into specific domains have been made in recent years, several aspects still remain to be explored.}
+      \field{issn}{17426596}
+      \field{issue}{1}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{4}
+      \field{title}{A Survey on Application of Knowledge Graph}
+      \field{volume}{1487}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1088/1742-6596/1487/1/012016
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

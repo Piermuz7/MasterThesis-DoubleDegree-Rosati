@@ -390,6 +390,62 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{rdfs}%
+{%
+name={RDFS},%
+sort={RDFS},%
+type={acronym},%
+first={RDF Schema\glsspace (RDFS)},%
+firstplural={RDF Schema\acrpluralsuffix \glsspace (RDFS\acrpluralsuffix )},%
+text={RDFS},%
+plural={RDFS\acrpluralsuffix },%
+description={RDF Schema},%
+descriptionplural={RDF Schema\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={RDF Schema},%
+longplural={RDF Schemas},%
+short={RDFS},%
+shortplural={RDFSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{uri}%
+{%
+name={URI},%
+sort={URI},%
+type={acronym},%
+first={Uniform Resource Identifier\glsspace (URI)},%
+firstplural={Uniform Resource Identifier\acrpluralsuffix \glsspace (URI\acrpluralsuffix )},%
+text={URI},%
+plural={URI\acrpluralsuffix },%
+description={Uniform Resource Identifier},%
+descriptionplural={Uniform Resource Identifier\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Uniform Resource Identifier},%
+longplural={Uniform Resource Identifiers},%
+short={URI},%
+shortplural={URIs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{owl}%
 {%
 name={OWL},%
@@ -469,34 +525,6 @@ long={Natural Language Processing},%
 longplural={Natural Language Processings},%
 short={NLP},%
 shortplural={NLPs},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{rdfs}%
-{%
-name={RDFS},%
-sort={RDFS},%
-type={acronym},%
-first={RDF Schema\glsspace (RDFS)},%
-firstplural={RDF Schema\acrpluralsuffix \glsspace (RDFS\acrpluralsuffix )},%
-text={RDFS},%
-plural={RDFS\acrpluralsuffix },%
-description={RDF Schema},%
-descriptionplural={RDF Schema\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={RDF Schema},%
-longplural={RDF Schemas},%
-short={RDFS},%
-shortplural={RDFSs},%
 counter={page},%
 parent={},%
 %

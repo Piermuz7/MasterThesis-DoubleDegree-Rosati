@@ -69,13 +69,13 @@
 
 
 % If you don't have a co-supervisor, exchange with
-% \cosupervisorfalse
-\cosupervisortrue
+\cosupervisorfalse
+%\cosupervisortrue
 %-------------------------------------------------
 
 % You co-supervisor's name 
 % Citation command \supcoName 
-\cosupervisor{Dr. James \textsc{Allan}}
+%\cosupervisor{Dr. James \textsc{Allan}}
 %-------------------------------------------------  
 
 % You co-supervisor's URL
@@ -194,16 +194,18 @@
 \newacronym{rnn}{RNN}{Recurrent Neural Network}
 \newacronym{dnn}{DNN}{Deep Neural Network}
 \newacronym{rdf}{RDF}{Resource Description Framework}
+\newacronym{rdfs}{RDFS}{RDF Schema}
+\newacronym{uri}{URI}{Uniform Resource Identifier}
 \newacronym{owl}{OWL}{Web Ontology Language}
 \newacronym{sparql}{SPARQL}{SPARQL Protocol and RDF Query Language}
 \newacronym{nlp}{NLP}{Natural Language Processing}
-\newacronym{rdfs}{RDFS}{RDF Schema}
 \newacronym{lod}{LOD}{Linked Open Data}
 \newacronym{kge}{KGE}{Knowledge Graph Embedding}
 \newacronym{recnn}{RecNN}{Recursive Neural Network}
 \newacronym{gcn}{GCN}{Graph Convolutional Network}
 \newacronym{gat}{GAT}{Graph Attention Network}
 \newacronym{mpnn}{MPNN}{Message Passing Neural Network}
+
 
 
 
@@ -256,8 +258,6 @@
 \input{01_Chapters/02_LiteratureReview}
 \fillingPage{}
 \input{01_Chapters/03_ResearchMethod}
-\fillingPage{}
-\input{01_Chapters/Notes.tex}
 \fillingPage{} 
 \input{01_Chapters/05_Conclusion}
 
@@ -319,9 +319,7 @@
 %	FOREWORD / ACKNOWLEDGEMENTS (optional)
 %----------------------------------------------------------------------------------------
 
-\ackPage{
-    The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
-}
+\input{01_Chapters/Acknowledgments.tex}
 
 \clearpage % Start a new page
 

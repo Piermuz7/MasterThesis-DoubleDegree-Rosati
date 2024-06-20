@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.9)  12 JUN 2024 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.9)  20 JUN 2024 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,29 +1224,29 @@ Package biblatex Info: Reference segment=0 on input line 34.
 \@gls@deffile=\write9
 \openout9 = `Rosati-2024-Thesis.glsdefs'.
 
-<03_Figures/00_Logo/logo-unicam-notext.png, id=84, 793.96625pt x 971.63pt>
+<03_Figures/00_Logo/logo-unicam-notext.png, id=88, 793.96625pt x 971.63pt>
 File: 03_Figures/00_Logo/logo-unicam-notext.png Graphic file (type png)
 <use 03_Figures/00_Logo/logo-unicam-notext.png>
-Package pdftex.def Info: 03_Figures/00_Logo/logo-unicam-notext.png  used on input line 222.
+Package pdftex.def Info: 03_Figures/00_Logo/logo-unicam-notext.png  used on input line 224.
 (pdftex.def)             Requested size: 74.3978pt x 91.04872pt.
-<03_Figures/00_Logo/logo-fhnw-notext.png, id=87, 1254.6875pt x 744.7825pt>
+<03_Figures/00_Logo/logo-fhnw-notext.png, id=91, 1254.6875pt x 744.7825pt>
 File: 03_Figures/00_Logo/logo-fhnw-notext.png Graphic file (type png)
 <use 03_Figures/00_Logo/logo-fhnw-notext.png>
-Package pdftex.def Info: 03_Figures/00_Logo/logo-fhnw-notext.png  used on input line 222.
+Package pdftex.def Info: 03_Figures/00_Logo/logo-fhnw-notext.png  used on input line 224.
 (pdftex.def)             Requested size: 114.06569pt x 67.7177pt.
 
-Overfull \hbox (0.68785pt too wide) in paragraph at lines 222--222
+Overfull \hbox (0.68785pt too wide) in paragraph at lines 224--224
 [][]   []
  []
 
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 222--222
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 224--224
 [][]   []
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 222.
+(Font)              using `OT1/cmr/bx/n' instead on input line 224.
 
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1263,7 +1263,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 3--229
+Underfull \hbox (badness 10000) in paragraph at lines 3--231
 
  []
 
@@ -1271,10 +1271,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--229
 ------------------------------------------------------------------------------
  Statement of Authenticity
 ------------------------------------------------------------------------------
-<03_Figures/signature1.jpg, id=121, 2055.68pt x 1541.76pt>
+<03_Figures/signature1.jpg, id=124, 2055.68pt x 1541.76pt>
 File: 03_Figures/signature1.jpg Graphic file (type jpg)
 <use 03_Figures/signature1.jpg>
-Package pdftex.def Info: 03_Figures/signature1.jpg  used on input line 237.
+Package pdftex.def Info: 03_Figures/signature1.jpg  used on input line 239.
 (pdftex.def)             Requested size: 102.79001pt x 77.09251pt.
 [2
 
@@ -1300,25 +1300,36 @@ Chapter 1.
 Chapter 2.
 (./01_Chapters/literature-review/knowledge-graphs.tex [2
 
-] [3] [4] [5]) [6] (./01_Chapters/literature-review/graph-neural-networks.tex [7] [8] [9] [10] [11] [12] [13])) (./01_Chapters/03_ResearchMethod.tex) (./01_Chapters/Notes.tex) (./01_Chapters/05_Conclusion.tex [14]
+] [3] [4] [5]
+<03_Figures/literature-review/kg-application-fields.png, id=217, 1026.83624pt x 379.4175pt>
+File: 03_Figures/literature-review/kg-application-fields.png Graphic file (type png)
+<use 03_Figures/literature-review/kg-application-fields.png>
+Package pdftex.def Info: 03_Figures/literature-review/kg-application-fields.png  used on input line 56.
+(pdftex.def)             Requested size: 417.47307pt x 154.25955pt.
+ [6 <./03_Figures/literature-review/kg-application-fields.png>] [7]) (./01_Chapters/literature-review/graph-neural-networks.tex [8] [9] [10] [11] [12] [13] [14] [15]) (./01_Chapters/literature-review/building-energy-management-systems.tex [16] [17] [18] [19] [20]
+Overfull \hbox (4.80211pt too wide) in paragraph at lines 137--138
+[]\OT1/cmr/m/n/10.95 Energy Audits: Con-duct-ing reg-u-lar audits to as-sess en-ergy per-form-ance and identify
+ []
+
+[21] [22] [23]) (./01_Chapters/literature-review/research-gap.tex)) (./01_Chapters/03_ResearchMethod.tex) (./01_Chapters/05_Conclusion.tex [24]
 Chapter 3.
 )
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-[15
+[25
+
+] [26
 
 ]
 Overfull \hbox (0.61789pt too wide) in paragraph at lines 271--271
 [][]\OT1/cmr/m/n/10.95 Francis, N., Green, A., Guagliardo, P., Lib-kin, L., Lindaaker, T., Marsault, V., Plantikow,
  []
 
-[16
-
-]
+[27]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¯ in font cmr10!
-[17]
+[28]
 ------------------------------------------------------------------------------
  Glossary
 ------------------------------------------------------------------------------
@@ -1330,11 +1341,11 @@ No file Rosati-2024-Thesis.acr.
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-[18] (./Rosati-2024-Thesis.lof)
+[29] (./Rosati-2024-Thesis.lof)
 \tf@lof=\write11
 \openout11 = `Rosati-2024-Thesis.lof'.
 
- [19
+ [30
 
 ]
 ------------------------------------------------------------------------------
@@ -1344,14 +1355,15 @@ No file Rosati-2024-Thesis.acr.
 \tf@lot=\write12
 \openout12 = `Rosati-2024-Thesis.lot'.
 
- [20
+ [31
 
 
-]
+] (./01_Chapters/Acknowledgments.tex
 ------------------------------------------------------------------------------
  Acknowledgements Page
 ------------------------------------------------------------------------------
-[21
+) [32
+
 
 ]
 ------------------------------------------------------------------------------
@@ -1362,24 +1374,24 @@ No file Rosati-2024-Thesis.acr.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Rosati-2024-Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5390F3467B361F5B86F92F41734CFBE1;2638.
+(rerunfilecheck)             Checksum: 79DA9679702DC7BA76EB6A136959FC15;2779.
 Package logreq Info: Writing requests to 'Rosati-2024-Thesis.run.xml'.
 \openout1 = `Rosati-2024-Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50402 strings out of 478268
- 1102484 string characters out of 5846347
- 2008053 words of memory out of 5000000
- 67630 multiletter control sequences out of 15000+600000
+ 50587 strings out of 478268
+ 1107104 string characters out of 5846347
+ 2010026 words of memory out of 5000000
+ 67751 multiletter control sequences out of 15000+600000
  478581 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,166p,2294b,8827s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Rosati-2024-Thesis.pdf (25 pages, 923544 bytes).
+Output written on Rosati-2024-Thesis.pdf (36 pages, 1024786 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
