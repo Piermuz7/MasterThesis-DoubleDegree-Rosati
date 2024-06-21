@@ -871,6 +871,97 @@
       \field{title}{Neural Message Passing for Quantum Chemistry}
       \field{year}{2017}
     \endentry
+    \entry{Gori2005}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d25d4f83ae540b2b728a5423e9fbe85b}{%
+           family={Gori},
+           familyi={G\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b56d5f9b0efe692c5e81a88da3a2f2b7}{%
+           family={Monfardini},
+           familyi={M\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=447de7983619243dc5bf3af69d609b20}{%
+           family={Scarselli},
+           familyi={S\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c3e1f358b87e3ab79622e6504ebcaaf}
+      \strng{fullhash}{9c8447cad4e780034e98b80b7b341453}
+      \strng{bibnamehash}{9c8447cad4e780034e98b80b7b341453}
+      \strng{authorbibnamehash}{9c8447cad4e780034e98b80b7b341453}
+      \strng{authornamehash}{0c3e1f358b87e3ab79622e6504ebcaaf}
+      \strng{authorfullhash}{9c8447cad4e780034e98b80b7b341453}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In several applications the information is naturally represented by graphs. Traditional approaches cope with graphi-cal data structures using a preprocessing phase which transforms the graphs into a set of flat vectors. However, in this way, important topological information may be lost and the achieved results may heavily depend on the preprocessing stage. This paper presents a new neural model, called graph neural network (GNN), capable of directly processing graphs. GNNs extends recursive neural networks and can be applied on most of the practically useful kinds of graphs, including directed, undirected, labelled and cyclic graphs. A learning algorithm for GNNs is proposed and some experiments are discussed which assess the properties of the model.}
+      \field{isbn}{0-7803-9048-2}
+      \field{issn}{2161-4407}
+      \field{journaltitle}{IEEE International Joint Conference on Neural Networks}
+      \field{title}{A New Model for Learning in Graph Domains}
+      \field{volume}{5}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.1109/IJCNN.2005.1555942
+      \endverb
+      \keyw{Keywords}
+    \endentry
+    \entry{Grover2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0e7ecffac4441691ff61e0b68d89cd33}{%
+           family={Grover},
+           familyi={G\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{f78ae7abf2608b5507c89d73eca50af5}
+      \strng{fullhash}{f78ae7abf2608b5507c89d73eca50af5}
+      \strng{bibnamehash}{f78ae7abf2608b5507c89d73eca50af5}
+      \strng{authorbibnamehash}{f78ae7abf2608b5507c89d73eca50af5}
+      \strng{authornamehash}{f78ae7abf2608b5507c89d73eca50af5}
+      \strng{authorfullhash}{f78ae7abf2608b5507c89d73eca50af5}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450342322}
+      \field{issn}{2154-817X}
+      \field{journaltitle}{Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{month}{8}
+      \field{title}{Node2vec: Scalable feature learning for networks}
+      \field{volume}{13-17-August-2016}
+      \field{year}{2016}
+      \field{pages}{855\bibrangedash 864}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2939672.2939754
+      \endverb
+      \keyw{Feature learning,Graph representations,Information networks,Node embeddings}
+    \endentry
     \entry{Hamilton2017}{misc}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=2abce6c40b4cc1a3d89f175883b24536}{%
@@ -1332,6 +1423,62 @@
       \endverb
       \keyw{applications,data mining,graph databases,knowledge graphs,knowledge representation,natural language processing,semantic web}
     \endentry
+    \entry{Khemani2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=065a77f23b1c3832aeacb1269479591f}{%
+           family={Khemani},
+           familyi={K\bibinitperiod},
+           given={Bharti},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7bb53bc184b6b3d5f205081ec5ddb97}{%
+           family={Patil},
+           familyi={P\bibinitperiod},
+           given={Shruti},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be34a381d3b31caac0e4a8150da4a303}{%
+           family={Kotecha},
+           familyi={K\bibinitperiod},
+           given={Ketan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=623ec3ea2244bcc12d0556928295ce14}{%
+           family={Tanwar},
+           familyi={T\bibinitperiod},
+           given={Sudeep},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{5023732984d5a319abc04b921530ccc7}
+      \strng{fullhash}{f06823153f5afeb70634609bb067ad03}
+      \strng{bibnamehash}{f06823153f5afeb70634609bb067ad03}
+      \strng{authorbibnamehash}{f06823153f5afeb70634609bb067ad03}
+      \strng{authornamehash}{5023732984d5a319abc04b921530ccc7}
+      \strng{authorfullhash}{f06823153f5afeb70634609bb067ad03}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep learning has seen significant growth recently and is now applied to a wide range of conventional use cases, including graphs. Graph data provides relational information between elements and is a standard data format for various machine learning and deep learning tasks. Models that can learn from such inputs are essential for working with graph data effectively. This paper identifies nodes and edges within specific applications, such as text, entities, and relations, to create graph structures. Different applications may require various graph neural network (GNN) models. GNNs facilitate the exchange of information between nodes in a graph, enabling them to understand dependencies within the nodes and edges. The paper delves into specific GNN models like graph convolution networks (GCNs), GraphSAGE, and graph attention networks (GATs), which are widely used in various applications today. It also discusses the message-passing mechanism employed by GNN models and examines the strengths and limitations of these models in different domains. Furthermore, the paper explores the diverse applications of GNNs, the datasets commonly used with them, and the Python libraries that support GNN models. It offers an extensive overview of the landscape of GNN research and its practical implementations.}
+      \field{issn}{21961115}
+      \field{issue}{1}
+      \field{journaltitle}{Journal of Big Data}
+      \field{month}{12}
+      \field{title}{A review of graph neural networks: concepts, architectures, techniques, challenges, datasets, applications, and future directions}
+      \field{volume}{11}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1186/s40537-023-00876-4
+      \endverb
+      \keyw{Graph Attention Networks (GAT),Graph Convolution Network (GCN),Graph Neural Network (GNN),GraphSAGE,Message Passing Mechanism,Natural Language Processing (NLP)}
+    \endentry
     \entry{Kipf2017}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=26d8bcbda6afaf96334bf47c8fb88a75}{%
@@ -1565,6 +1712,54 @@
       \endverb
       \keyw{Complexity,Query language,RDF,SPARQL,Semantic Web}
     \endentry
+    \entry{Perozzi2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3bbe3b6d26e1f03feea22728836605cd}{%
+           family={Perozzi},
+           familyi={P\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fdea7728f40679d54135ffed015aec3}{%
+           family={Al-Rfou},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Rami},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14cc658e717a3f34fd056009828c501d}{%
+           family={Skiena},
+           familyi={S\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{42f913597cb4202ac7fbbeed7bad8273}
+      \strng{fullhash}{75e48cd19787d1c675c8307f806c80a1}
+      \strng{bibnamehash}{75e48cd19787d1c675c8307f806c80a1}
+      \strng{authorbibnamehash}{75e48cd19787d1c675c8307f806c80a1}
+      \strng{authornamehash}{42f913597cb4202ac7fbbeed7bad8273}
+      \strng{authorfullhash}{75e48cd19787d1c675c8307f806c80a1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450329569}
+      \field{journaltitle}{Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{title}{DeepWalk: Online learning of social representations}
+      \field{year}{2014}
+      \field{pages}{701\bibrangedash 710}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2623330.2623732
+      \endverb
+      \keyw{deep learning,latent representations,learning with partial labels,network classification,online learning,social networks}
+    \endentry
     \entry{pujara2013knowledge}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=603e425c04181fb9cb012633c322ac6d}{%
@@ -1613,6 +1808,57 @@
       \field{year}{2013}
       \field{pages}{542\bibrangedash 557}
       \range{pages}{16}
+    \endentry
+    \entry{Rong2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f292ec47b3dca3814617cd5390916824}{%
+           family={Rong},
+           familyi={R\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ee4909a832e993602aa62ad48918b29}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Wenbing},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc4a291289dd8cc0a090f4585626d4f6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Tingyang},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10b0bc00e8e92345a8bc3f6c1e6bb625}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Junzhou},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{10e0b3852a636107e8d5fcb831c4c87b}
+      \strng{fullhash}{4aa5968b8d3b105cfe35682390c30d27}
+      \strng{bibnamehash}{4aa5968b8d3b105cfe35682390c30d27}
+      \strng{authorbibnamehash}{4aa5968b8d3b105cfe35682390c30d27}
+      \strng{authornamehash}{10e0b3852a636107e8d5fcb831c4c87b}
+      \strng{authorfullhash}{4aa5968b8d3b105cfe35682390c30d27}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{\emph\{Over-fitting\} and \emph\{over-smoothing\} are two main obstacles of developing deep Graph Convolutional Networks (GCNs) for node classification. In particular, over-fitting weakens the generalization ability on small dataset, while over-smoothing impedes model training by isolating output representations from the input features with the increase in network depth. This paper proposes DropEdge, a novel and flexible technique to alleviate both issues. At its core, DropEdge randomly removes a certain number of edges from the input graph at each training epoch, acting like a data augmenter and also a message passing reducer. Furthermore, we theoretically demonstrate that DropEdge either reduces the convergence speed of over-smoothing or relieves the information loss caused by it. More importantly, our DropEdge is a general skill that can be equipped with many other backbone models (e.g. GCN, ResGCN, GraphSAGE, and JKNet) for enhanced performance. Extensive experiments on several benchmarks verify that DropEdge consistently improves the performance on a variety of both shallow and deep GCNs. The effect of DropEdge on preventing over-smoothing is empirically visualized and validated as well. Codes are released on~\url\{https://github.com/DropEdge/DropEdge\}.}
+      \field{month}{7}
+      \field{title}{DropEdge: Towards Deep Graph Convolutional Networks on Node Classification}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.10903
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.10903
+      \endverb
     \endentry
     \entry{Sahu2019}{article}{}
       \name{author}{4}{}{%
@@ -1723,7 +1969,6 @@
       \field{title}{The graph neural network model}
       \field{volume}{20}
       \field{year}{2009}
-      \true{nocite}
       \field{pages}{61\bibrangedash 80}
       \range{pages}{20}
       \verb{doi}
@@ -1762,6 +2007,73 @@
       \field{year}{2012}
       \field{pages}{3}
       \range{pages}{1}
+    \endentry
+    \entry{Tang2015}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=541194db9dac70af45a28c067d289c8d}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be51ffe8f55f70ee4360e3e6a1a4216e}{%
+           family={Qu},
+           familyi={Q\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9b32eefcfd0b44a27bae162e66746ae}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Mingzhe},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a56aedb5f6ad175a5340edc7bf6267e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=934a0c3e849405255facd8113ba785b3}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ca1c136fc4a8c4c39869eeaf7fade74}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Qiaozhu},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{46894c9a61813f6e656d9217e281e7d1}
+      \strng{fullhash}{87054c2dc52ba2fab3bbd4445bd88471}
+      \strng{bibnamehash}{87054c2dc52ba2fab3bbd4445bd88471}
+      \strng{authorbibnamehash}{87054c2dc52ba2fab3bbd4445bd88471}
+      \strng{authornamehash}{46894c9a61813f6e656d9217e281e7d1}
+      \strng{authorfullhash}{87054c2dc52ba2fab3bbd4445bd88471}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450334693}
+      \field{journaltitle}{WWW 2015 - Proceedings of the 24th International Conference on World Wide Web}
+      \field{month}{5}
+      \field{title}{LINE: Large-scale information network embedding}
+      \field{year}{2015}
+      \field{pages}{1067\bibrangedash 1077}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1145/2736277.2741093
+      \endverb
+      \keyw{Dimension Reduction,Feature Learning,Information Network Embedding,Scalability}
     \endentry
     \entry{Tchechmedjiev2019}{article}{}
       \name{author}{9}{}{%

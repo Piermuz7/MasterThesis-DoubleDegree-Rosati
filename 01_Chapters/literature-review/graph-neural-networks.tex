@@ -7,24 +7,140 @@ methodologies, applications, challenges and future directions of \glspl{gnn}.
 
 \subsubsection*{Early Work and Foundations}
 
-Graphs have received success because the achievements of Neural Networks, for \gls{ml} tasks such as object detection and speech recognition. Graphs are used to represent real-world datasets like protein-protein interaction networks, social networks, traffic forecasting, e-commerce, geographical maps, \glspl{kg} and so on. In \acrlong{dl}, if we think of images, they are represented as a grid in Euclidean space. At this point, a \gls{cnn} takes the image as input and is able to extract features for achieving the task in question.
-\gls{dl} has achieved much success due mainly to the advancement of computational resources and the availability of data made available. 
+Graphs have received success because the achievements of neural networks, for \gls{ml} tasks such as object detection and speech recognition.
+Graphs are mathematical structures consisting of nodes connected by edges, making them ideal for modeling relationships and dependencies in complex systems.
+Mathematically, a graph is defined as $G=(V, E)$, where $V$ represents the nodes and $E$ represents the edges. The edges in a graph can be either directed or undirected, depending on whether directional dependencies exist between the nodes.
+Graphs are used to represent real-world datasets like protein-protein interaction networks, social networks, traffic forecasting, e-commerce, geographical maps, \glspl{kg} and so on.
+\\\glspl{gnn} draw inspiration from \glspl{cnn}.
+According to \cite{Khemani2024}, \glspl{cnn} and \glspl{rnn} are not well-suited for effectively handling graph-structured data.
+\glspl{cnn} are designed for data with a grid structure, such as images, while \glspl{rnn} are tailored for sequences, like text.
+Typically, arrays are used for storing text data, and matrices are used for image data. However, arrays and matrices are inadequate for dealing with graph data.
+For graphs, we need a specialized technique called Graph Convolution. This technique allows deep neural networks to process graph-structured data directly, resulting in a \glspl{gnn}.
 Nowadays, however there is a continuous increase in applications and domains that use complex structures such as graphs (\cite{Wu2021}).
 The complexity of graphs implied not insignificant problems on existing \gls{ml} algorithms because a graph may have a variable number of nodes or edges; or it might have nodes that may have a different number of neighbours.
-This last point is very important in some operation like convolution, that is easy for image but difficult for graphs.
+This last point is very important in some operation like convolution, that is easy for images but not for graphs.
 Another motivation comes from graph representation learning, which aims to learn to represent graph nodes, edges or subgraphs by low-dimensional vectors (\cite{Zhou2020}).
-Existing word embedding methods like DeepWalk, node2vec, LINE, TADW have achieved very good results but they have 2 important drawbacks. The first one is that there are no shared parameters in the encoder, which implies computationally inefficency (n. of parameters grows linearly with the n. of nodes);
+Existing word embedding methods like DeepWalk (\cite{Perozzi2014}), node2vec (\cite{Grover2016}), LINE (\cite{Tang2015}) have achieved very good results but they have 2 important drawbacks. The first one is that there are no shared parameters in the encoder, which implies computationally inefficency (n. of parameters grows linearly with the n. of nodes);
 The second drawback is that there's a lack of generalization because they cannot deal with dynamic graphs or generalize to new graphs.
+\\Inspired by the success of \glspl{cnn} and \glspl{rnn}, \cite{Gori2005, Scarselli2009} have designed and developed the first \gls{gnn} model in order to operate on non-Euclidian space.
+Variations of \glspl{gnn}, including \glspl{gcn}, \glspl{gat}, and GraphSAGE, have demonstrated groundbreaking performance on various \gls{dl} tasks in recent years.
+\\To summarize, a \gls{gnn} aims to learn a state embedding \( h_v \in \mathbb{R}^s \) that encapsulates the neighborhood data of each node.
+This state embedding \( h_v \), an $s$-dimensional vector for node \( v \), can be used to generate an output \( O_v \), such as the predicted distribution of the node label.
+The predicted node label distribution (\( O_v \)) is derived from the state embedding \( h_v \) (\cite{Rong2019}).
 
-Inspired by \glspl{cnn} and \glspl{rnn}, \glspl{gnn} have developed in order to operate on non-Euclidian space.
+\subsection*{GNN Learning Tasks and Training Settings}
+According to \cite{Zhou2020,Wu2021}, \glspl{gnn} are versatile tools capable of performing a variety of node-level, edge-level, and graph-level tasks.
+Each approach leverages different amounts and types of labeled data to extract meaningful patterns and representations from graph-structured data.
+
+\textbf{Node-level} tasks focus on predicting or inferring properties of individual nodes within a graph. This includes node classification, where each node is classified into one of several predefined categories, and node regression, which predicts continuous values associated with nodes.
+Node clustering groups nodes into clusters based on feature similarity and structural proximity, and node representation learning focuses on learning low-dimensional embeddings that preserve the graph's structural and feature information.
+
+\textbf{Edge-level} tasks aim to predict or infer properties related to the edges in a graph.
+Link prediction involves predicting the existence of an edge between two nodes and is crucial for applications such as recommending friends in social networks or predicting interactions in biological networks.
+Edge classification assigns categories to edges based on the properties of the connected nodes and their relationships, while edge regression predicts continuous values associated with edges, such as the strength of interactions or the weight of connections.
+
+\textbf{Graph-level} tasks involve making predictions or inferences about entire graphs.
+Graph classification assigns a label to an entire graph, which is useful in applications like classifying molecules or categorizing social networks.
+Graph regression predicts continuous values for entire graphs, such as the bioactivity of chemical compounds or the performance metrics of network designs.
+Graph generation involves creating new graphs that resemble a given set of graphs and is important in applications like molecule generation for drug discovery or network topology design.
+
+Fig. \ref{fig:gnn-graph-learning-tasks-summary} summarizes the key graph learning tasks that \glspl{gnn} can perform, highlighting the diversity and flexibility of these models in handling various types of graph-structured data.
+
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.9\textwidth]{03_Figures/literature-review/gnn-graph-learning-tasks-summary.png}
+     \rule{35em}{0.5pt}
+    \caption{Graph learning tasks by \glspl{gnn} (\cite{Khemani2024})} 
+ \label{fig:gnn-graph-learning-tasks-summary}
+\end{figure}
+
+\glspl{gnn} can be trained using a variety of learning paradigms, including supervised, semi-supervised, or unsupervised learning approaches, each of which leverages different methods and data availability to optimize the model for various analytical tasks on graph-structured data (\cite{Zhou2020,Wu2021}).
+
+In \textbf{supervised learning}, models are trained using labeled data, where each input example is paired with the correct output.
+For \glspl{gnn}, supervised tasks include node classification, link prediction, and graph classification, with a loss function defined based on the difference between predicted and actual labels.
+
+\textbf{Semi-supervised learning} uses a small amount of labeled data along with a large amount of unlabeled data (\cite{Kipf2017}).
+\glspl{gnn} are well-suited for this approach due to their ability to leverage graph structure and propagate label information through the network.
+Semi-supervised tasks include semi-supervised node classification and semi-supervised link prediction, allowing models to make use of the vast amounts of unlabeled data, which is often easier and cheaper to obtain.
+
+\textbf{Unsupervised learning} involves training a model without any labeled data, relying solely on the structure and inherent properties of the input data.
+In \glspl{gnn}, unsupervised tasks include node clustering, graph embedding, and graph generation.
+Techniques like autoencoders, where the model learns to reconstruct the input graph from compressed embeddings, or contrastive learning, where the model learns representations by contrasting positive and negative samples derived from the graph structure, are often used in unsupervised learning.
+
+\subsection*{The Message-Passing Mechanism}
+The message-passing mechanism in \glspl{gnn} is a sophisticated process that maintains graph symmetries through optimizable transformations on all graph properties, including nodes, edges, and the global context, preserving permutation invariances (\cite{Khemani2024}).
+This ensures that the connectivity of the input graph remains unchanged, allowing the output to be characterized using the same adjacency list and feature vector count as the input.
+However, the output graph has updated embeddings as the \gls{gnn} modifies each node, edge, and global-context representation.
+
+At its core, the message-passing mechanism operates iteratively, enabling nodes to collect and aggregate information from their neighbors.
+Here's a detailed breakdown of this process:
+\begin{enumerate}
+    \item \textbf{Node Representation Initialization}: each node in the graph is initialized with a feature vector. These initial representations can be based on node attributes or initialized randomly.
+
+    \item \textbf{Message Passing Phase}: this phase involves multiple iterations, during which nodes exchange and aggregate information from their neighbors. The process unfolds as follows:
+    \begin{itemize}
+        \item[a.] \textbf{Message Computation}: each node generates a message to be sent to its neighboring nodes. This message is typically a function of the node’s current feature vector and the feature vectors of its neighbors. Formally, for a node \(u\), the message \(m_{u}^{(k)}\) sent to its neighbors can be computed using a differentiable function such as a neural network:
+        \[
+        m_{u}^{(k)} = \text{MessageFunction}(h_u^{(k)}, \{h_v^{(k)}~|~v \in \mathcal{N}(u)\}, \{e_{uv}~|~v \in \mathcal{N}(u)\})
+        \]
+        where \(h_u^{(k)}\) is the feature vector of node \(u\) at iteration \(k\), \(\mathcal{N}(u)\) denotes the neighbors of node \(u\), and \(e_{uv}\) represents the edge features between nodes \(u\) and \(v\).
+  
+        \item[b.] \textbf{Message Aggregation}: each node aggregates the messages received from its neighbors. The aggregation function is typically permutation-invariant, ensuring that the order of the neighboring nodes does not affect the result. Common aggregation functions include summation, mean, or max. For a node \(u\), the aggregated message \(M_u^{(k)}\) is computed as:
+        \[
+        M_u^{(k)} = \text{AGGREGATE}^{(k)}(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\})
+        \]
+  
+        \item[c.] \textbf{Node Update}: each node updates its feature vector based on the aggregated message and its current feature vector. This update is performed using an update function, often a neural network. For a node \(u\), the updated feature vector \(h_u^{(k+1)}\) is computed as:
+        \[
+        h_u^{(k+1)} = \text{UPDATE}^{(k)}(h_u^{(k)}, M_u^{(k)})
+        \]
+    \end{itemize}
+
+    \item \textbf{Iteration and Neighborhood Expansion}: the message-passing phase is repeated for multiple iterations. With each iteration, nodes accumulate information from increasingly distant parts of the graph. After the first iteration (\(k=1\)), each node’s embedding includes information from its 1-hop neighborhood. After the second iteration (\(k=2\)), each node’s embedding incorporates information from its 2-hop neighborhood, and so on. Generally, after \(k\) iterations, each node’s embedding contains data from its \(k\)-hop neighborhood.
+
+    \item \textbf{Structural and Feature-Based Information}: the information passed during message passing consists of two main components: structural information about the graph (such as the degree of nodes) and feature-based information (attributes of the nodes and edges). Each node's message is stored in the form of feature vectors, and during each iteration, these vectors are updated to reflect the aggregated information from neighboring nodes.
+
+    \item \textbf{Readout Phase}: after completing the message-passing iterations, a readout function is applied to extract the final representation for nodes, edges, or the entire graph. This function aggregates the final node embeddings into a single representation. For graph-level tasks, the readout function might be a global pooling operation, such as summation, mean, or max over all node feature vectors.
+
+    \item \textbf{Mathematical Formulation}: the process can be mathematically represented as:
+   \[
+   h_u^{(k+1)} = \text{UPDATE}^{(k)}\left(h_u^{(k)}, \text{AGGREGATE}^{(k)}\left(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\}\right)\right)
+   \]
+   where \(h_u^{(k)}\) denotes the feature vector of node \(u\) at iteration \(k\), and \(m_{v}^{(k)}\) represents the message from node \(v\) at iteration \(k\). The AGGREGATE function combines the messages from the neighbors, and the UPDATE function combines this aggregated message with the node’s current feature vector to produce the updated feature vector.
+
+
+\end{enumerate}
+
+The message-passing mechanism of \glspl{gnn} is illustrated Fig. \ref{fig:gnn-message-passing-mechanism}.
+Here, an input graph with a set of node features \(X \in \mathbb{R}^{d \times |V|}\) is used to produce updated node embeddings.
+The process begins with each node having an initial message (or feature vector).
+Nodes then exchange messages with their neighbors. For instance, the B user node collects messages from its neighboring nodes, which are then aggregated.
+This aggregated message is used to update B user's node feature vector, resulting in a new embedding for the B user node for the next iteration.
+The diagram visually represents how messages are computed, aggregated, and updated across nodes in the graph, leading to refined node embeddings over iterations.
+
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.9\textwidth]{03_Figures/literature-review/gnn-message-passing-mechanism.png}
+     \rule{35em}{0.5pt}
+    \caption{Message Passing Mechanism in \glspl{gnn} (\cite{Khemani2024})} 
+ \label{fig:gnn-message-passing-mechanism}
+\end{figure}
+
+This mechanism enables \glspl{gnn} to effectively capture the dependencies and relationships within graph-structured data, making them powerful tools for tasks like node classification, link prediction, and graph classification.
+By iteratively exchanging and aggregating information, \glspl{gnn} can learn rich, expressive representations that reflect both the structure and attributes of the graph.
+
+\subsection*{\gls{gnn} Models}
+Over the years, different models of \glspl{gnn} have been developed, each with its own potential and for specific tasks.
+The following are the most important and best-known network architectures in the literature.
+
+TODO: GCN, GAT, GraphSAGE
+TODO: mention other models...
 
 \subsubsection*{Spectral Approaches}
 
 The breakthrough in spectral approaches marked a significant evolution in \glspl{gnn}. \cite{Bruna2013} introduced a method leveraging spectral graph theory to define convolution operations on graphs. This approach was refined by \cite{Defferrard2016}, leading to more efficient models. \cite{Kipf2017} simplified this concept further, making it more accessible and practical, thus popularizing the \gls{gcn}.
 
-\subsection*{Key Architectures and Methodologies}
-
-\subsubsection*{Graph Convolutional Networks (GCNs)}
+\subsubsection*{\acrfullpl{gcn}}
 
 \glspl{gcn} represent one of the most influential architectures in the \gls{gnn} landscape. They generalize the convolution operation to graph data, enabling the aggregation of feature information from a node's neighbors.
 

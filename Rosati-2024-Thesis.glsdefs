@@ -82,6 +82,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{rq}%
+{%
+name={RQ},%
+sort={RQ},%
+type={acronym},%
+first={Research Question\glsspace (RQ)},%
+firstplural={Research Question\acrpluralsuffix \glsspace (RQ\acrpluralsuffix )},%
+text={RQ},%
+plural={RQ\acrpluralsuffix },%
+description={Research Question},%
+descriptionplural={Research Question\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Research Question},%
+longplural={Research Questions},%
+short={RQ},%
+shortplural={RQs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{kg}%
 {%
 name={KG},%
@@ -581,34 +609,6 @@ long={Knowledge Graph Embedding},%
 longplural={Knowledge Graph Embeddings},%
 short={KGE},%
 shortplural={KGEs},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{recnn}%
-{%
-name={RecNN},%
-sort={RecNN},%
-type={acronym},%
-first={Recursive Neural Network\glsspace (RecNN)},%
-firstplural={Recursive Neural Network\acrpluralsuffix \glsspace (RecNN\acrpluralsuffix )},%
-text={RecNN},%
-plural={RecNN\acrpluralsuffix },%
-description={Recursive Neural Network},%
-descriptionplural={Recursive Neural Network\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Recursive Neural Network},%
-longplural={Recursive Neural Networks},%
-short={RecNN},%
-shortplural={RecNNs},%
 counter={page},%
 parent={},%
 %

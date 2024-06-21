@@ -1,5 +1,8 @@
 \babel@toc {british}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Application Fields of Knowledge Graphs (\blx@tocontentsinit {0}\cite {Zou2020})\relax }}{6}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces An example of \acrlong {kg} (\blx@tocontentsinit {0}\cite {Chaudhri2022})\relax }}{3}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Application of \acrlongpl {kg} (\blx@tocontentsinit {0}\cite {Zou2020})\relax }}{7}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Graph learning tasks by \glspl {gnn} (\blx@tocontentsinit {0}\cite {Khemani2024})\relax }}{11}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Message Passing Mechanism in \glspl {gnn} (\blx@tocontentsinit {0}\cite {Khemani2024})\relax }}{15}{figure.caption.44}%
 \addvspace {10\p@ }

@@ -15,6 +15,23 @@ A \gls{kg} refers to a semantic network graph which is consisted of diverse enti
     \item $F$ represents the fact set $\{\mathnormal{f_1,f_2, ... ,f_F}\}$, and each $\mathnormal{f}$ is defined as a triple $(\mathnormal{h,r,t}) \in \mathnormal{f}$, in which $\mathnormal{h}$ denotes the head entity, $\mathnormal{r}$ stands for the relationship, and $\mathnormal{t}$ indicates the tail entity.
 \end{itemize}
 
+The \gls{kg} in Fig. \ref{fig:kg-example-albert-einstein} visually represents the relationships and attributes associated with Albert Einstein.
+At the center of the graph is ``Albert Einstein'', from which several connections extend.
+One connection indicates that he was ``born in'' Germany.
+Another connection shows his ``occupation'' as a ``Theoretical Physicist''.
+This occupation is further connected to ``Physicist'' as a ``kind of'' category, indicating that a theoretical physicist is a type of physicist.
+The graph also shows that a physicist ``practices'' physics.
+Additionally, it highlights that Albert Einstein ``developed'' the ``Theory of Relativity'', which is shown as a ``branch of'' physics.
+The graph effectively maps out key aspects of Albert Einstein's background, profession, and contributions to science.
+
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.7\textwidth]{03_Figures/literature-review/kg-example-albert-einstein.png}
+     \rule{35em}{0.5pt}
+    \caption{An example of \acrlong{kg} (\cite{Chaudhri2022})} 
+ \label{fig:kg-example-albert-einstein}
+\end{figure}
+
 \subsubsection*{Ontologies and Semantic Web Technologies}
 An ontology is a formal representation of knowledge in a domain, specifying the concepts, relationships, and constraints that exist within that domain. The term ``ontology'' can be used to the shared understanding of some domain of interest (\cite{Uschold1996}).
 Ontologies play a critical role in defining the schema and semantics of \glspl{kg}. They specify the types of entities, relationships, and constraints, thereby providing a formalized structure for the data. The Semantic Web technologies, particularly the \gls{rdf} and the \gls{owl}, are fundamental to the development and functioning of \glspl{kg} (\cite{Antoniou2008}).
@@ -55,7 +72,7 @@ Other applications include social networks, classification, geosciences and vari
 	   \centering
     \includegraphics[width=\textwidth]{03_Figures/literature-review/kg-application-fields.png}
 		\rule{35em}{0.5pt}
-	   \caption{Application Fields of Knowledge Graphs (\cite{Zou2020})} 
+	   \caption{Application of \acrlongpl{kg} (\cite{Zou2020})} 
     \label{fig:kg-application-fields}
 \end{figure}
 
@@ -79,7 +96,7 @@ Semantic Search and Text Analysis: \glspl{kg} enhance text analysis and semantic
 
 \subsubsection*{Scalability and Performance}
 As \glspl{kg} grow in size and complexity, scalability and performance become critical challenges. Efficient storage, querying, and updating of large \glspl{kg} require advanced techniques and architectures. Research in distributed computing, graph databases, and parallel processing is ongoing to address these issues (\cite{Chaudhri2022}).
-
+ 
 \subsubsection*{Data Quality and Integration}
 
 Ensuring the accuracy and consistency of data in \glspl{kg} is essential for their reliability. Data quality issues, such as inconsistencies, duplications, and inaccuracies, can significantly impact the performance of applications relying on \glspl{kg}. Developing methods for automatic data cleaning, validation, and integration is an active area of research (\cite{Paulheim2017}).
