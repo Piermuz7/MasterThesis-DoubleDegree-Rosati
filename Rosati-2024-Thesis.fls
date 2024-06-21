@@ -1785,6 +1785,12 @@ INPUT ./01_Chapters/05_Conclusion.tex
 INPUT ./01_Chapters/05_Conclusion.tex
 INPUT 01_Chapters/05_Conclusion.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./Rosati-2024-Thesis.acr
+INPUT Rosati-2024-Thesis.acr
+INPUT ./Rosati-2024-Thesis.acr
+INPUT Rosati-2024-Thesis.acr
+INPUT ./Rosati-2024-Thesis.acr
+INPUT Rosati-2024-Thesis.acr
 INPUT ./Rosati-2024-Thesis.lof
 INPUT Rosati-2024-Thesis.lof
 INPUT Rosati-2024-Thesis.lof

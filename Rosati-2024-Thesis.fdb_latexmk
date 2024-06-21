@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber Rosati-2024-Thesis"] 1719008715 "Rosati-2024-Thesis.bcf" "Rosati-2024-Thesis.bbl" "Rosati-2024-Thesis" 1719008842
-  "Bibliography.bib" 1719006174 65850 fd2e27e6a449c4a5dd330de94cf376c4 ""
-  "Rosati-2024-Thesis.bcf" 1719008842 129232 a3182058762988369cac0c78b54d2590 "pdflatex"
+["biber Rosati-2024-Thesis"] 1719011078 "Rosati-2024-Thesis.bcf" "Rosati-2024-Thesis.bbl" "Rosati-2024-Thesis" 1719011191
+  "Bibliography.bib" 1719009654 63366 1af73c79c93ac84ddb5c7edae04a5b52 ""
+  "Rosati-2024-Thesis.bcf" 1719011191 129232 a3182058762988369cac0c78b54d2590 "pdflatex"
   (generated)
   "Rosati-2024-Thesis.bbl"
   "Rosati-2024-Thesis.blg"
-["pdflatex"] 1719008839 "/Users/piermichelerosati/Documents/MasterThesis-DoubleDegree-Rosati/Rosati-2024-Thesis.tex" "Rosati-2024-Thesis.pdf" "Rosati-2024-Thesis" 1719008842
-  "/Users/piermichelerosati/Documents/MasterThesis-DoubleDegree-Rosati/Rosati-2024-Thesis.tex" 1718982358 10427 21f4a2c3159423ce91b31cce74b894e2 ""
+["pdflatex"] 1719011188 "/Users/piermichelerosati/Documents/MasterThesis-DoubleDegree-Rosati/Rosati-2024-Thesis.tex" "Rosati-2024-Thesis.pdf" "Rosati-2024-Thesis" 1719011191
+  "/Users/piermichelerosati/Documents/MasterThesis-DoubleDegree-Rosati/Rosati-2024-Thesis.tex" 1719011071 10425 49ca01f23aa2d6ae7d6c0e283d710c23 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -317,18 +317,17 @@
   "03_Figures/literature-review/kg-example-albert-einstein.png" 1718982790 48764 f81a456ea27f4705eed3dde0a97a8cc7 ""
   "03_Figures/signature1.jpg" 1714668590 189081 868bf0c12a4f1758b0ec85b584ed5b5c ""
   "04_Packages/lstpatch.sty" 1714668590 13431 1e4a9d9086bef9c3bb5a3d827053632c ""
-  "Rosati-2024-Thesis.acr" 0 -1 0 ""
-  "Rosati-2024-Thesis.aux" 1719008842 15920 9a89a6721ed67a5a15272e9b377ce2c6 "pdflatex"
-  "Rosati-2024-Thesis.bbl" 1719008717 155817 f62dfba7b41e943f0242b8a8734dd65d "biber Rosati-2024-Thesis"
-  "Rosati-2024-Thesis.gls" 0 -1 0 ""
-  "Rosati-2024-Thesis.glsdefs" 1719008842 14686 aab34e9c70c7262f57e13348b4d137aa "pdflatex"
-  "Rosati-2024-Thesis.lof" 1719008842 755 4eab36cb52b403cef58e6d03b02c857c "pdflatex"
-  "Rosati-2024-Thesis.lot" 1719008842 90 07df6e96667231f22a10948b9f919e7f "pdflatex"
-  "Rosati-2024-Thesis.out" 1719008842 2925 daaf391c3c240751b65978915b949981 "pdflatex"
-  "Rosati-2024-Thesis.run.xml" 1719008842 2593 b5293d63f6d290363a982da54c32b8f2 "pdflatex"
-  "Rosati-2024-Thesis.tex" 1718982358 10427 21f4a2c3159423ce91b31cce74b894e2 ""
-  "Rosati-2024-Thesis.toc" 1719008842 1554 affc20f5eb59dbcf6467fac18f3c00b5 "pdflatex"
-  "Thesis.cls" 1718891937 24117 9181a9a1752db4a4a42629f362c35c48 ""
+  "Rosati-2024-Thesis.acr" 1719011153 3749 7981d6cede8f180ac50673c5de9a4891 ""
+  "Rosati-2024-Thesis.aux" 1719011191 15796 ab4f3720978343baf42ee5f861133817 "pdflatex"
+  "Rosati-2024-Thesis.bbl" 1719011081 155817 f62dfba7b41e943f0242b8a8734dd65d "biber Rosati-2024-Thesis"
+  "Rosati-2024-Thesis.glsdefs" 1719011191 14686 aab34e9c70c7262f57e13348b4d137aa "pdflatex"
+  "Rosati-2024-Thesis.lof" 1719011191 755 4eab36cb52b403cef58e6d03b02c857c "pdflatex"
+  "Rosati-2024-Thesis.lot" 1719011191 90 07df6e96667231f22a10948b9f919e7f "pdflatex"
+  "Rosati-2024-Thesis.out" 1719011191 2841 3071e8ce498c8d3b311625ae9ec86864 "pdflatex"
+  "Rosati-2024-Thesis.run.xml" 1719011191 2593 b5293d63f6d290363a982da54c32b8f2 "pdflatex"
+  "Rosati-2024-Thesis.tex" 1719011071 10425 49ca01f23aa2d6ae7d6c0e283d710c23 ""
+  "Rosati-2024-Thesis.toc" 1719011191 1490 7946a6cfc7cb774059ecb4a43e532bc0 "pdflatex"
+  "Thesis.cls" 1719011188 24105 d126027cc520e2ccdfe3491058547279 ""
   (generated)
   "Rosati-2024-Thesis.acn"
   "Rosati-2024-Thesis.aux"

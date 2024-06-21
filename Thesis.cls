@@ -546,7 +546,7 @@
     \addtotoc{Glossary}
     \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
     
-    \printglossary      
+    \printglossary
 }
 %----------------------------------------------------------------------------------------
 
@@ -559,7 +559,7 @@
     \addtotoc{Abbreviations}
     \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
     
-    \printglossary[type=\acronymtype, title=Abbreviations]      
+    \printglossary[type=\acronymtype, title=Abbreviations]
 }
 %----------------------------------------------------------------------------------------
 

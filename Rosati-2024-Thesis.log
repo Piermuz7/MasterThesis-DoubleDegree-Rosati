@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.9)  22 JUN 2024 00:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.9)  22 JUN 2024 01:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,29 +1224,29 @@ Package biblatex Info: Reference segment=0 on input line 34.
 \@gls@deffile=\write9
 \openout9 = `Rosati-2024-Thesis.glsdefs'.
 
-<03_Figures/00_Logo/logo-unicam-notext.png, id=92, 793.96625pt x 971.63pt>
+<03_Figures/00_Logo/logo-unicam-notext.png, id=88, 793.96625pt x 971.63pt>
 File: 03_Figures/00_Logo/logo-unicam-notext.png Graphic file (type png)
 <use 03_Figures/00_Logo/logo-unicam-notext.png>
-Package pdftex.def Info: 03_Figures/00_Logo/logo-unicam-notext.png  used on input line 224.
+Package pdftex.def Info: 03_Figures/00_Logo/logo-unicam-notext.png  used on input line 221.
 (pdftex.def)             Requested size: 74.3978pt x 91.04872pt.
-<03_Figures/00_Logo/logo-fhnw-notext.png, id=95, 1254.6875pt x 744.7825pt>
+<03_Figures/00_Logo/logo-fhnw-notext.png, id=91, 1254.6875pt x 744.7825pt>
 File: 03_Figures/00_Logo/logo-fhnw-notext.png Graphic file (type png)
 <use 03_Figures/00_Logo/logo-fhnw-notext.png>
-Package pdftex.def Info: 03_Figures/00_Logo/logo-fhnw-notext.png  used on input line 224.
+Package pdftex.def Info: 03_Figures/00_Logo/logo-fhnw-notext.png  used on input line 221.
 (pdftex.def)             Requested size: 114.06569pt x 67.7177pt.
 
-Overfull \hbox (0.68785pt too wide) in paragraph at lines 224--224
+Overfull \hbox (0.68785pt too wide) in paragraph at lines 221--221
 [][]   []
  []
 
 
-Overfull \hbox (4.86665pt too wide) in paragraph at lines 224--224
+Overfull \hbox (4.86665pt too wide) in paragraph at lines 221--221
 [][]   []
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 224.
+(Font)              using `OT1/cmr/bx/n' instead on input line 221.
 
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1263,7 +1263,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 3--231
+Underfull \hbox (badness 10000) in paragraph at lines 3--228
 
  []
 
@@ -1271,10 +1271,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--231
 ------------------------------------------------------------------------------
  Statement of Authenticity
 ------------------------------------------------------------------------------
-<03_Figures/signature1.jpg, id=128, 2055.68pt x 1541.76pt>
+<03_Figures/signature1.jpg, id=124, 2055.68pt x 1541.76pt>
 File: 03_Figures/signature1.jpg Graphic file (type jpg)
 <use 03_Figures/signature1.jpg>
-Package pdftex.def Info: 03_Figures/signature1.jpg  used on input line 239.
+Package pdftex.def Info: 03_Figures/signature1.jpg  used on input line 236.
 (pdftex.def)             Requested size: 102.79001pt x 77.09251pt.
 [2
 
@@ -1301,25 +1301,25 @@ Chapter 2.
 (./01_Chapters/literature-review/knowledge-graphs.tex [2
 
 ]
-<03_Figures/literature-review/kg-example-albert-einstein.png, id=178, 561.09625pt x 282.05376pt>
+<03_Figures/literature-review/kg-example-albert-einstein.png, id=173, 561.09625pt x 282.05376pt>
 File: 03_Figures/literature-review/kg-example-albert-einstein.png Graphic file (type png)
 <use 03_Figures/literature-review/kg-example-albert-einstein.png>
 Package pdftex.def Info: 03_Figures/literature-review/kg-example-albert-einstein.png  used on input line 29.
 (pdftex.def)             Requested size: 292.22987pt x 146.89688pt.
  [3 <./03_Figures/literature-review/kg-example-albert-einstein.png>] [4] [5]
-<03_Figures/literature-review/kg-application-fields.png, id=225, 1026.83624pt x 379.4175pt>
+<03_Figures/literature-review/kg-application-fields.png, id=220, 1026.83624pt x 379.4175pt>
 File: 03_Figures/literature-review/kg-application-fields.png Graphic file (type png)
 <use 03_Figures/literature-review/kg-application-fields.png>
 Package pdftex.def Info: 03_Figures/literature-review/kg-application-fields.png  used on input line 73.
 (pdftex.def)             Requested size: 417.47307pt x 154.25955pt.
  [6] [7 <./03_Figures/literature-review/kg-application-fields.png>]) [8] (./01_Chapters/literature-review/graph-neural-networks.tex [9] [10]
-<03_Figures/literature-review/gnn-graph-learning-tasks-summary.png, id=311, 827.09pt x 574.145pt>
+<03_Figures/literature-review/gnn-graph-learning-tasks-summary.png, id=306, 827.09pt x 574.145pt>
 File: 03_Figures/literature-review/gnn-graph-learning-tasks-summary.png Graphic file (type png)
 <use 03_Figures/literature-review/gnn-graph-learning-tasks-summary.png>
 Package pdftex.def Info: 03_Figures/literature-review/gnn-graph-learning-tasks-summary.png  used on input line 51.
 (pdftex.def)             Requested size: 375.7232pt x 260.82463pt.
  [11 <./03_Figures/literature-review/gnn-graph-learning-tasks-summary.png>] [12] [13]
-<03_Figures/literature-review/gnn-message-passing-mechanism.png, id=340, 841.1425pt x 280.04625pt>
+<03_Figures/literature-review/gnn-message-passing-mechanism.png, id=335, 841.1425pt x 280.04625pt>
 File: 03_Figures/literature-review/gnn-message-passing-mechanism.png Graphic file (type png)
 <use 03_Figures/literature-review/gnn-message-passing-mechanism.png>
 Package pdftex.def Info: 03_Figures/literature-review/gnn-message-passing-mechanism.png  used on input line 123.
@@ -1340,7 +1340,7 @@ Chapter 3.
 ] [31
 
 ]
-Overfull \hbox (0.61789pt too wide) in paragraph at lines 271--271
+Overfull \hbox (0.61789pt too wide) in paragraph at lines 268--268
 [][]\OT1/cmr/m/n/10.95 Francis, N., Green, A., Guagliardo, P., Lib-kin, L., Lindaaker, T., Marsault, V., Plantikow,
  []
 
@@ -1349,21 +1349,20 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¯ in font cmr10!
 [33]
 ------------------------------------------------------------------------------
- Glossary
-------------------------------------------------------------------------------
-No file Rosati-2024-Thesis.gls.
-------------------------------------------------------------------------------
  Abbreviations
 ------------------------------------------------------------------------------
-No file Rosati-2024-Thesis.acr.
+(./Rosati-2024-Thesis.acr [34] [35
+
+
+])
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
-[34] [35] (./Rosati-2024-Thesis.lof)
+[36] (./Rosati-2024-Thesis.lof)
 \tf@lof=\write11
 \openout11 = `Rosati-2024-Thesis.lof'.
 
- [36
+ [37
 
 ]
 ------------------------------------------------------------------------------
@@ -1373,14 +1372,14 @@ No file Rosati-2024-Thesis.acr.
 \tf@lot=\write12
 \openout12 = `Rosati-2024-Thesis.lot'.
 
- [37
+ [38
 
 
 ] (./01_Chapters/Acknowledgments.tex
 ------------------------------------------------------------------------------
  Acknowledgements Page
 ------------------------------------------------------------------------------
-) [38
+) [39
 
 
 ]
@@ -1392,24 +1391,24 @@ No file Rosati-2024-Thesis.acr.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Rosati-2024-Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DAAF391C3C240751B65978915B949981;2925.
+(rerunfilecheck)             Checksum: 3071E8CE498C8D3B311625AE9EC86864;2841.
 Package logreq Info: Writing requests to 'Rosati-2024-Thesis.run.xml'.
 \openout1 = `Rosati-2024-Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  50718 strings out of 478268
- 1111115 string characters out of 5846347
- 2012611 words of memory out of 5000000
- 67846 multiletter control sequences out of 15000+600000
+ 1111112 string characters out of 5846347
+ 2011612 words of memory out of 5000000
+ 67843 multiletter control sequences out of 15000+600000
  478581 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,166p,2294b,8827s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Rosati-2024-Thesis.pdf (42 pages, 1415842 bytes).
+Output written on Rosati-2024-Thesis.pdf (43 pages, 1416915 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 198 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 715 PDF objects out of 1000 (max. 8388607)
+ 615 compressed objects within 7 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
