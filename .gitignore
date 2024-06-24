@@ -37,6 +37,8 @@
 *.thm
 *.toc
 *.vrb
+*.bcf
+*.run.xml
 
 # Mac OS X
 .DS_Store
