@@ -161,6 +161,7 @@ This enables \glspl{gcn} to capture and propagate information through the graph'
 
 \glspl{gcn} consist of multiple layers, each performing convolution and aggregation steps to refine node representations.
 By iteratively applying these layers, \glspl{gcn} can capture complex patterns and dependencies within the graph data.
+Fig. \ref{fig:gcn-semisupervised-learning} illustrates a multi-layer \gls{gcn} for semi-supervised learning task.
 
 A \gls{gcn} layer can be formally represented as:
 
@@ -174,6 +175,14 @@ where:
     \item \( W^{(l)} \) is the trainable weight matrix.
     \item \( \sigma \) is an activation function like ReLU.
 \end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.7\textwidth]{03_Figures/literature-review/gcn-semisupervised-learning.png}
+     \rule{35em}{0.5pt}
+    \caption{Schematic representation of a multi-layer \gls{gcn} for semi-supervised learning with $C$ input channels and $F$ feature maps in the output layer.  (\cite{Kipf2017})} 
+ \label{fig:gcn-semisupervised-learning}
+\end{figure}
 
 \glspl{gcn} offer several advantages.
 One key advantage is their ability to naturally handle graph-structured data, making them well-suited for tasks involving complex relational structures.
@@ -270,7 +279,7 @@ Sampling, aggregating and predicting steps are illustrated in Fig. \ref{fig:grap
     \centering
  \includegraphics[width=.9\textwidth]{03_Figures/literature-review/graphsage-approach.png}
      \rule{35em}{0.5pt}
-    \caption{Visual working of the gls{graphsage} sampling and aggregation approach. (\cite{Hamilton2017})} 
+    \caption{Visual working of the \gls{graphsage} sampling and aggregation approach. (\cite{Hamilton2017})} 
  \label{fig:graphsage-approach}
 \end{figure}
 
@@ -286,31 +295,62 @@ This can affect the quality of the learned representations, especially in sparse
 Additionally, the choice of the aggregation function and hyperparameters can significantly impact performance, requiring careful tuning.
 Another limitation is that while \gls{graphsage} is designed to handle large-scale graphs, it may still face challenges with extremely large or highly dynamic graphs where the graph structure changes rapidly (\cite{Wu2021}).
 
-\subsubsection*{\glspl{mpnn}}
+\subsubsection*{Other \gls{gnn} models}
 
-\glspl{mpnn} (\cite{Gilmer2017}) formalized the message-passing framework for \glspl{gnn}. In each layer, nodes exchange messages with their neighbors and update their states.
+\glspl{mpnn} are a class of neural networks specifically designed for graph-structured data.
+\glspl{mpnn} use a framework where nodes iteratively exchange and aggregate information.
+Each node's state is updated by aggregating messages from its neighbors and applying an update function to these messages along with the node's current state.
+The message function generates messages from the feature vectors of neighboring nodes and possibly edge features.
+These messages are then aggregated using an aggregation function to form a single message for each node.
+Finally, the update function updates the node's feature vector using the aggregated message.
+This process is repeated for a fixed number of iterations, and a readout function can be applied to obtain a graph-level representation.
+\glspl{mpnn} offer a flexible framework that can incorporate various functions for message passing, aggregation, and updating, making them adaptable to different types of graph data and tasks.
+This flexibility allows \glspl{mpnn} to capture complex dependencies and relationships within the graph structure.
+However, \glspl{mpnn} can have high computational complexity for large graphs due to the iterative message passing process, leading to scalability issues.
+They can also suffer from over-smoothing, where node representations become indistinguishable after several iterations, especially in deep networks.
+Hyperparameter tuning, such as the choice of message, aggregation, and update functions, can also be complex and require careful experimentation (\cite{Gilmer2017}).
 
-General Framework:
+\glspl{stgnn} extend \glspl{gnn} to model spatio-temporal data, capturing both spatial dependencies in the graph structure and temporal dynamics over time.
+These models often integrate graph convolutional layers with recurrent layers (e.g., \gls{lstm} or \gls{gru}) or temporal attention mechanisms to handle temporal aspects.
+The spatial layer captures spatial dependencies using \gls{gnn} techniques, while the temporal layer captures temporal dependencies using \glspl{rnn} or temporal convolutions.
+\glspl{stgnn} are effective at modeling dynamic systems where data evolves over time, such as traffic networks, social networks, and biological systems.
+They combine spatial and temporal information to provide comprehensive modeling of spatio-temporal data.
+However, they have increased complexity and computational cost due to the combination of spatial and temporal modeling.
+Balancing the spatial and temporal aspects of the model requires careful tuning (\cite{Yu2018,Li2018}).
 
-\begin{enumerate}
-    \item Message Function: \( m_{ij}^{(l)} = M(h_i^{(l)}, h_j^{(l)}, e_{ij}) \)
-    \item Update Function: \( h_i^{(l+1)} = U\left(h_i^{(l)}, \sum_{j \in \mathcal{N}(i)} m_{ij}^{(l)}\right) \)
-\end{enumerate}
+\glspl{grnn} integrate the principles of \glspl{rnn} with \glspl{gnn}.
+They use \glspl{rnn} to propagate information across the nodes iteratively, allowing for dynamic state updates based on the graph structure and node features over time.
+Typically, an \gls{rnn} cell like \gls{lstm} or \gls{gru} updates node states based on neighboring node states and current node features.
+\glspl{grnn} are capable of capturing dynamic changes in graph-structured data, making them suitable for tasks where the graph structure or node features evolve over time.
+However, \glspl{grnn} can be computationally intensive due to the iterative nature of \glspl{rnn} and may suffer from gradient vanishing or exploding issues common to \glspl{rnn} (\cite{Pareja2019}).
 
-where \( h_i \) and \( h_j \) are node features, and \( e_{ij} \) are edge features.
+\glspl{gae} use an encoder-decoder architecture to learn low-dimensional representations of nodes.
+The encoder maps nodes to embeddings, while the decoder reconstructs the graph structure or node features from these embeddings.
+The encoder typically uses \gls{gnn} layers to encode the graph structure into latent representations, and the decoder reconstructs the graph from these latent representations, often using inner product or neural network layers.
+\glspl{gae} are useful for unsupervised learning tasks like node clustering, link prediction, and anomaly detection, as they can capture complex dependencies in the graph data.
+However, they may require large amounts of data for training to achieve good reconstruction quality, and the decoder design can significantly impact performance and is often task-specific (\cite{Kipf2017,Wang2016}).
 
-Advantages:
-\begin{itemize}
-    \item General and flexible framework.
-    \item Can model complex dependencies and interactions.
-\end{itemize}
+\subsubsection*{GNNs for Knowledge Graphs}
+\glspl{gnn} have been extensively applied to \glspl{kg} due to their ability to capture both the structural and semantic information inherent in such graphs.
+Several \gls{gnn} methods have been tailored for various tasks in \glspl{kg}, including link prediction, knowledge graph alignment, knowledge graph reasoning, and node classification.
 
+Link prediction aims to infer missing links in a \gls{kg} by predicting the likelihood of a relationship existing between two entities.
+One prominent method is the \gls{rgcn}, which extends the traditional \gls{gcn} to handle multi-relational data by assigning different weights to different types of edges.
+This method effectively captures the diverse relationships in \glspl{kg} but can suffer from parameter explosion due to the large number of relations (\cite{Schlichtkrull2018}).
+Another approach, the \gls{hran}, introduces a relation-based attention mechanism to weigh different relational paths, improving the model's ability to discern important relations (\cite{Li2022}).
 
-Limitations:
-\begin{itemize}
-    \item High computational cost for dense graphs.
-    \item Complexity in designing effective message and update functions.
-\end{itemize}
+Knowledge graph alignment addresses the challenge of matching entities across different \glspl{kg}.
+The \gls{mugnn} employs multiple channels to encode \glspl{kg} using various relation weighting strategies and self-attention mechanisms.
+This model effectively mitigates structural differences between \glspl{kg} and utilizes seed alignment data for robust entity alignment (\cite{Cao2019}).
+Another approach, AliNet, introduces distant neighbors to enlarge the overlap between neighborhood structures using an attention mechanism, thus improving alignment accuracy (\cite{Sun2019}).
+
+Knowledge graph reasoning involves inferring new facts from existing data within a \gls{kg}.
+The \gls{trar} model aggregates information using node-level and subgraph-level attention mechanisms, focusing on relations that match the target relation (\cite{Zhao2021}).
+Another method, \gls{dpmpn}, constructs local subgraphs dynamically and employs a two-\gls{gnn} framework to learn and explain reasoning processes efficiently (\cite{Xu2019}).
+
+Node classification predicts the attributes of nodes within a \gls{kg}.
+The \gls{hgcn} addresses the limited receptive field issue by clustering structurally related nodes into hyper-nodes, thus achieving a larger receptive field and better information propagation (\cite{Hu2019}).
+The \gls{hdgi} method learns high-level representations by maximizing local-global mutual information and employing meta-path techniques for heterogeneous graphs (\cite{Ren2019}).
 
 \subsection*{Training Techniques and Challenges}
 
