@@ -235,27 +235,56 @@ Furthermore, tuning the hyperparameters of the attention mechanism can be intric
 
 \subsubsection*{GraphSAGE}
 
-GraphSAGE (\cite{Hamilton2017}) introduced an inductive approach that can generalize to unseen nodes by sampling and aggregating features from a node's local neighborhood.
-
-Sampling and Aggregation:
-
-GraphSAGE samples a fixed-size set of neighbors and uses aggregation functions such as mean, LSTM, or pooling to update node embeddings:
-
-\[ h_i' = \sigma\left(W \cdot \text{AGG}\left(\{h_j, \forall j \in \mathcal{N}(i)\}\right)\right) \]
-
-Advantages:
-\begin{itemize}
-    \item Scalable to large graphs.
-    \item Supports inductive learning.
-\end{itemize}
+\gls{graphsage} is an inductive learning framework for graph-structured data.
+Unlike traditional methods that rely on transductive learning, \gls{graphsage} focuses on generalizing to unseen nodes, making it well-suited for dynamic graphs or scenarios where the graph structure evolves over time (\cite{Hamilton2017}).
+This network consists of two main steps: Sampling and Aggregation, followed by a node representation update and normalization step.
+Below, these steps are briefly described
+Sampling, aggregating and predicting steps are illustrated in Fig. \ref{fig:graphsage-approach}.
 
 
-Limitations:
-\begin{itemize}
-    \item Information loss due to fixed-size sampling.
-    \item Requires carefully designed aggregation functions.
-\end{itemize}
+\begin{enumerate}
+    \item \textbf{Sampling}: in the sampling step, \gls{graphsage} samples a fixed-size set of neighbors for each node. This helps manage the complexity of the graph by limiting the number of neighbors considered during aggregation. Formally, for a node \(v\), a fixed-size set of neighbors \(\mathcal{N}(v)\) is sampled:
+    \[
+    \mathcal{N}(v) \subseteq \{u \in V~|~(v, u) \in E\}
+    \]
+ 
+    \item \textbf{Aggregation}: the aggregation step involves aggregating the feature vectors of the sampled neighbors to generate an updated representation for the node. Several aggregation functions can be used, including mean, LSTM-based, and pooling aggregators. The aggregation function is denoted as:
+    \[
+    h_{\mathcal{N}(v)}^{(k)} = \text{AGGREGATE}^{(k)}(\{h_u^{(k-1)}, \forall~u \in \mathcal{N}(v)\})
+    \]
+    where \(h_u^{(k-1)}\) is the representation of node \(u\) at the \((k-1)\)-th layer.
+ 
+    \item \textbf{Update}: after aggregation, the node's representation is updated by combining its current representation with the aggregated neighborhood information. This is followed by a nonlinear transformation using a weight matrix and an activation function, such as ReLU:
+    \[
+    h_v^{(k)} = \sigma\left(W^{(k)} \cdot \text{CONCAT}(h_v^{(k-1)}, h_{\mathcal{N}(v)}^{(k)})\right)
+    \]
+    where \(W^{(k)}\) is the weight matrix for the \(k\)-th layer and \(\sigma\) is a nonlinear activation function.
+ 
+    \item \textbf{Normalization}: finally, a normalization step is applied to ensure stability and prevent exploding or vanishing gradients. This is typically done using L2 normalization:
+    \[
+    h_v^{(k)} = \frac{h_v^{(k)}}{\|h_v^{(k)}\|}
+    \]
+\end{enumerate}
 
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.9\textwidth]{03_Figures/literature-review/graphsage-approach.png}
+     \rule{35em}{0.5pt}
+    \caption{Visual working of the gls{graphsage} sampling and aggregation approach. (\cite{Hamilton2017})} 
+ \label{fig:graphsage-approach}
+\end{figure}
+
+\gls{graphsage} has several advantages.
+One key advantage is its ability to generalize to unseen nodes, making it suitable for inductive tasks.
+This is particularly useful in dynamic graphs where new nodes and edges continuously emerge (\cite{Hamilton2017}).
+Additionally, the sampling step significantly reduces computational complexity, enabling the model to scale to large graphs.
+The flexibility of the aggregation function allows for customization based on specific applications, and the use of multiple layers facilitates the capture of higher-order neighborhood information.
+
+Despite its advantages, \gls{graphsage} also has limitations.
+The sampling process may lead to information loss, as only a subset of neighbors is considered.
+This can affect the quality of the learned representations, especially in sparse graphs.
+Additionally, the choice of the aggregation function and hyperparameters can significantly impact performance, requiring careful tuning.
+Another limitation is that while \gls{graphsage} is designed to handle large-scale graphs, it may still face challenges with extremely large or highly dynamic graphs where the graph structure changes rapidly (\cite{Wu2021}).
 
 \subsubsection*{\glspl{mpnn}}
 
