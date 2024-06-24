@@ -211,7 +211,7 @@ The node features are updated as:
 
 \[ h_i' = \sigma\left(\sum_{j \in \mathcal{N}(i)} \alpha_{ij} W h_j\right) \]
 
-Fig. \ref{fig:gat-attention-mechanism} shows the coefficients computed by the attention mechanism, parametrized by a weight vector $\vec{\mathbf{a}} \in \mathbb{R}^{2F'}$, applying a LeakyReLU activation.
+Fig. \ref{fig:gat-attention-mechanism} shows the coefficients computed by the attention mechanism, parametrized by a weight vector $\vec{\mathbf{a}} \in \mathbb{R}^{2F}$ (where $F$ is the number of features in each node), applying a LeakyReLU activation.
 \begin{figure}[htbp]
     \centering
  \includegraphics[width=.3\textwidth]{03_Figures/literature-review/gat-attention-mechanism.png}
