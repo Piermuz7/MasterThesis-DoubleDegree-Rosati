@@ -59,7 +59,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Linking the World’s Information: Essays on Tim Berners-Lee’s Invention of the World Wide Web}
+      \field{booktitle}{Linking the World's Information: Essays on Tim Berners-Lee's Invention of the World Wide Web}
       \field{edition}{1}
       \field{isbn}{9798400707940}
       \field{title}{Linked Data - The Story So Far}
@@ -334,7 +334,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Knowledge graphs (KGs) have emerged as a compelling abstraction for organizing the world’s structured knowledge and for integrating information extracted from multiple data sources. They are also beginning to play a central role in representing information extracted by AI systems, and for improving the predictions of AI systems by giving them knowledge expressed in KGs as input. The goals of this article are to (a) introduce KGs and discuss important areas of application that have gained recent prominence; (b) situate KGs in the context of the prior work in AI; and (c) present a few contrasting perspectives that help in better understanding KGs in relation to related technologies.}
+      \field{abstract}{Knowledge graphs (KGs) have emerged as a compelling abstraction for organizing the world's structured knowledge and for integrating information extracted from multiple data sources. They are also beginning to play a central role in representing information extracted by AI systems, and for improving the predictions of AI systems by giving them knowledge expressed in KGs as input. The goals of this article are to (a) introduce KGs and discuss important areas of application that have gained recent prominence; (b) situate KGs in the context of the prior work in AI; and (c) present a few contrasting perspectives that help in better understanding KGs in relation to related technologies.}
       \field{issn}{23719621}
       \field{issue}{1}
       \field{journaltitle}{AI Magazine}
@@ -459,6 +459,65 @@
       \verb{doi}
       \verb 10.1145/3292500.3330925
       \endverb
+    \endentry
+    \entry{Cui2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c7f6a3d1688003e0a41e49e8ce85f01e}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Zhiyong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a17760223fb7507665661e8878f4dec1}{%
+           family={Henrickson},
+           familyi={H\bibinitperiod},
+           given={Kristian},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a10dc3fa6ad54be59cdc054e19c8e139}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Ruimin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10823b6d64e8068836ff795955b9efb9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yinhai},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{3a576ece3cad27540d9bee29c4ca78c5}
+      \strng{fullhash}{9a3a7f75578fbc640fcff1dcf5ccc330}
+      \strng{bibnamehash}{9a3a7f75578fbc640fcff1dcf5ccc330}
+      \strng{authorbibnamehash}{9a3a7f75578fbc640fcff1dcf5ccc330}
+      \strng{authornamehash}{3a576ece3cad27540d9bee29c4ca78c5}
+      \strng{authorfullhash}{9a3a7f75578fbc640fcff1dcf5ccc330}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Traffic forecasting is a particularly challenging application of spatiotemporal forecasting, due to the time-varying traffic patterns and the complicated spatial dependencies on road networks. To address this challenge, we learn the traffic network as a graph and propose a novel deep learning framework, Traffic Graph Convolutional Long Short-Term Memory Neural Network (TGC-LSTM), to learn the interactions between roadways in the traffic network and forecast the network-wide traffic state. We define the traffic graph convolution based on the physical network topology. The relationship between the proposed traffic graph convolution and the spectral graph convolution is also discussed. An L1-norm on graph convolution weights and an L2-norm on graph convolution features are added to the model's loss function to enhance the interpretability of the proposed model. Experimental results show that the proposed model outperforms baseline methods on two real-world traffic state datasets. The visualization of the graph convolution weights indicates that the proposed framework can recognize the most influential road segments in real-world traffic networks.}
+      \field{issn}{15580016}
+      \field{issue}{11}
+      \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
+      \field{month}{11}
+      \field{title}{Traffic Graph Convolutional Recurrent Neural Network: A Deep Learning Framework for Network-Scale Traffic Learning and Forecasting}
+      \field{volume}{21}
+      \field{year}{2020}
+      \field{pages}{4883\bibrangedash 4894}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TITS.2019.2950416
+      \endverb
+      \keyw{LSTM,Traffic forecasting,graph convolution,recurrent neural network,spatialoral}
     \endentry
     \entry{Cyganiak14RCA}{report}{}
       \name{author}{3}{}{%
@@ -588,6 +647,80 @@
       \verb{url}
       \verb https://github.com/mdeff/cnn_graph
       \endverb
+    \endentry
+    \entry{Fan2019}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=c962fa5377a09410d9645db6e5704558}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Wenqi},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9495c8a5a2c9489e8af928b6f0eed6b}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16a77262afb7cc9b0229c21f168bd098}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcd84142f4f61ad0c884a49e5688c6fa}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c876310822725ae4936f8c79aedc716}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=854278958e1021c53ca312cc8316e2a6}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jiliang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=866fc31d9db55acbc0a55c2b3c929414}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Dawei},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{eb25007ac5b5dcfb3bbc997db67f5ab4}
+      \strng{fullhash}{9a47c531d96e3f331a21b1573bd1cefe}
+      \strng{bibnamehash}{9a47c531d96e3f331a21b1573bd1cefe}
+      \strng{authorbibnamehash}{9a47c531d96e3f331a21b1573bd1cefe}
+      \strng{authornamehash}{eb25007ac5b5dcfb3bbc997db67f5ab4}
+      \strng{authorfullhash}{9a47c531d96e3f331a21b1573bd1cefe}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent years, Graph Neural Networks (GNNs), which can naturally integrate node information and topological structure, have been demonstrated to be powerful in learning on graph data. These advantages of GNNs provide great potential to advance social recommendation since data in social recommender systems can be represented as user-user social graph and user-item graph; and learning latent factors of users and items is the key. However, building social recommender systems based on GNNs faces challenges. For example, the user-item graph encodes both interactions and their associated opinions; social relations have heterogeneous strengths; users involve in two graphs (e.g., the user-user social graph and the user-item graph). To address the three aforementioned challenges simultaneously, in this paper, we present a novel graph neural network framework (GraphRec) for social recommendations. In particular, we provide a principled approach to jointly capture interactions and opinions in the user-item graph and propose the framework GraphRec, which coherently models two graphs and heterogeneous strengths. Extensive experiments on two real-world datasets demonstrate the effectiveness of the proposed framework GraphRec.}
+      \field{isbn}{9781450366748}
+      \field{journaltitle}{The Web Conference 2019 - Proceedings of the World Wide Web Conference, WWW 2019}
+      \field{month}{5}
+      \field{title}{Graph neural networks for social recommendation}
+      \field{year}{2019}
+      \field{pages}{417\bibrangedash 426}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3308558.3313488
+      \endverb
+      \keyw{Graph Neural Networks,Neural Networks,Recommender Systems,Social Network,Social Recommendation}
     \endentry
     \entry{Fernandez2011}{article}{}
       \name{author}{6}{}{%
@@ -1410,7 +1543,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Knowledge graphs (KGs) have rapidly emerged as an important area in AI over the last ten years. Building on a storied tradition of graphs in the AI community, a KG may be simply defined as a directed, labeled, multi-relational graph with some form of semantics. In part, this has been fueled by increased publication of structured datasets on the Web, and well-publicized successes of large-scale projects such as the Google Knowledge Graph and the Amazon Product Graph. However, another factor that is less discussed, but which has been equally instrumental in the success of KGs, is the cross-disciplinary nature of academic KG research. Arguably, because of the diversity of this research, a synthesis of how different KG research strands all tie together could serve a useful role in enabling more ‘moonshot’ research and large-scale collaborations. This review of the KG research landscape attempts to provide such a synthesis by first showing what the major strands of research are, and how those strands map to different communities, such as Natural Language Processing, Databases and Semantic Web. A unified framework is suggested in which to view the distinct, but overlapping, foci of KG research within these communities.}
+      \field{abstract}{Knowledge graphs (KGs) have rapidly emerged as an important area in AI over the last ten years. Building on a storied tradition of graphs in the AI community, a KG may be simply defined as a directed, labeled, multi-relational graph with some form of semantics. In part, this has been fueled by increased publication of structured datasets on the Web, and well-publicized successes of large-scale projects such as the Google Knowledge Graph and the Amazon Product Graph. However, another factor that is less discussed, but which has been equally instrumental in the success of KGs, is the cross-disciplinary nature of academic KG research. Arguably, because of the diversity of this research, a synthesis of how different KG research strands all tie together could serve a useful role in enabling more ‘moonshot' research and large-scale collaborations. This review of the KG research landscape attempts to provide such a synthesis by first showing what the major strands of research are, and how those strands map to different communities, such as Natural Language Processing, Databases and Semantic Web. A unified framework is suggested in which to view the distinct, but overlapping, foci of KG research within these communities.}
       \field{issn}{20782489}
       \field{issue}{4}
       \field{journaltitle}{Information (Switzerland)}
@@ -1516,6 +1649,101 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1609.02907
+      \endverb
+    \endentry
+    \entry{Lee2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9a27056f3867b1e2c2338abbc1f77c70}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={John\bibnamedelima Boaz},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7c042e3ae9e4143e9960410c1aad008}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1387c71d325f61dba70248c1c35725cb}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Xiangnan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{a1daa15e1b0d9d856909c40dfac44188}
+      \strng{fullhash}{e2d6c3b50f26b3a2c72d96b91422fbd8}
+      \strng{bibnamehash}{e2d6c3b50f26b3a2c72d96b91422fbd8}
+      \strng{authorbibnamehash}{e2d6c3b50f26b3a2c72d96b91422fbd8}
+      \strng{authornamehash}{a1daa15e1b0d9d856909c40dfac44188}
+      \strng{authorfullhash}{e2d6c3b50f26b3a2c72d96b91422fbd8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graph classification is a problem with practical applications in many different domains. To solve this problem, one usually calculates certain graph statistics (i.e., graph features) that help discriminate between graphs of different classes. When calculating such features, most existing approaches process the entire graph. In a graphlet-based approach, for instance, the entire graph is processed to get the total count of different graphlets or subgraphs. In many real-world applications, however, graphs can be noisy with discriminative patterns confined to certain regions in the graph only. In this work, we study the problem of attention-based graph classification. The use of attention allows us to focus on small but informative parts of the graph, avoiding noise in the rest of the graph. We present a novel RNN model, called the Graph Attention Model (GAM), that processes only a portion of the graph by adaptively selecting a sequence of “informative” nodes. Experimental results on multiple real-world datasets show that the proposed method is competitive against various well-known methods in graph classification even though our method is limited to only a portion of the graph.}
+      \field{isbn}{9781450355520}
+      \field{journaltitle}{Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{month}{7}
+      \field{title}{Graph classification using structural attention}
+      \field{year}{2018}
+      \field{pages}{1666\bibrangedash 1674}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3219819.3219980
+      \endverb
+      \keyw{Attentional processing,Deep learning,Graph mining,Reinforcement learning}
+    \endentry
+    \entry{Li2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6606760bf79f45a1ee77fdc7eee90a5d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qimai},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcde603e999f79cc0a0d6a450470b268}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Zhichao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f6f455b13d5d01b3c5b5505666199d2}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Xiao-Ming},
+           giveni={X\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1bbbe36d16f7acbb3d82a4d128682250}
+      \strng{fullhash}{a877374b93a5895ee41f997edf776f8d}
+      \strng{bibnamehash}{a877374b93a5895ee41f997edf776f8d}
+      \strng{authorbibnamehash}{a877374b93a5895ee41f997edf776f8d}
+      \strng{authornamehash}{1bbbe36d16f7acbb3d82a4d128682250}
+      \strng{authorfullhash}{a877374b93a5895ee41f997edf776f8d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many interesting problems in machine learning are being revisited with new deep learning tools. For graph-based semisupervised learning, a recent important development is graph convolutional networks (GCNs), which nicely integrate local vertex features and graph topology in the convolutional layers. Although the GCN model compares favorably with other state-of-the-art methods, its mechanisms are not clear and it still requires a considerable amount of labeled data for validation and model selection. In this paper, we develop deeper insights into the GCN model and address its fundamental limits. First, we show that the graph convolution of the GCN model is actually a special form of Laplacian smoothing, which is the key reason why GCNs work, but it also brings potential concerns of over-smoothing with many convolutional layers. Second, to overcome the limits of the GCN model with shallow architectures, we propose both co-training and self-training approaches to train GCNs. Our approaches significantly improve GCNs in learning with very few labels, and exempt them from requiring additional labels for validation. Extensive experiments on benchmarks have verified our theory and proposals.}
+      \field{month}{1}
+      \field{title}{Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1801.07606
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1801.07606
       \endverb
     \endentry
     \entry{Lin2015}{misc}{}
@@ -1625,6 +1853,69 @@
       \field{year}{2016}
       \field{pages}{25\bibrangedash 39}
       \range{pages}{15}
+    \endentry
+    \entry{Monti2016}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8f0d23e8869cd90a91c7a2d49ae85c0e}{%
+           family={Monti},
+           familyi={M\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b635105d5c572604739cdc9a9c13b5e9}{%
+           family={Boscaini},
+           familyi={B\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=296aa51baf6b5dce74c13806342b5bbe}{%
+           family={Masci},
+           familyi={M\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67340328e52553a972aa6fded69d1699}{%
+           family={Rodolà},
+           familyi={R\bibinitperiod},
+           given={Emanuele},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9976a69550d434ce587ee097b58ff26}{%
+           family={Svoboda},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0c6e9e0629d03c0bfec15575c55c598}{%
+           family={Bronstein},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{43e47c48e339343c72620c9bf5e525a8}
+      \strng{fullhash}{144d48be29262f8789c192115eb786b0}
+      \strng{bibnamehash}{144d48be29262f8789c192115eb786b0}
+      \strng{authorbibnamehash}{144d48be29262f8789c192115eb786b0}
+      \strng{authornamehash}{43e47c48e339343c72620c9bf5e525a8}
+      \strng{authorfullhash}{144d48be29262f8789c192115eb786b0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep learning has achieved a remarkable performance breakthrough in several fields, most notably in speech recognition, natural language processing, and computer vision. In particular, convolutional neural network (CNN) architectures currently produce state-of-the-art performance on a variety of image analysis tasks such as object detection and recognition. Most of deep learning research has so far focused on dealing with 1D, 2D, or 3D Euclidean-structured data such as acoustic signals, images, or videos. Recently, there has been an increasing interest in geometric deep learning, attempting to generalize deep learning methods to non-Euclidean structured data such as graphs and manifolds, with a variety of applications from the domains of network analysis, computational social science, or computer graphics. In this paper, we propose a unified framework allowing to generalize CNN architectures to non-Euclidean domains (graphs and manifolds) and learn local, stationary, and compositional task-specific features. We show that various non-Euclidean CNN methods previously proposed in the literature can be considered as particular instances of our framework. We test the proposed method on standard tasks from the realms of image-, graph- and 3D shape analysis and show that it consistently outperforms previous approaches.}
+      \field{month}{11}
+      \field{title}{Geometric deep learning on graphs and manifolds using mixture model CNNs}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1611.08402
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1611.08402
+      \endverb
     \endentry
     \entry{Paulheim2017}{article}{}
       \name{author}{1}{}{%
@@ -2161,6 +2452,57 @@
       \endverb
       \keyw{Claims,Fact-checking,Knowledge Graphs,Societal debates}
     \endentry
+    \entry{Thekumparampil2018}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=442e9022a98c2b544bff8400f2b7aa10}{%
+           family={Thekumparampil},
+           familyi={T\bibinitperiod},
+           given={Kiran\bibnamedelima K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5305db1dfd127efb3eb09c039837c18f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chong},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a708b0573da1c8e751ef081a44490b9}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Sewoong},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2afdae52015b97674d81efea449edce2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Li-Jia},
+           giveni={L\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{62b1ca1a536713bbe7846eb0209804f8}
+      \strng{fullhash}{7fbd9672ed51e30e25c03a26e122bf7f}
+      \strng{bibnamehash}{7fbd9672ed51e30e25c03a26e122bf7f}
+      \strng{authorbibnamehash}{7fbd9672ed51e30e25c03a26e122bf7f}
+      \strng{authornamehash}{62b1ca1a536713bbe7846eb0209804f8}
+      \strng{authorfullhash}{7fbd9672ed51e30e25c03a26e122bf7f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently popularized graph neural networks achieve the state-of-the-art accuracy on a number of standard benchmark datasets for graph-based semi-supervised learning, improving significantly over existing approaches. These architectures alternate between a propagation layer that aggregates the hidden states of the local neighborhood and a fully-connected layer. Perhaps surprisingly, we show that a linear model, that removes all the intermediate fully-connected layers, is still able to achieve a performance comparable to the state-of-the-art models. This significantly reduces the number of parameters, which is critical for semi-supervised learning where number of labeled examples are small. This in turn allows a room for designing more innovative propagation layers. Based on this insight, we propose a novel graph neural network that removes all the intermediate fully-connected layers, and replaces the propagation layers with attention mechanisms that respect the structure of the graph. The attention mechanism allows us to learn a dynamic and adaptive local summary of the neighborhood to achieve more accurate predictions. In a number of experiments on benchmark citation networks datasets, we demonstrate that our approach outperforms competing methods. By examining the attention weights among neighbors, we show that our model provides some interesting insights on how neighbors influence each other.}
+      \field{month}{3}
+      \field{title}{Attention-based Graph Neural Network for Semi-supervised Learning}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1803.03735
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1803.03735
+      \endverb
+    \endentry
     \entry{Uschold1996}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=43ce48ece7fbfefcc05e550adb670c1d}{%
@@ -2251,7 +2593,7 @@
       \field{abstract}{We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).}
       \field{month}{10}
       \field{title}{Graph Attention Networks}
-      \field{year}{2017}
+      \field{year}{2018}
       \verb{urlraw}
       \verb http://arxiv.org/abs/1710.10903
       \endverb
@@ -2497,6 +2839,101 @@
       \verb 10.1109/TNNLS.2020.2978386
       \endverb
       \keyw{Deep learning,graph autoencoder (GAE),graph convolutional networks (GCNs),graph neural networks (GNNs),graph representation learning,network embedding}
+    \endentry
+    \entry{Xu2019}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=29a3a6bf823a641230b0258e0a8a0214}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Keyulu},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=164c7f22cde069c57bf9b80f76441fa9}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Weihua},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83a44c18acfaa38fa9f6ba76cfdc0132}{%
+           family={Jegelka},
+           familyi={J\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{344f5b90b6e6e45d86fe86fd8fdca38c}
+      \strng{fullhash}{3fe1c2e12a449ac359ab2737dfe4ce17}
+      \strng{bibnamehash}{3fe1c2e12a449ac359ab2737dfe4ce17}
+      \strng{authorbibnamehash}{3fe1c2e12a449ac359ab2737dfe4ce17}
+      \strng{authornamehash}{344f5b90b6e6e45d86fe86fd8fdca38c}
+      \strng{authorfullhash}{3fe1c2e12a449ac359ab2737dfe4ce17}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graph Neural Networks (GNNs) are an effective framework for representation learning of graphs. GNNs follow a neighborhood aggregation scheme, where the representation vector of a node is computed by recursively aggregating and transforming representation vectors of its neighboring nodes. Many GNN variants have been proposed and have achieved state-of-the-art results on both node and graph classification tasks. However, despite GNNs revolutionizing graph representation learning, there is limited understanding of their representational properties and limitations. Here, we present a theoretical framework for analyzing the expressive power of GNNs to capture different graph structures. Our results characterize the discriminative power of popular GNN variants, such as Graph Convolutional Networks and GraphSAGE, and show that they cannot learn to distinguish certain simple graph structures. We then develop a simple architecture that is provably the most expressive among the class of GNNs and is as powerful as the Weisfeiler-Lehman graph isomorphism test. We empirically validate our theoretical findings on a number of graph classification benchmarks, and demonstrate that our model achieves state-of-the-art performance.}
+      \field{title}{HOW POWERFUL ARE GRAPH NEURAL NETWORKS?}
+      \field{year}{2019}
+    \endentry
+    \entry{Yang_2018_ECCV}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=28f60884b33f4a669bad592a2b59e04d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jianwei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e96667037518d5907f881526f2af4f8}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jiasen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=571d2d1449f75b0c538caca8aa9bf4b6}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0a408119272ca1bd49b625e3b927d05}{%
+           family={Batra},
+           familyi={B\bibinitperiod},
+           given={Dhruv},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0ab7a4601951a0c59352f1dcb531afb}{%
+           family={Parikh},
+           familyi={P\bibinitperiod},
+           given={Devi},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b5d3b9b540e91aa30cfa6b84f7905f4b}
+      \strng{fullhash}{15b95edb2cb63535463e854e6333c6d2}
+      \strng{bibnamehash}{15b95edb2cb63535463e854e6333c6d2}
+      \strng{authorbibnamehash}{15b95edb2cb63535463e854e6333c6d2}
+      \strng{authornamehash}{b5d3b9b540e91aa30cfa6b84f7905f4b}
+      \strng{authorfullhash}{15b95edb2cb63535463e854e6333c6d2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the European Conference on Computer Vision (ECCV)}
+      \field{month}{9}
+      \field{title}{Graph R-CNN for Scene Graph Generation}
+      \field{year}{2018}
     \endentry
     \entry{Yasunaga2021}{article}{}
       \name{author}{5}{}{%

@@ -79,24 +79,24 @@ Here's a detailed breakdown of this process:
 
     \item \textbf{Message Passing Phase}: this phase involves multiple iterations, during which nodes exchange and aggregate information from their neighbors. The process unfolds as follows:
     \begin{itemize}
-        \item[a.] \textbf{Message Computation}: each node generates a message to be sent to its neighboring nodes. This message is typically a function of the node’s current feature vector and the feature vectors of its neighbors. Formally, for a node \(u\), the message \(m_{u}^{(k)}\) sent to its neighbors can be computed using a differentiable function such as a neural network:
+        \item[a.] \textbf{Message Computation}: each node generates a message to be sent to its neighboring nodes. This message is typically a function of the node's current feature vector and the feature vectors of its neighbors. Formally, for a node \(u\), the message \(m_{u}^{(k)}\) sent to its neighbors can be computed using a differentiable function such as a neural network:
         \[
-        m_{u}^{(k)} = \text{MessageFunction}(h_u^{(k)}, \{h_v^{(k)}~|~v \in \mathcal{N}(u)\}, \{e_{uv}~|~v \in \mathcal{N}(u)\})
+        m_{u}^{(k)} = MessageFunction(h_u^{(k)}, \{h_v^{(k)}~|~v \in \mathcal{N}(u)\}, \{e_{uv}~|~v \in \mathcal{N}(u)\})
         \]
         where \(h_u^{(k)}\) is the feature vector of node \(u\) at iteration \(k\), \(\mathcal{N}(u)\) denotes the neighbors of node \(u\), and \(e_{uv}\) represents the edge features between nodes \(u\) and \(v\).
   
         \item[b.] \textbf{Message Aggregation}: each node aggregates the messages received from its neighbors. The aggregation function is typically permutation-invariant, ensuring that the order of the neighboring nodes does not affect the result. Common aggregation functions include summation, mean, or max. For a node \(u\), the aggregated message \(M_u^{(k)}\) is computed as:
         \[
-        M_u^{(k)} = \text{AGGREGATE}^{(k)}(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\})
+        M_u^{(k)} = AGGREGATE^{(k)}(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\})
         \]
   
         \item[c.] \textbf{Node Update}: each node updates its feature vector based on the aggregated message and its current feature vector. This update is performed using an update function, often a neural network. For a node \(u\), the updated feature vector \(h_u^{(k+1)}\) is computed as:
         \[
-        h_u^{(k+1)} = \text{UPDATE}^{(k)}(h_u^{(k)}, M_u^{(k)})
+        h_u^{(k+1)} = UPDATE^{(k)}(h_u^{(k)}, M_u^{(k)})
         \]
     \end{itemize}
 
-    \item \textbf{Iteration and Neighborhood Expansion}: the message-passing phase is repeated for multiple iterations. With each iteration, nodes accumulate information from increasingly distant parts of the graph. After the first iteration (\(k=1\)), each node’s embedding includes information from its 1-hop neighborhood. After the second iteration (\(k=2\)), each node’s embedding incorporates information from its 2-hop neighborhood, and so on. Generally, after \(k\) iterations, each node’s embedding contains data from its \(k\)-hop neighborhood.
+    \item \textbf{Iteration and Neighborhood Expansion}: the message-passing phase is repeated for multiple iterations. With each iteration, nodes accumulate information from increasingly distant parts of the graph. After the first iteration (\(k=1\)), each node's embedding includes information from its 1-hop neighborhood. After the second iteration (\(k=2\)), each node's embedding incorporates information from its 2-hop neighborhood, and so on. Generally, after \(k\) iterations, each node's embedding contains data from its \(k\)-hop neighborhood.
 
     \item \textbf{Structural and Feature-Based Information}: the information passed during message passing consists of two main components: structural information about the graph (such as the degree of nodes) and feature-based information (attributes of the nodes and edges). Each node's message is stored in the form of feature vectors, and during each iteration, these vectors are updated to reflect the aggregated information from neighboring nodes.
 
@@ -104,9 +104,9 @@ Here's a detailed breakdown of this process:
 
     \item \textbf{Mathematical Formulation}: the process can be mathematically represented as:
    \[
-   h_u^{(k+1)} = \text{UPDATE}^{(k)}\left(h_u^{(k)}, \text{AGGREGATE}^{(k)}\left(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\}\right)\right)
+   h_u^{(k+1)} = UPDATE^{(k)}\left(h_u^{(k)}, AGGREGATE^{(k)}\left(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\}\right)\right)
    \]
-   where \(h_u^{(k)}\) denotes the feature vector of node \(u\) at iteration \(k\), and \(m_{v}^{(k)}\) represents the message from node \(v\) at iteration \(k\). The AGGREGATE function combines the messages from the neighbors, and the UPDATE function combines this aggregated message with the node’s current feature vector to produce the updated feature vector.
+   where \(h_u^{(k)}\) denotes the feature vector of node \(u\) at iteration \(k\), and \(m_{v}^{(k)}\) represents the message from node \(v\) at iteration \(k\). The AGGREGATE function combines the messages from the neighbors, and the UPDATE function combines this aggregated message with the node's current feature vector to produce the updated feature vector.
 
 
 \end{enumerate}
@@ -122,7 +122,7 @@ The diagram visually represents how messages are computed, aggregated, and updat
     \centering
  \includegraphics[width=.9\textwidth]{03_Figures/literature-review/gnn-message-passing-mechanism.png}
      \rule{35em}{0.5pt}
-    \caption{Message Passing Mechanism in \glspl{gnn} (\cite{Khemani2024})} 
+    \caption{Message passing mechanism in \glspl{gnn} (\cite{Khemani2024})} 
  \label{fig:gnn-message-passing-mechanism}
 \end{figure}
 
@@ -134,7 +134,10 @@ Over the years, different models of \glspl{gnn} have been developed, each with i
 The following are the most important and best-known network architectures in the literature.
 
 TODO: GCN, GAT, GraphSAGE
+
 TODO: mention other models...
+
+TODO: GNN for KGs
 
 \subsubsection*{Spectral Approaches}
 
@@ -142,13 +145,26 @@ The breakthrough in spectral approaches marked a significant evolution in \glspl
 
 \subsubsection*{\acrfullpl{gcn}}
 
-\glspl{gcn} represent one of the most influential architectures in the \gls{gnn} landscape. They generalize the convolution operation to graph data, enabling the aggregation of feature information from a node's neighbors.
+%\glspl{gcn} represent one of the most influential architectures in the \gls{gnn} landscape. They generalize the convolution operation to graph data, enabling the aggregation of feature information from a node's neighbors.
+\glspl{gcn} are a fundamental variant of graph neural networks developed by \cite{Kipf2017}.
+The convolution layers in \glspl{gcn} operate similarly to the convolution process in \glspl{cnn}.
+In \glspl{cnn}, input neurons are multiplied by weights known as filters or kernels, which act as a sliding window across the image, allowing the network to learn from nearby cells.
+Weight sharing involves using the same filter throughout the same layer of the image.
+For instance, when \glspl{cnn} are used to distinguish between images of cats and non-cats, the same filter detects the cat's nose and ears across the image.
+This concept applies to \glspl{gcn} as well, where similar filters are applied throughout the graph structure (\cite{Kipf2017}).
 
-Mathematical Formulation:
+\glspl{gcn} operate by learning features through the analysis of neighboring nodes, mirroring the behavior of \glspl{cnn}.
+However, the primary distinction between \glspl{cnn} and \glspl{gnn} lies in their application domains: \glspl{cnn} are designed to handle regular, Euclidean-ordered data, while \glspl{gnn} are a generalized form of CNNs suited for irregular, non-Euclidean data with varying numbers of node connections and unordered nodes.
+They extend traditional \glspl{cnn}, which are typically used for grid-like data such as images, by performing convolution operations on graph data.
+This enables \glspl{gcn} to capture and propagate information through the graph's nodes, considering both a node's features and those of its neighbors.
+\glspl{gcn} have been successfully applied to various problems, including image classification (\cite{Monti2016}), traffic forecasting (\cite{Cui2020}), recommendation systems (\cite{Fan2019}) and scene graph generation (\cite{Yang_2018_ECCV}).
 
-A \gls{gcn} layer can be represented as:
+\glspl{gcn} consist of multiple layers, each performing convolution and aggregation steps to refine node representations.
+By iteratively applying these layers, \glspl{gcn} can capture complex patterns and dependencies within the graph data.
 
-\[ H^{(l+1)} = \sigma\left(\tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2} H^{(l)} W^{(l)}\right) \]
+A \gls{gcn} layer can be formally represented as:
+
+\[ H^{(l+1)} = \sigma\left(\tilde{D}^{-\frac{1}{2}}\tilde{A}\tilde{D}^{-\frac{1}{2}} H^{(l)} W^{(l)}\right) \]
 
 where:
 \begin{itemize}
@@ -159,23 +175,29 @@ where:
     \item \( \sigma \) is an activation function like ReLU.
 \end{itemize}
 
+\glspl{gcn} offer several advantages.
+One key advantage is their ability to naturally handle graph-structured data, making them well-suited for tasks involving complex relational structures.
+\glspl{gcn} leverage the connectivity information in graphs to capture and propagate node features, enabling more effective learning from the data's inherent structure.
+This capability extends the powerful concept of convolution from Euclidean data, like images, to non-Euclidean data, such as graphs, allowing for a more generalized application of neural network models (\cite{Wu2021}).
+Additionally, \glspl{gcn} are computationally efficient for large-scale graph data, as they utilize localized operations that limit the complexity of processing entire graphs at once.
+This localized approach helps in scaling \glspl{gcn} to larger datasets and complex networks (\cite{Li2018}).
 
-Advantages:
-\begin{itemize}
-    \item Simplicity and effectiveness for semi-supervised learning tasks.
-    \item Captures local neighborhood structures well.
-\end{itemize}
+However, \glspl{gcn} also have limitations.
+One major limitation is their reliance on the assumption of homophily, where connected nodes are assumed to have similar features.
+This can restrict their effectiveness in graphs where such an assumption does not hold, such as in heterophilic graphs where connected nodes may have dissimilar features (\cite{Xu2019}).
+Another limitation is the potential for oversmoothing, where node features become indistinguishable after several layers of convolution, leading to a loss of meaningful differentiation between nodes.
+This can hinder the model's ability to capture fine-grained information in deeper architectures (\cite{Li2018}).
+Additionally, \glspl{gcn} often struggle with scalability in extremely large graphs or dynamic graphs where the structure changes frequently, as the need to recompute convolutions can become computationally intensive.
+Finally, \glspl{gcn} require careful tuning of hyperparameters and can be sensitive to the choice of architecture, which may limit their accessibility and ease of use for practitioners without extensive expertise in \glspl{gnn} (\cite{Wu2021}).
 
-
-Limitations:
-\begin{itemize}
-    \item Limited expressiveness due to fixed aggregation scheme.
-    \item Struggles with capturing long-range dependencies.
-\end{itemize}
-
-\subsubsection*{\glspl{gat}}
+\subsubsection*{\acrfullpl{gat}}
 
 \cite{Velickovic2018} introduced \glspl{gat}, which incorporate attention mechanisms to dynamically weigh the importance of neighboring nodes.
+\gls{gat} is a novel neural network designed to work with graph-structured data.
+It employs masked self-attentional layers to overcome the limitations of previous methods that relied on graph convolutions or their approximations.
+By stacking these layers, \gls{gat} enables the model to implicitly assign different weights to various nodes in a neighborhood, allowing nodes to focus on the most relevant features of their neighbors.
+This approach eliminates the need for expensive matrix operations, such as inversion, and does not require prior knowledge of the graph's structure.
+\gls{gat} effectively addresses many significant limitations of spectral-based graph neural networks, making the model suitable for both inductive and transductive tasks.
 
 Attention Mechanism:
 
@@ -189,18 +211,27 @@ The node features are updated as:
 
 \[ h_i' = \sigma\left(\sum_{j \in \mathcal{N}(i)} \alpha_{ij} W h_j\right) \]
 
-Advantages:
-\begin{itemize}
-    \item Handles heterogeneous graphs by assigning different importances to neighbors.
-    \item Enhanced interpretability through attention weights.
-\end{itemize}
+Fig. \ref{fig:gat-attention-mechanism} shows the coefficients computed by the attention mechanism, parametrized by a weight vector $\vec{\mathbf{a}} \in \mathbb{R}^{2F'}$, applying a LeakyReLU activation.
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.3\textwidth]{03_Figures/literature-review/gat-attention-mechanism.png}
+     \rule{35em}{0.5pt}
+    \caption{Attention mechanism in \glspl{gat} (\cite{Velickovic2018})} 
+ \label{fig:gat-attention-mechanism}
+\end{figure}
 
 
-Limitations:
-\begin{itemize}
-    \item Computationally expensive due to the attention mechanism.
-    \item Can become inefficient for very large graphs.
-\end{itemize}
+\glspl{gat} provide numerous advantages.
+One of the main benefits is their capability to assign different importance weights to nodes within a neighborhood, enhancing the model's ability to concentrate on the most relevant features and relationships.
+This is facilitated by the self-attention mechanism, which avoids the need for expensive matrix operations or prior knowledge of the graph's structure, thus making \glspl{gat} computationally efficient and versatile (\cite{Velickovic2018}).
+Furthermore, \glspl{gat} can naturally manage graphs with varying node degrees and adapt to different scales, offering robustness and scalability.
+The ability to learn dynamic attention weights for different nodes makes \glspl{gat} especially effective for tasks involving heterogeneous graphs and those with complex, irregular structures.
+
+Nevertheless \glspl{gat} also have certain limitations.
+A notable challenge is that the attention mechanism can be computationally demanding, especially for large-scale graphs with numerous nodes and edges, potentially causing scalability issues.
+The computational complexity of the self-attention mechanism can grow with the number of nodes, making it less efficient for very large graphs compared to simpler convolutional methods (\cite{Thekumparampil2018}).
+Additionally, although \glspl{gat} can focus on relevant nodes, they may suffer from overfitting, particularly when the attention mechanism excessively emphasizes specific nodes, leading to a reduction in generalization.
+Furthermore, tuning the hyperparameters of the attention mechanism can be intricate and requires careful experimentation to achieve optimal performance (\cite{Lee2018}).
 
 \subsubsection*{GraphSAGE}
 
