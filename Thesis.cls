@@ -115,7 +115,7 @@
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{epstopdf}
-\usepackage{booktabs}
+\usepackage{array}
 \usepackage{rotating}
 \usepackage{listings}
 \usepackage{blindtext}
