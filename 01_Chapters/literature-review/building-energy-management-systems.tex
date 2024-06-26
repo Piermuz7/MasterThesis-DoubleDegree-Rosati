@@ -1,6 +1,6 @@
 \glspl{bems} have gained significant attention in recent years due to the increasing need for energy efficiency and sustainability in the built environment.
 The primary aim of \glspl{bems} is to monitor, control, and optimize the energy consumption of buildings to reduce energy costs, enhance occupant comfort, and minimize environmental impact.
-This literature review examines the evolution, key components, technologies, benefits, and challenges associated with \glspl{bems}.
+This section examines the evolution, key components, technologies, benefits, data representation and challenges associated with \glspl{bems}.
 
 \subsection*{Evolution of Building Energy Management Systems}
 The concept of \gls{bems} dates back to the 1970s, following the energy crises that highlighted the importance of energy conservation.
@@ -36,7 +36,7 @@ Fig. \ref{fig:bems-ci-base-architecture} illustrates a potential framework for e
 The adoption of \gls{bems} offers numerous benefits.
 One of the primary advantages is the reduction in energy consumption, which leads to cost savings.
 Studies have shown that \gls{bems} can achieve energy savings of up to 30\% in commercial buildings (\cite{Wags2024}).
-Moreover, \gls{bems} enhance occupant comfort by maintaining optimal indoor conditions, such as temperature and air quality.
+Moreover, \glspl{bems} enhance occupant comfort by maintaining optimal indoor conditions, such as temperature and air quality.
 \gls{bems} also contribute to environmental sustainability by reducing greenhouse gas emissions associated with energy use.
 By optimizing energy consumption and integrating renewable energy sources, \gls{bems} can significantly lower a building's carbon footprint (\cite{Lee2016}).
 Another benefit is the improved operational efficiency of building systems.
@@ -53,9 +53,6 @@ Future research and development in \gls{bems} should focus on enhancing interope
 The integration of \gls{ai} and \gls{ml} technologies holds promise for further optimizing energy management and improving the adaptability of \gls{bems} to dynamic building conditions (\cite{Amasyali2018}).
 
 \subsection*{Building Data Representation}
-TODO: insert images of brick, project haystack, ifc, ssn, saref, sos, oandm
-
-TODO: review and ref in the text comparison table of ontology building representation
 
 According to \cite{Balaji2018}, buildings are responsible for 32\% of global energy consumption.
 Recently, a new wave of innovative applications has emerged that utilise a distributed network of sensors, actuators and human interactions to improve building energy efficiency and operations management.
@@ -66,6 +63,7 @@ This curation process is often manual and cost-prohibitive, and hinders widespre
 Recent efforts have attempted to address this problem through data standards and metadata schemas, but often fail to capture the complexity of the relationships required for these applications.
 The most relevant ones in the literature and used industrially are discussed below.
 
+\subsubsection*{Brick Ontology}
 The Brick ontology is a comprehensive framework designed to standardize the representation of data in buildings, focusing on aspects such as \glspl{bas}, sensors, and equipment (\cite{Balaji2016}).
 It addresses the need for a unified data model to facilitate interoperability and integration across various systems within a building.
 The ontology provides a schema for representing the physical, logical, and virtual aspects of buildings, which includes the different types of equipment, sensors, and control points, as well as their relationships and properties (\cite{Balaji2018}).
@@ -78,6 +76,20 @@ The core of Brick ontology consists of three main components: classes, propertie
 Classes represent the various types of entities found in buildings, such as sensors, HVAC systems, and lighting fixtures.
 Properties describe the attributes of these entities, including their states and configurations.
 Relationships capture the interactions and connections between different entities, enabling a comprehensive mapping of the building's infrastructure (\cite{Balaji2018}).
+Fig. \ref{fig:brick-model-example} illustrates an example of a Brick model, showing the relationships between different building components.
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.9\textwidth]{03_Figures/literature-review/brick-model-example.png}
+     \rule{35em}{0.5pt}
+    \caption{An example of Brick Model (\href{https://docs.brickschema.org/brick/concepts.html}{Brick Ontology Documentation})} 
+ \label{fig:brick-model-example}
+\end{figure}
+
+The blue nodes represent entities that are instances of Brick classes.
+These are the ``things'' within this example of building, encompassing equipment (e.g., AHU1A, VAV2-4), points (e.g., VAV2-4.DPRPOS), locations (e.g., Room 410), and logical collections (e.g., VAV2-3Zone).
+The colored boxes, connected to the instances by dashed lines, indicate Brick classes, where the dashed lines represent the ``is an instance of'' relationship (rdf:type).
+The solid directed edges depict Brick relationships between entities.
+
 Brick ontology is structured in a way that allows for extensibility and scalability.
 New classes and properties can be added to accommodate emerging technologies and new types of equipment.
 This flexibility makes Brick a future-proof solution for representing building data, capable of evolving alongside advancements in building automation and smart building technologies (\cite{Balaji2016}).
@@ -95,6 +107,7 @@ In conclusion, Brick ontology represents a significant advancement in the field 
 Its structured and standardized approach addresses the critical challenges of data integration and interoperability in building management systems.
 With its extensibility and adaptability, Brick is well-positioned to support the future of smart building technologies and contribute to the development of more efficient and sustainable buildings (\cite{Agarwal2012}; \cite{Balaji2016}; \cite{Balaji2018}).
 
+\subsubsection*{Comparison with Other Building Data Representation Models}
 Project Haystack is one of the early initiatives aimed at standardizing the semantic tagging of building data.
 It provides a set of tags and conventions for describing the types of equipment, sensors, and operational data found in buildings (\cite{projecthaystack}).
 The Haystack tagging model focuses on simplicity and ease of use, allowing practitioners to quickly annotate and share building data.
@@ -107,10 +120,10 @@ Unlike Brick, which focuses on operational data, \gls{ifc} encompasses a broad r
 \gls{ifc}'s comprehensive nature makes it an essential tool in \gls{bim}, facilitating collaboration among architects, engineers, and contractors (\cite{Liu2021}).
 However, its complexity and broad scope can make it challenging to use specifically for \gls{bems} data representation without additional customization.
 
-The \gls{ssn} ontology, developed by the \gls{w3c}, provides a framework for describing sensors and their observations, actuators, and their operations, as well as the systems they are a part of (Compton et al., 2012).
+The \gls{ssn} ontology, developed by the \gls{w3c}, provides a framework for describing sensors and their observations, actuators, and their operations, as well as the systems they are a part of (\cite{Compton2012}).
 SSN focuses on the semantic representation of sensor data, enabling the integration and interpretation of sensor information across various applications.
-The ontology includes concepts for describing the capabilities, measurements, and deployments of sensors, making it highly suitable for BEMS where sensor data is critical for monitoring and control (Compton et al., 2012).
-However, SSN by itself does not cover the full range of building components and their relationships, which limits its use as a standalone solution for comprehensive BEMS data representation.
+The ontology includes concepts for describing the capabilities, measurements, and deployments of sensors, making it highly suitable for \gls{bems} where sensor data is critical for monitoring and control (\cite{Compton2012}).
+However, SSN by itself does not cover the full range of building components and their relationships, which limits its use as a standalone solution for comprehensive \gls{bems} data representation.
 
 Another approach is the \gls{saref} ontology, which provides a common model for representing smart appliances and their functions (\cite{Daniele2015}).
 \gls{saref} was developed by ETSI in collaboration with the European Commission to enable interoperability among smart devices.
@@ -125,14 +138,15 @@ These standards enable the integration of spatial and temporal sensor data, whic
 The development and adoption of these various models highlight the diverse approaches to representing \gls{bems} data.
 Each method offers unique strengths and addresses different aspects of building management, from semantic tagging and sensor data integration to comprehensive building information modeling.
 The choice of data representation model often depends on the specific requirements of the building management application, including the need for interoperability, the scope of data integration, and the complexity of the building systems involved (\cite{Compton2012,Daniele2015}).
+Table \ref{tab:ontology-comparison} provides a comparison of Brick ontology with other building data representation models, highlighting their key aspects and differences.
+Table \ref{tab:ontology-comparison-from-brick-ontology-documentation} provides a more detailed comparison of the modeling support offered by Brick, Project Haystack, \gls{ifc}, and \gls{saref}.
 
-In conclusion, while Brick ontology represents a significant advancement in the standardization of building data, it is part of a broader ecosystem of models and standards aimed at addressing the diverse needs of \gls{bems}.
+In conclusion, while Brick ontology represents a significant advancement in the standardization of building data, it is part of a large ecosystem of models and standards aimed at addressing the diverse needs of \gls{bems}.
 Project Haystack, \gls{ifc}, \gls{ssn}, and \gls{saref} each offer distinct approaches to representing building data, contributing to the ongoing efforts to enhance data integration, interoperability, and utilization in \gls{bems}.
 By leveraging these various methods, practitioners can develop more efficient, intelligent, and sustainable solutions for managing building operations and energy usage (\cite{Balaji2016,Balaji2018}).
 
 \begin{table}[h!]
     \centering
-    \caption{Comparison of Brick, \gls{saref}, Project Haystack, and \gls{ifc}}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|>{\bfseries}l|l|l|l|l|}
     \hline
@@ -156,6 +170,37 @@ By leveraging these various methods, practitioners can develop more efficient, i
     \hline
     \end{tabular}%
     }
+    \caption{Comparison of Brick, \gls{saref}, Project Haystack, and \gls{ifc}}
+    \label{tab:ontology-comparison}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    \textbf{Modeling Support} & \textbf{Brick} & \textbf{Project Haystack} & \textbf{IFC} & \textbf{SAREF}\\
+    \hline
+    HVAC Systems & \textbf{yes} & \textbf{yes} & \textbf{yes} & no \\
+    \hline
+    Lighting Systems & \textbf{yes} & partial & \textbf{yes} & no \\
+    \hline
+    Electrical Systems & \textbf{yes} & \textbf{yes} & \textbf{yes} & no \\
+    \hline
+    Spatial Information & \textbf{yes} & no & \textbf{yes} & no \\
+    \hline
+    Sensor Systems & \textbf{yes} & \textbf{yes} & generic & \textbf{yes} \\
+    \hline
+    Control Relationships & \textbf{yes} & no & generic & no \\
+    \hline
+    Operational Relationships & \textbf{yes} & no & generic & no \\
+    \hline
+    Formal Definitions & \textbf{yes} & no & \textbf{yes} & \textbf{yes} \\
+    \hline
+    \end{tabular}%
+    }
+    \caption{Modeling Support offered by Brick, Project Haystack, \gls{ifc}, \gls{saref} (\href{https://docs.brickschema.org/intro.html}{Brick Ontology Documentation})}
+    \label{tab:ontology-comparison-from-brick-ontology-documentation}
 \end{table}
 
 \subsection*{Conclusion}

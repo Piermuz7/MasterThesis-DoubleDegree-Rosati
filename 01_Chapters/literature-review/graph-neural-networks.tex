@@ -1,6 +1,6 @@
 \acrlongpl{gnn} have become fundamental to \acrlong{dl} field, particularly for tasks involving non-Euclidean data structures.
 These models have had a significant impact on several domains, such as social network analysis, bioinformatics, recommender systems and \gls{nlp}.
-This literature review explores the development, key architectures, methodologies, applications and methodologies, applications, challenges and future directions of \glspl{gnn}.
+This section explores the development, key architectures, methodologies, applications and methodologies, applications, challenges and future directions of \glspl{gnn}.
 
 \subsection*{Historical Context and Evolution}
 
@@ -30,6 +30,8 @@ The predicted node label distribution (\( O_v \)) is derived from the state embe
 \subsection*{GNN Learning Tasks and Training Settings}
 According to \cite{Zhou2020,Wu2021}, \glspl{gnn} are versatile tools capable of performing a variety of node-level, edge-level, and graph-level tasks.
 Each approach leverages different amounts and types of labeled data to extract meaningful patterns and representations from graph-structured data.
+These approaches are described below.
+Fig. \ref{fig:gnn-graph-learning-tasks-summary} summarizes the key graph learning tasks that \glspl{gnn} can perform, highlighting the diversity and flexibility of these models in handling various types of graph-structured data.
 
 \textbf{Node-level} tasks focus on predicting or inferring properties of individual nodes within a graph. This includes node classification, where each node is classified into one of several predefined categories, and node regression, which predicts continuous values associated with nodes.
 Node clustering groups nodes into clusters based on feature similarity and structural proximity, and node representation learning focuses on learning low-dimensional embeddings that preserve the graph's structural and feature information.
@@ -42,8 +44,6 @@ Edge classification assigns categories to edges based on the properties of the c
 Graph classification assigns a label to an entire graph, which is useful in applications like classifying molecules or categorizing social networks.
 Graph regression predicts continuous values for entire graphs, such as the bioactivity of chemical compounds or the performance metrics of network designs.
 Graph generation involves creating new graphs that resemble a given set of graphs and is important in applications like molecule generation for drug discovery or network topology design.
-
-Fig. \ref{fig:gnn-graph-learning-tasks-summary} summarizes the key graph learning tasks that \glspl{gnn} can perform, highlighting the diversity and flexibility of these models in handling various types of graph-structured data.
 
 \begin{figure}[htbp]
     \centering
@@ -72,7 +72,7 @@ This ensures that the connectivity of the input graph remains unchanged, allowin
 However, the output graph has updated embeddings as the \gls{gnn} modifies each node, edge, and global-context representation.
 
 At its core, the message-passing mechanism operates iteratively, enabling nodes to collect and aggregate information from their neighbors.
-Here's a detailed breakdown of this process:
+According to \cite{Khemani2024}, the message-passing mechanism in \glspl{gnn} involves the following key steps:
 \begin{enumerate}
     \item \textbf{Node Representation Initialization}: each node in the graph is initialized with a feature vector. These initial representations can be based on node attributes or initialized randomly.
 
@@ -100,15 +100,13 @@ Here's a detailed breakdown of this process:
     \item \textbf{Structural and Feature-Based Information}: the information passed during message passing consists of two main components: structural information about the graph (such as the degree of nodes) and feature-based information (attributes of the nodes and edges). Each node's message is stored in the form of feature vectors, and during each iteration, these vectors are updated to reflect the aggregated information from neighboring nodes.
 
     \item \textbf{Readout Phase}: after completing the message-passing iterations, a readout function is applied to extract the final representation for nodes, edges, or the entire graph. This function aggregates the final node embeddings into a single representation. For graph-level tasks, the readout function might be a global pooling operation, such as summation, mean, or max over all node feature vectors.
+\end{enumerate}
 
-    \item \textbf{Mathematical Formulation}: the process can be mathematically represented as:
+The entire process can be mathematically represented as:
    \[
    h_u^{(k+1)} = UPDATE^{(k)}\left(h_u^{(k)}, AGGREGATE^{(k)}\left(\{m_{v}^{(k)}~|~v \in \mathcal{N}(u)\}\right)\right)
    \]
-   where \(h_u^{(k)}\) denotes the feature vector of node \(u\) at iteration \(k\), and \(m_{v}^{(k)}\) represents the message from node \(v\) at iteration \(k\). The AGGREGATE function combines the messages from the neighbors, and the UPDATE function combines this aggregated message with the node's current feature vector to produce the updated feature vector.
-
-
-\end{enumerate}
+where \(h_u^{(k)}\) denotes the feature vector of node \(u\) at iteration \(k\), and \(m_{v}^{(k)}\) represents the message from node \(v\) at iteration \(k\). The AGGREGATE function combines the messages from the neighbors, and the UPDATE function combines this aggregated message with the node's current feature vector to produce the updated feature vector.
 
 The message-passing mechanism of \glspl{gnn} is illustrated Fig. \ref{fig:gnn-message-passing-mechanism}.
 Here, an input graph with a set of node features \(X \in \mathbb{R}^{d \times |V|}\) is used to produce updated node embeddings.
