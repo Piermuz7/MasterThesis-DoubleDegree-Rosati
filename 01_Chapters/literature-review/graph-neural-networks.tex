@@ -31,7 +31,7 @@ The predicted node label distribution (\( O_v \)) is derived from the state embe
 According to \cite{Zhou2020,Wu2021}, \glspl{gnn} are versatile tools capable of performing a variety of node-level, edge-level, and graph-level tasks.
 Each approach leverages different amounts and types of labeled data to extract meaningful patterns and representations from graph-structured data.
 These approaches are described below.
-Fig. \ref{fig:gnn-graph-learning-tasks-summary} summarizes the key graph learning tasks that \glspl{gnn} can perform, highlighting the diversity and flexibility of these models in handling various types of graph-structured data.
+Figure \ref{fig:gnn-graph-learning-tasks-summary} summarizes the key graph learning tasks that \glspl{gnn} can perform, highlighting the diversity and flexibility of these models in handling various types of graph-structured data.
 
 \textbf{Node-level} tasks focus on predicting or inferring properties of individual nodes within a graph. This includes node classification, where each node is classified into one of several predefined categories, and node regression, which predicts continuous values associated with nodes.
 Node clustering groups nodes into clusters based on feature similarity and structural proximity, and node representation learning focuses on learning low-dimensional embeddings that preserve the graph's structural and feature information.
@@ -108,7 +108,7 @@ The entire process can be mathematically represented as:
    \]
 where \(h_u^{(k)}\) denotes the feature vector of node \(u\) at iteration \(k\), and \(m_{v}^{(k)}\) represents the message from node \(v\) at iteration \(k\). The AGGREGATE function combines the messages from the neighbors, and the UPDATE function combines this aggregated message with the node's current feature vector to produce the updated feature vector.
 
-The message-passing mechanism of \glspl{gnn} is illustrated Fig. \ref{fig:gnn-message-passing-mechanism}.
+The message-passing mechanism of \glspl{gnn} is illustrated Figure \ref{fig:gnn-message-passing-mechanism}.
 Here, an input graph with a set of node features \(X \in \mathbb{R}^{d \times |V|}\) is used to produce updated node embeddings.
 The process begins with each node having an initial message (or feature vector).
 Nodes then exchange messages with their neighbors. For instance, the B user node collects messages from its neighboring nodes, which are then aggregated.
@@ -152,7 +152,7 @@ This enables \glspl{gcn} to capture and propagate information through the graph'
 
 \glspl{gcn} consist of multiple layers, each performing convolution and aggregation steps to refine node representations.
 By iteratively applying these layers, \glspl{gcn} can capture complex patterns and dependencies within the graph data.
-Fig. \ref{fig:gcn-semisupervised-learning} illustrates a multi-layer \gls{gcn} for semi-supervised learning task.
+Figure \ref{fig:gcn-semisupervised-learning} illustrates a multi-layer \gls{gcn} for semi-supervised learning task.
 
 A \gls{gcn} layer can be formally represented as:
 
@@ -211,7 +211,7 @@ The node features are updated as:
 
 \[ h_i' = \sigma\left(\sum_{j \in \mathcal{N}(i)} \alpha_{ij} W h_j\right) \]
 
-Fig. \ref{fig:gat-attention-mechanism} shows the coefficients computed by the attention mechanism, parametrized by a weight vector $\vec{\mathbf{a}} \in \mathbb{R}^{2F}$ (where $F$ is the number of features in each node), applying a LeakyReLU activation.
+Figure \ref{fig:gat-attention-mechanism} shows the coefficients computed by the attention mechanism, parametrized by a weight vector $\vec{\mathbf{a}} \in \mathbb{R}^{2F}$ (where $F$ is the number of features in each node), applying a LeakyReLU activation.
 \begin{figure}[htbp]
     \centering
  \includegraphics[width=.3\textwidth]{03_Figures/literature-review/gat-attention-mechanism.png}
@@ -239,7 +239,7 @@ Furthermore, tuning the hyperparameters of the attention mechanism can be intric
 Unlike traditional methods that rely on transductive learning, \gls{graphsage} focuses on generalizing to unseen nodes, making it well-suited for dynamic graphs or scenarios where the graph structure evolves over time (\cite{Hamilton2017}).
 This network consists of two main steps: Sampling and Aggregation, followed by a node representation update and normalization step.
 Below, these steps are briefly described
-Sampling, aggregating and predicting steps are illustrated in Fig. \ref{fig:graphsage-approach}.
+Sampling, aggregating and predicting steps are illustrated in Figure \ref{fig:graphsage-approach}.
 
 
 \begin{enumerate}
