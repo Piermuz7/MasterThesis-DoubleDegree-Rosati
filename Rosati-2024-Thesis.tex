@@ -43,7 +43,7 @@
 
 % You thesis title
 % Citation command \thesisTitle
-\thesisTitle{HAI-BEMS: \\A Hybrid Artificial Intelligent Approach for Building Energy Management Systems}
+\thesisTitle{A Knowledge Graph and Large Language Model-Based Approach for Research Collaboration}
 %-------------------------------------------------  
 
 % You supervisor's name Unicam or FHNW
@@ -179,6 +179,9 @@
 %	ABBREVIATIONS
 %	Add your glossary terms below
 %	
+%   To generate the list of abbreviations run the following command in the terminal:
+%   makeglossaries Rosati-2024-Thesis 
+%
 %   If you want to cite an abbreviation term simply use \gls{term) for the singular form  
 %   of the term or \glspl{term} for the plural form of the term.
 %----------------------------------------------------------------------------------------
@@ -186,15 +189,13 @@
 \newacronym{rq}{RQ}{Research Question}
 \newacronym{kg}{KG}{Knowledge Graph}
 \newacronym{ai}{AI}{Artifical Intelligence}
-\newacronym{bems}{BEMS}{Building Energy Management System}
+\newacronym{llm}{LLM}{Large Language Model}
+\newacronym{dnn}{DNN}{Deep Neural Network}
 \newacronym{gnn}{GNN}{Graph Neural Network}
 \newacronym{ml}{ML}{Machine Learning}
 \newacronym{dl}{DL}{Deep Learning}
-\newacronym{iot}{IoT}{Internet of Things}
-\newacronym{wot}{IoT}{Web of Things}
 \newacronym{cnn}{CNN}{Convolutional Neural Network}
 \newacronym{rnn}{RNN}{Recurrent Neural Network}
-\newacronym{dnn}{DNN}{Deep Neural Network}
 \newacronym{rdf}{RDF}{Resource Description Framework}
 \newacronym{rdfs}{RDFS}{RDF Schema}
 \newacronym{uri}{URI}{Uniform Resource Identifier}
@@ -208,6 +209,7 @@
 \newacronym{mpnn}{MPNN}{Message Passing Neural Network}
 \newacronym{graphsage}{GraphSAGE}{Graph Sample and Aggregation}
 \newacronym{stgnn}{STGNN}{Spatio-Temporal Graph Neural Network}
+\newacronym{tgn}{TGN}{Temporal Graph Networks}
 \newacronym{lstm}{LSTM}{Long Short-Term Memory}
 \newacronym{gru}{GRU}{Gated Recurrent Unit}
 \newacronym{grnn}{GRNN}{Graph Recurrent Neural Network}
@@ -221,20 +223,19 @@
 \newacronym{hdgi}{HDGI}{Heterogeneous Deep Graph Infomax}
 \newacronym{han}{HAN}{Heterogeneous Graph Attention Networks}
 \newacronym{cv}{CV}{Computer Vision}
-\newacronym{hvac}{HVAC}{heating, ventilation, and air conditioning}
-\newacronym{mpc}{MPC}{Model Predictive Control}
-\newacronym{ict}{ICT}{Information and Communication Technology}
-\newacronym{ci}{CI}{Computational intelligence}
-\newacronym{bas}{BAS}{building automation system}
-\newacronym{ifc}{IFC}{Industry Foundation Classes}
-\newacronym{saref}{SAREF}{Smart Applications REFerence ontology}
-\newacronym{mep}{MEP}{mechanical, electrical, and plumbing}
-\newacronym{bim}{BIM}{Building Information Modeling}
-\newacronym{ssn}{SSN}{Semantic Sensor Network}
 \newacronym{w3c}{W3C}{World Wide Web Consortium}
-\newacronym{sos}{SOS}{Sensor Observation Service}
-\newacronym{oandm}{O\&M}{Observation and Measurement}
-\newacronym{ogc}{OGC}{Open Geospatial Consortium}
+\newacronym{mag}{MAG}{Microsoft Academic Graph}
+\newacronym{s2ag}{S2AG}{Semantic Scholar Academic Graph}
+\newacronym{orkg}{ORKG}{Open Research Knowledge Graph}
+\newacronym{foaf}{FOAF}{Friend of a Friend}
+\newacronym{doi}{DOI}{Digital Object Identifier}
+\newacronym{orcid}{ORCID}{Open Researcher and Contributor ID}
+\newacronym{viaf}{VIAF}{Virtual International Authority File}
+\newacronym{cbf}{CBF}{Content-Based Filtering}
+\newacronym{cf}{CF}{Collaborative Filtering}
+\newacronym{gbc}{GBC}{Gradient Boosted Classifier}
+\newacronym{auc}{AUC}{Area Under the Curve}
+\newacronym{rag}{RAG}{Retrieval-Augmented Recommendation}
 
 % PDF meta-data
 \hypersetup{pdftitle={\thesisTitle}}
@@ -254,7 +255,7 @@
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\input{01_Chapters/00_Abstract}
+\input{01_Chapters/Abstract}
 
 \clearpage % Start a new page
 
@@ -263,7 +264,7 @@
 %----------------------------------------------------------------------------------------
 
 \fillingPage{} 
-\statementOfAuthenticity
+%\statementOfAuthenticity
 
 \clearpage
 
@@ -280,13 +281,13 @@
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 \fillingPage{}
-\input{01_Chapters/01_Introduction} 
+\input{01_Chapters/Introduction} 
 \fillingPage{}
-\input{01_Chapters/02_LiteratureReview}
-\fillingPage{}
-\input{01_Chapters/03_ResearchMethod}
+\input{01_Chapters/LiteratureReview}
+%\fillingPage{}
+%\input{01_Chapters/ResearchMethod}
 \fillingPage{} 
-\input{01_Chapters/05_Conclusion}
+\input{01_Chapters/Conclusion}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
