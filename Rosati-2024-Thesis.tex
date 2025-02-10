@@ -43,7 +43,7 @@
 
 % You thesis title
 % Citation command \thesisTitle
-\thesisTitle{A Knowledge Graph and Large Language Model-Based Approach for Research Collaboration}
+\thesisTitle{A Hybrid AI Approach for Recommending Collaborators in European Research Projects}
 %-------------------------------------------------  
 
 % You supervisor's name Unicam or FHNW
@@ -80,7 +80,7 @@
 
 % You co-supervisor's URL
 % Citation command \supcoURL
-\cosupervisorURL{https://www.empa.ch/web/alja}
+%\cosupervisorURL{}
 %-------------------------------------------------
 
 % Your degree name
@@ -98,7 +98,7 @@
 
 % Your URL
 % Citation command \authorURL
-\authorsURL{http://www.johnsmith.com}
+%\authorsURL{http://www.johnsmith.com}
 %-------------------------------------------------
 
 % Your address (not used)
@@ -236,6 +236,30 @@
 \newacronym{gbc}{GBC}{Gradient Boosted Classifier}
 \newacronym{auc}{AUC}{Area Under the Curve}
 \newacronym{rag}{RAG}{Retrieval-Augmented Recommendation}
+\newacronym{map}{MAP}{Mean Average Precision}
+\newacronym{mrr}{MRR}{Mean Reciprocal Rank}
+\newacronym{ndcg}{NDCG}{Normalized Discounted Cumulative Gain}
+\newacronym{rrmf}{RRMF}{Research Paper Recommendation System Integrating Multiple Features}
+\newacronym{mae}{MAE}{Mean Absolute Error}
+\newacronym{rmse}{RMSE}{Root Mean Squared Error}
+\newacronym{ramo}{RAMO}{Retrieval-Augmented Generation for MOOCs}
+\newacronym{dsr}{DSR}{Design Science Research}
+\newacronym{cordis}{CORDIS}{Community Research and Development Information Service}
+\newacronym{fp7}{FP7}{Seventh Framework Programme}
+\newacronym{h2020}{H2020}{Horizon 2020}
+\newacronym{eurio}{EURIO}{EUropean Research Information Ontology}
+\newacronym{dc}{DC}{Dublin Core}
+\newacronym{skos}{SKOS}{Simple Knowledge Organization System}
+\newacronym{nt}{NT}{N-Triples}
+\newacronym{ttl}{TTL}{Turtle}
+\newacronym{nq}{NQ}{N-Quads}
+\newacronym{jsonld}{JSON-LD}{JavaScript Object Notation for Linked Data}
+\newacronym{csv}{CSV}{Comma-Separated Values}
+\newacronym{xlsx}{XLSX}{Microsoft Excel Open XML Spreadsheet}
+\newacronym{dcat}{DCAT}{Data Catalog Vocabulary}
+\newacronym{dingo}{DINGO}{Data Integration for Grant Ontology}
+\newacronym{fabio}{FaBiO}{FRBR-aligned Bibliographic Ontology}
+\newacronym{frapo}{FRAPO}{Funding, Research Administration and Projects Ontology}
 
 % PDF meta-data
 \hypersetup{pdftitle={\thesisTitle}}
@@ -284,9 +308,15 @@
 \input{01_Chapters/Introduction} 
 \fillingPage{}
 \input{01_Chapters/LiteratureReview}
-%\fillingPage{}
-%\input{01_Chapters/ResearchMethod}
-\fillingPage{} 
+\fillingPage{}
+\input{01_Chapters/ResearchDesign}
+\fillingPage{}
+\input{01_Chapters/ResearchMethods}
+\fillingPage{}
+\input{01_Chapters/ArtifactDevelopment}
+\fillingPage{}
+\input{01_Chapters/Evaluation}
+\fillingPage{}
 \input{01_Chapters/Conclusion}
 
 %----------------------------------------------------------------------------------------
@@ -347,6 +377,7 @@
 %----------------------------------------------------------------------------------------
 
 \input{01_Chapters/Acknowledgments.tex}
+\input{01_Chapters/Ringraziamenti.tex}
 
 \clearpage % Start a new page
 

@@ -158,7 +158,8 @@
 \usepackage[british]{babel} % Internationalisation (hyphenation rules), needed for APA citation
 \usepackage{csquotes} % Context-sensitive inline and display quotations, recommended for APA citation
 
-\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+%\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\usepackage[style=numeric,sorting=nyt,backend=biber]{biblatex}
 
 \DeclareLanguageMapping{british}{british-apa}
 
@@ -338,23 +339,25 @@
  
     \begin{minipage}[b][3.8em][t]{0.4\textwidth}
     \begin{flushleft} \large
-    \emph{Candidate:}\\
+    \emph{Candidate}\\
 	%{\authorName} % Author name - remove the \href bracket to remove the link
     {\bfseries \authorName} % Author name - remove the \href bracket to 
     %remove the link
     \end{flushleft}
-    {\bfseries \small Matricula \@thematricola}%
+    %{\bfseries \small Student ID \@thematricola}%
+    \emph{Student ID} \\
+    {\bfseries \@thematricola}
     \end{minipage}
     \begin{minipage}[b][3.8em][t]{0.4\textwidth}
     \begin{flushright} \large
-    \emph{FHNW Supervisor:} \\
+    \emph{FHNW Supervisor} \\
     \href{\supURL}{\bfseries \supName} \\
     \vspace{0.3cm}
-    \emph{Unicam Supervisor:} \\
+    \emph{Unicam Supervisor} \\
     \href{\supTwoURL}{\bfseries \supTwoName} \\
     \ifcosupervisor
         \vspace{0.3cm}
-        \emph{Empa Supervisor:} \\
+        \emph{Empa Supervisor} \\
         \href{\supcoURL}{\bfseries \supcoName}
     \fi 
     \vspace{0.3cm}
@@ -362,7 +365,7 @@
     \end{minipage}\\[4cm]
  
     \large \textit{A thesis presented to the \hswUnicam{} of the \unicam{} and 
-\hsw{} of the \fhnw{} in partial fulfillment of the requirements for the degree of \msc{} in \degreeTwoName{} }\\[1cm] % University requirement text
+\hsw{} of the \fhnw{} in partial fulfillment of the requirements for the Degree of \msc{} in \degreeTwoName{} }\\[1cm] % University requirement text
 
 
     %{\rmfamily \Large \bfseries \unicam \par}%
@@ -456,6 +459,16 @@
     
     \markboth{}{} % Add "Acknowledgements" to fancy header
     \chapter*{Acknowledgements}
+}
+\newcommand\ackPageIT{
+
+    \btypeout{Ringraziamenti Page}
+    
+    \addtotoc{Ringraziamenti} % Add the "Abstract" page entry to the Contents
+    \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+    
+    \markboth{}{} % Add "Ringraziamenti" to fancy header
+    \chapter*{Ringraziamenti}
 }
 %----------------------------------------------------------------------------------------
 

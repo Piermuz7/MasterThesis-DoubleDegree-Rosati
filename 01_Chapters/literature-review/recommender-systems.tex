@@ -1,4 +1,4 @@
-The task of recommender systems is to use users' data and their current and historical preferences with the goal of making predictions about users' possible future likes and interests (\cite{Lu2012}).
+The task of recommender systems is to use users' data and their current and historical preferences with the goal of making predictions about users' possible future likes and interests \cite{Lu2012}.
 
 In recommender systems, \gls{ml} models are used to predict the rating $r_{ui}$ of a user $u$ on an item $i$.
 At inference time, the system recommends to each user $u$ the items $I$ having highest predicted rating $r_{ui}$.
@@ -6,17 +6,17 @@ It is therefore necessary to collect user feedback, so that we can have a ground
 Explicit Feedback is a rating explicitly given by the user to express their satisfaction with an item.
 Implicit Feedback assumes that user-item interactions are an indication of preferences.
 
-The two main approaches in recommender systems are \gls{cbf} and \gls{cf}, often combined in hybrid methods (\cite{Ko2022}).
+The two main approaches in recommender systems are \gls{cbf} and \gls{cf}, often combined in hybrid methods \cite{Ko2022}.
 
-\gls{cbf} is a method for recommending articles with attributes similar to those that users like and recommends them based on article information (\cite{Vallet2006}).
-According to \cite{salter2006cinemascreen}, such filtering has a major drawback: it recommends only data on articles that are closely related to data on articles that a user has considered in the past. Because of this, the system struggles to recommend new articles. 
+\gls{cbf} is a method for recommending articles with attributes similar to those that users like and recommends them based on article information \cite{Vallet2006}.
+According to \textcite{salter2006cinemascreen}, such filtering has a major drawback: it recommends only data on articles that are closely related to data on articles that a user has considered in the past. Because of this, the system struggles to recommend new articles. 
 
 \gls{cf} relies on user-item interactions, such as ratings or clicks, to identify patterns and recommend items that were liked by similar users.
-It is effective, but suffers from 3 problems such as: the sparsity problem, that occurs when there is not enough data available for recommendation (\cite{Plexousakis2005}).
-Another important problem is the cold start problem, which occurs when there is no evaluation data, that is, when a new user enters the system (\cite{WEI201729}).
-Finally, gray sheep is a problem in which there is only a small number of users with similar evaluation data to that of the individual user, and thus there are difficulties in providing recommendations (\cite{Gras2016}).
+It is effective, but suffers from 3 problems such as: the sparsity problem, that occurs when there is not enough data available for recommendation \cite{Plexousakis2005}.
+Another important problem is the cold start problem, which occurs when there is no evaluation data, that is, when a new user enters the system \cite{WEI201729}.
+Finally, gray sheep is a problem in which there is only a small number of users with similar evaluation data to that of the individual user, and thus there are difficulties in providing recommendations \cite{Gras2016}.
 
-Hybrid filtering systems integrate multiple recommendation techniques, such as \gls{cbf} and \gls{cf}, to address the shortcomings of each method and improve overall recommendation quality (\cite{Ko2022}).
+Hybrid filtering systems integrate multiple recommendation techniques, such as \gls{cbf} and \gls{cf}, to address the shortcomings of each method and improve overall recommendation quality \cite{Ko2022}.
 By combining these approaches, hybrid systems can utilize both item attributes and user behavior to create a more comprehensive understanding of preferences.
 This combination enhances recommendation accuracy, increases diversity, and provides a more robust solution adaptable to various scenarios, making hybrid systems a superior choice for personalized recommendations.
 
@@ -24,12 +24,12 @@ This combination enhances recommendation accuracy, increases diversity, and prov
 Most of the existing works of recommender systems in the literature regarding the field of research are based on suggesting research papers.
 The following describes the work found during the literature review regarding these systems.
 
-\cite{refore} proposed the REFORE system, a hybrid recommender system specifically designed to assist researchers in managing information overload by providing high-quality and personalized recommendations of research papers.
+\textcite{refore} proposed the REFORE system, a hybrid recommender system specifically designed to assist researchers in managing information overload by providing high-quality and personalized recommendations of research papers.
 The system integrates bibliometric measures, such as journal impact factors and author h-indexes, into its recommendation process, thereby emphasizing the quality of both the items (papers) and the users (researchers) involved.
 
 REFORE employs a \gls{cbf} approach to match user preferences with paper content, using metadata such as keywords, abstracts, and citations.
 It represents papers as vectors in a linguistic framework, assigning importance scores to keywords, which are then matched to user profiles.
-The structure of the system is shown in Fig. \ref{fig:refore}.
+The structure of the system is shown in Fig.~\ref{fig:refore}.
 These profiles are built dynamically based on the researcher's past publications and manually input preferences.
 Additionally, a collaborative filtering mechanism is implemented to leverage the feedback and preferences of similar users, identifying relevant items based on shared interests.
 
@@ -45,7 +45,7 @@ This linguistic framework allows for precise and interpretable measurements of s
     \centering
  \includegraphics[width=0.8\textwidth]{03_Figures/literature-review/refore.png}
      \rule{35em}{0.5pt}
-    \caption{Structure of REFORE system (\cite{refore})}
+    \caption{Structure of REFORE system (\textcite{refore})}
  \label{fig:refore}
 \end{figure}
 
@@ -53,8 +53,8 @@ In terms of evaluation, the system was tested with a group of researchers from m
 Researchers received monthly recommendations based on newly published papers from the Web of Science database, and their feedback was collected to measure the system's effectiveness.
 The experimental results demonstrated the system's ability to deliver high-quality and personalized recommendations, outperforming traditional methods by incorporating bibliometric quality measures and user feedback into the hybrid recommendation strategy.
 
-\cite{Kanwal2024} proposed a research paper recommendation system, integrating citation networks and collaboration networks to provide high-quality and relevant suggestions to researchers.
-This approach, named RRMF (Research Paper Recommendation System Integrating Multiple Features), addresses challenges such as the cold-start problem, data sparsity, and semantic ambiguity.
+\textcite{Kanwal2024} proposed a research paper recommendation system, integrating citation networks and collaboration networks to provide high-quality and relevant suggestions to researchers.
+This approach, named \gls{rrmf}, addresses challenges such as the cold-start problem, data sparsity, and semantic ambiguity.
 
 The proposed methodology involves generating a multi-level citation network, where the focal paper of interest (PI) serves as the central node.
 Citation relationships are explored up to six levels, leveraging both forward (citing) and backward (cited by) links.
@@ -69,17 +69,17 @@ Authors are extracted from top-ranked papers, and their collaboration networks a
 These author-based insights contribute to refining paper recommendations, ensuring that suggested papers come from prominent authors within the field.
 
 To evaluate the system, the AMiner dataset, comprising nearly 4.8 million papers and over 45 million citation relationships, was used.
-The system's performance was benchmarked using metrics such as Mean Average Precision (MAP), Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain (NDCG).
-Experimental results demonstrated that the RRMF outperformed traditional systems, such as Google Scholar and previous citation-based methods, by achieving higher precision and recall.
+The system's performance was benchmarked using metrics such as \gls{map}, \gls{mrr}, and \gls{ndcg}.
+Experimental results demonstrated that the \gls{rrmf} outperformed traditional systems, such as Google Scholar and previous citation-based methods, by achieving higher precision and recall.
 The incorporation of multi-level citation analysis and author collaboration measures significantly improved the quality and relevance of recommendations.
 
-\cite{Murali2019} proposed a research paper recommender system using a user-based collaborative filtering approach.
+\textcite{Murali2019} proposed a research paper recommender system using a user-based collaborative filtering approach.
 The goal of the system is to recommend research papers tailored to a user's interests by analyzing their preferences and similarities with other users.
 The authors addressed the challenge of information overload faced by researchers due to the rapid growth in the number of research publications.
 
 The system operates by collecting a dataset of user-paper interactions, which includes attributes such as user IDs, paper IDs, and ratings assigned by users to the papers. Based on this data, the system calculates the similarity between users using the cosine similarity measure. This approach evaluates the resemblance between user profiles by treating their preferences as vectors and computing the cosine of the angle between them.
 Users with similar interests are identified, and recommendations are generated by predicting ratings for papers based on the ratings given by these similar users.
-The block diagram of the system architecture is shown in Fig. \ref{fig:murali}.
+The block diagram of the system architecture is shown in Fig.~\ref{fig:murali}.
 
 To improve the quality of recommendations, the system utilizes a prediction rating mechanism, which assigns a predicted score to papers based on the collaborative filtering model.
 Papers with higher predicted ratings are recommended to the user, ensuring that suggestions align with their preferences.
@@ -89,17 +89,17 @@ The authors also implemented a ``user-link formation'' step to construct the col
     \centering
  \includegraphics[width=0.8\textwidth]{03_Figures/literature-review/murali.png}
      \rule{35em}{0.5pt}
-    \caption{Block diagram of the system architecture (\cite{Murali2019})}
+    \caption{Block diagram of the system architecture (\textcite{Murali2019})}
  \label{fig:murali}
 \end{figure}
 
 For evaluation, the system was tested on a dataset comprising 135 users and their interactions with research papers.
-Performance was measured using metrics like Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) to assess the accuracy of predicted ratings against actual ratings.
+Performance was measured using metrics like \gls{mae} and \gls{rmse} to assess the accuracy of predicted ratings against actual ratings.
 The results showed that the user-based collaborative filtering model performed well, producing high-quality recommendations with minimal deviation in predicted ratings.
 The authors acknowledge limitations in their work, such as the reliance on a synthetic dataset for testing due to the unavailability of real-world datasets with pre-existing paper ratings.
 They suggest that the system's effectiveness could be further enhanced if real datasets from platforms like research paper repositories were used.
 
-In their work, \cite{Sharma2023} present a detailed exploration of research paper recommender systems, addressing their evolution, methodologies, and associated challenges.
+In their work, \textcite{Sharma2023} present a detailed exploration of research paper recommender systems, addressing their evolution, methodologies, and associated challenges.
 It categorizes existing approaches into key methodologies, including \gls{cbf}, \gls{cf}, link-based algorithms, co-occurrence techniques, and hybrid approaches.
 Each method is analyzed based on its underlying knowledge sources, such as textual attributes of research papers, author profiles, citation patterns, and user-generated tags, which are leveraged to model user preferences and generate personalized recommendations.
 Based on their studies, the authors divide recommender systems into three essential components: the first requirement for performing any task is domain-specific knowledge and its application to the task at hand.
@@ -108,13 +108,13 @@ Principle knowledge includes all available information about an item that is use
 Operational theory, on the other hand, is concerned with the ``how'' aspect, i.e., how the information provided is applied to achieve the intended goals.
 The second component is the recommendation approach, which outlines a step-by-step methodology for solving the problem, detailing implementation techniques and their practical implementation.
 Finally, the third component, probably the most critical, is user modeling.
-The general architecture of a research paper recommendation system is shown in Fig. \ref{fig:general-architecture-rprs}.
+The general architecture of a research paper recommendation system is shown in Fig.~\ref{fig:general-architecture-rprs}.
 
 \begin{figure}[htbp]
     \centering
  \includegraphics[width=0.8\textwidth]{03_Figures/literature-review/general-architecture-rprs.png}
      \rule{35em}{0.5pt}
-    \caption{General architecture of Research Paper Recommendation System (\cite{Sharma2023})}
+    \caption{General architecture of Research Paper Recommendation System (\textcite{Sharma2023})}
  \label{fig:general-architecture-rprs}
 \end{figure}
 
@@ -123,9 +123,9 @@ Hybrid methods, which integrate multiple approaches, are presented as a solution
 The study also identifies critical challenges, including the lack of standard datasets for benchmarking, insufficient evaluation metrics for dimensions like novelty and serendipity, and the difficulty of scaling algorithms to handle real-world, large-scale datasets.
 Furthermore, the paper underscores the need for more sophisticated evaluation frameworks and advanced computational models, such as \gls{dl}, to improve the efficacy and scalability of research paper recommender systems.
 
-\cite{Jagadishwari2023} proposed a methodology for recommending academic collaborators using a combination of citation analysis and academic influence metrics.
+\textcite{Jagadishwari2023} proposed a methodology for recommending academic collaborators using a combination of citation analysis and academic influence metrics.
 Their work highlights the importance of identifying suitable collaborators to enhance research productivity and addresses the challenges posed by the vast volume of academic data.
-The system utilizes the DBLP dataset, focusing on core computer science publications from 2017 to 2019, and incorporates citation count and influential citation metrics to assess academic influence.
+The system utilizes the DBLP dataset \cite{Ley2002}, focusing on core computer science publications from 2017 to 2019, and incorporates citation count and influential citation metrics to assess academic influence.
 
 The methodology involves preprocessing the dataset to eliminate irrelevant data, computing an Academic Level Index (ALI) using three different formulae, and then calculating a Research Score (R score) based on ALI and domain-specific publication metrics.
 The R score serves as the basis for ranking scholars and identifying potential collaborators.
@@ -133,7 +133,7 @@ Three variations of the R score computation are tested, and the study concludes 
 The system's results are visualized using graphs and compared across the three scoring methods, demonstrating that R3 Score provides the most precise matches.
 The authors suggest future research could include additional factors like geographic location and funding status, as well as expanding the dataset to other academic disciplines.
 
-\cite{Zhang2023} provide a comprehensive review of scholarly recommendation systems, highlighting their evolution, methodologies, applications, and challenges.
+\textcite{Zhang2023} provide a comprehensive review of scholarly recommendation systems, highlighting their evolution, methodologies, applications, and challenges.
 These systems play a crucial role in academia, assisting researchers in identifying relevant literature, potential collaborators, conferences, journals, datasets, and grant opportunities.
 The study identifies \gls{cbf} as the most widely used technique, particularly for literature recommendations, whereas \gls{cf} is more prevalent in conference and collaborator recommenders.
 Hybrid approaches, which combine \gls{cbf} and \gls{cf}, are also discussed as a promising direction for improving recommendation accuracy and diversity.
@@ -145,20 +145,20 @@ Evaluation methods, including online and offline metrics, are examined, with off
 In its conclusion, the paper stresses the importance of developing unified frameworks that integrate diverse methodologies and leverage advances in \gls{ai} to address current limitations.
 It also calls for more research into underrepresented areas like dataset and grant recommendation systems, advocating for user-centric designs that prioritize usability and practical application.
 
-\cite{Du2022} proposed a novel model called ACR-ANE to enhance the recommendation of academic collaborators by integrating network topology and multi-type scholar attributes.
+\textcite{Du2022} proposed a novel model called ACR-ANE to enhance the recommendation of academic collaborators by integrating network topology and multi-type scholar attributes.
 The study addresses the limitations of existing approaches, which often consider only local network structures or singular attribute types, and introduces non-local neighbors to capture stronger academic relationships.
 Non-local neighbors are determined through biased random walks and frequency filtering, allowing the model to identify significant connections beyond immediate collaborators.
 
 The methodology incorporates six scholarly attributes-academic age, research interests, publication count, average citations, number of collaborators, and H-index—into a scholar attribute matrix.
 These attributes, combined with network structure, are encoded using a deep auto-encoder to generate low-dimensional embeddings that preserve both local and global academic network characteristics.
 The model establishes a new multi-type relational network by integrating non-local neighbors and attribute-based proximity, which enriches the representation of academic relationships.
-The framework of ACR-ANE is shown in Fig. \ref{fig:acr-ane}.
+The framework of ACR-ANE is shown in Fig.~\ref{fig:acr-ane}.
 
 \begin{figure}[htbp]
     \centering
  \includegraphics[width=0.8\textwidth]{03_Figures/literature-review/academic-collaborator-recommendation-framework.png}
      \rule{35em}{0.5pt}
-    \caption{The framework of ACR-ANE model. (\cite{Du2022})}
+    \caption{The framework of ACR-ANE model. (\textcite{Du2022})}
  \label{fig:acr-ane}
 \end{figure}
 
@@ -167,7 +167,7 @@ The results highlight the effectiveness of combining network structure and schol
 However, the study acknowledges its limitation in handling dynamic networks and suggests future work on incorporating temporal factors to reflect evolving academic collaborations.
 
 
-\cite{Zhu2022} explored the application of \glspl{gnn} to recommend research collaborators in the academic domain.
+\textcite{Zhu2022} explored the application of \glspl{gnn} to recommend research collaborators in the academic domain.
 The study focuses on leveraging dynamic and temporal aspects of research networks, addressing the challenge of identifying suitable collaborators in a rapidly evolving academic landscape.
 The authors utilize data from the MEDLINE database and implement two \gls{gnn}-based models, GraphSAGE and \gls{tgn}, to capture both static and temporal dependencies among researchers.
 
@@ -183,24 +183,24 @@ They propose future enhancements, including the integration of distribution-base
 
 \subsection*{Retrieval-Augmented Recommender Systems}\label{sec:retrieval-augmented-recommender-systems-in-research-field}
 
-According to \cite{Deldjoo2024}, \gls{rag} leverages the integration of retrieval systems and generative models to produce highly relevant and context-aware recommendations.
+According to \textcite{Deldjoo2024}, \gls{rag} leverages the integration of retrieval systems and generative models to produce highly relevant and context-aware recommendations.
 This approach stores knowledge externally, allowing dynamic updates and reducing the risk of hallucinations by grounding outputs in retrieved data.
 By minimizing the need for extensive model parameters, \gls{rag} improves efficiency and makes complex tasks, such as generating personalized explanations, more feasible.
 However, its effectiveness is strictly linked to the quality and relevance of the retrieved information, making it reliant on robust retrieval systems and well-curated external knowledge bases.
 Additionally, the integration of retrieval and generation components introduces complexity and potential computational overhead, especially in real-time applications.
 Despite these challenges, \gls{rag} offers a powerful framework for enhancing the accuracy and adaptability of modern recommender systems.
 
-For example, \cite{Banerjee2024} propose an approach to improving tourism recommender systems by integrating sustainability considerations into the recommendation process.
+For example, \textcite{Banerjee2024} propose an approach to improving tourism recommender systems by integrating sustainability considerations into the recommendation process.
 The authors leverage \gls{rag} to enhance \glspl{llm} for generating recommendations, focusing on sustainable city trips in Europe.
 Their main innovation is the incorporation of a sustainability metric during the \gls{rag} pipeline's prompt augmentation phase, called Sustainability Augmented Reranking (SAR).
 
-Fig. \ref{fig:sar-enhanced-recommendation} illustrates the SAR-enhanced recommendation process, which adjusts the traditional \gls{rag} pipeline by including a sustainability metric based on city popularity and seasonal demand.
+Fig.~\ref{fig:sar-enhanced-recommendation} illustrates the SAR-enhanced recommendation process, which adjusts the traditional \gls{rag} pipeline by including a sustainability metric based on city popularity and seasonal demand.
 
 \begin{figure}[htbp]
     \centering
     \rule{35em}{0.5pt}
     \includegraphics[width=0.8\textwidth]{03_Figures/literature-review/rag-tourism.png}
-    \caption{SAR-enhanced recommendation process (\cite{Banerjee2024})}
+    \caption{SAR-enhanced recommendation process (\textcite{Banerjee2024})}
  \label{fig:sar-enhanced-recommendation}
 \end{figure}
 
@@ -211,28 +211,28 @@ By leveraging data from sources like Wikivoyage\footnote{\url{https://www.wikivo
 Using open-source \glspl{llm}, such as Llama-3.1-Instruct-8B and Mistral-Instruct-7B, the study demonstrates that SAR-enhanced recommendations perform equal to or better than baseline models (without SAR) in terms of quality and sustainability.
 The approach reduces common issues in \gls{llm}-based TRS, like hallucinations, and supports a multi-stakeholder perspective by addressing the needs of users, local communities, and environmental sustainability.
 
-Another example is RAMO (Retrieval-Augmented Generation for MOOCs), a system designed to enhance Massive Open Online Courses (MOOCs) recommendations by addressing the ``cold start'' problem common in recommender systems (\cite{Rao2024}).
+Another example is \gls{ramo}, a system designed to enhance Massive Open Online Courses (MOOCs) recommendations by addressing the ``cold start'' problem common in recommender systems \cite{Rao2024}.
 Traditional course recommendation systems often struggle with new users due to the absence of historical data.
-RAMO tackles this limitation by leveraging a \gls{rag} pipeline integrated with \gls{llm}.
+\gls{ramo} tackles this limitation by leveraging a \gls{rag} pipeline integrated with \gls{llm}.
 
-In RAMO, the \gls{rag} framework combines two key components: a retriever and a generator.
+In \gls{ramo}, the \gls{rag} framework combines two key components: a retriever and a generator.
 The retriever accesses a pre-built knowledge base of course data, such as Coursera's publicly available dataset, and retrieves relevant information based on user queries.
 The retrieved content is used to augment the prompts provided to the generator, ensuring responses are contextually relevant and precise.
-This setup enables RAMO to generate personalized course recommendations even when little or no user-specific information is available, thereby overcoming the cold start issue.
+This setup enables \gls{ramo} to generate personalized course recommendations even when little or no user-specific information is available, thereby overcoming the cold start issue.
 
-The RAMO system workflow is shown in Fig. \ref{fig:ramo-system-workflow}.
+The \gls{ramo} system workflow is shown in Fig.~\ref{fig:ramo-system-workflow}.
 
 \begin{figure}[htbp]
     \centering
     \rule{35em}{0.5pt}
     \includegraphics[width=0.8\textwidth]{03_Figures/literature-review/ramo.png}
-    \caption{The RAMO System workflow (\cite{Rao2024})}
+    \caption{The \gls{ramo} System workflow (\textcite{Rao2024})}
  \label{fig:ramo-system-workflow}
 \end{figure}
 
 The system utilizes advanced text embedding techniques to store and retrieve course data efficiently, employing models like OpenAI's text-embedding-ada-002 for embedding generation.
 The final recommendations are produced by GPT-3.5 Turbo, selected for its cost-efficiency and performance, allowing dynamic, conversational interaction with users.
 
-The paper evaluates RAMO by comparing its performance to traditional systems and standard \gls{llm}-based recommenders without \gls{rag}.
+The paper evaluates \gls{ramo} by comparing its performance to traditional systems and standard \gls{llm}-based recommenders without \gls{rag}.
 Results show that the \gls{rag}-enhanced system delivers more personalized and flexible recommendations, particularly in scenarios requiring personalized suggestions or dealing with general queries from new users.
 The integration of \gls{rag} also ensures that the recommendations align closely with user needs by dynamically retrieving and incorporating domain-specific knowledge.

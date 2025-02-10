@@ -1,35 +1,35 @@
 \chapter{Introduction}\label{chap:intro}
 
 This chapter presents the foundation of the thesis including the background, challenges, and goals of the study.
-It begins with the Background (Sec. \ref{sec:background}), which provides an overview of research collaboration, its importance in advancing scientific discovery, and the role of digital tools and recommender systems in facilitating such collaborations.
-The chapter then moves to the Problem Statement (Sec. \ref{sec:problem-statement}), highlighting the limitations of traditional approaches and existing \gls{ai} methods in identifying potential research collaborators, such as their lack of interpretability, contextual understanding, and ability to generalize across diverse scenarios.
-Sec. \ref{sec:thesis-statement} defines the Thesis Statement, which outlines the proposed solution: a recommender system integrating knowledge graphs and large language models to deliver accurate, explainable, and context-aware recommendations.
-The Research Gap (Sec. \ref{sec:research-gap}) identifies shortcomings in current methods, emphasizing the unexplored potential of combining knowledge graphs with retrieval-augmented large language models to enhance precision and explainability.
-The chapter also illustrates Research Questions (Sec. \ref{sec:research-questions}) to guide the investigation and concludes with a Thesis Structure (Sec. \ref{sec:thesis-structure}), offering a roadmap for the subsequent chapters of the document.
+It begins with the Background (Sec.~\ref{sec:background}), which provides an overview of research collaboration, its importance in advancing scientific discovery, and the role of digital tools and recommender systems in facilitating such collaborations.
+The chapter then moves to the Problem Statement (Sec.~\ref{sec:problem-statement}), highlighting the limitations of traditional approaches and existing \gls{ai} methods in identifying potential research collaborators, such as their lack of interpretability, contextual understanding, and ability to generalize across diverse scenarios.
+Sec.~\ref{sec:thesis-statement} defines the Thesis Statement, which outlines the proposed solution: a recommender system integrating knowledge graphs and large language models to deliver accurate, explainable, and context-aware recommendations.
+The Research Gap (Sec.~\ref{sec:research-gap}) identifies shortcomings in current methods, emphasizing the unexplored potential of combining knowledge graphs with retrieval-augmented large language models to enhance precision and explainability.
+The chapter also illustrates Research Questions (Sec.~\ref{sec:research-questions}) to guide the investigation and concludes with a Thesis Structure (Sec. \ref{sec:thesis-structure}), offering a roadmap for the subsequent chapters of the document.
 
 \section{Background}\label{sec:background}
-Research collaboration is the process where researchers from various fields, institutions, or disciplines work together to achieve shared scientific objectives (\cite{KATZ19971}).
-The exponential growth of academic research in various fields has increased the need for effective collaboration between researchers (\cite{Adams2012, Vermeulen2017}).
+Research collaboration is the process where researchers from various fields, institutions, or disciplines work together to achieve shared scientific objectives \cite{KATZ19971}.
+The exponential growth of academic research in various fields has increased the need for effective collaboration between researchers \cite{Adams2012, Vermeulen2017}.
 Research collaborations are commonly used in areas such as medicine, engineering, social sciences, and environmental studies, where diverse expertise is often required to tackle intricate problems.
-According to \cite{Mei2021}, these collaborations are vital for addressing complex, multidisciplinary challenges, advancing knowledge, and accelerating innovation.
+According to \textcite{Mei2021}, these collaborations are vital for addressing complex, multidisciplinary challenges, advancing knowledge, and accelerating innovation.
 They typically take the form of joint publications, shared research grants, co-developed methodologies, and interdisciplinary studies.
 Their importance is underscored by their ability to share resources and knowledge and foster innovation, making them key factors in scientific progress.
 
-Traditional approaches to collaboration often rely on professional networking through conferences, workshops, and institutional partnerships (\cite{KATZ19971}).
+Traditional approaches to collaboration often rely on professional networking through conferences, workshops, and institutional partnerships \cite{KATZ19971}.
 These methods have proven effective in facilitating connections, but are often constrained by geographic and logistical limitations.
 Digital tools, such as ResearchGate\footnote{\url{https://www.researchgate.net}}, Academia.edu\footnote{\url{https://www.academia.edu}}, Google Scholar\footnote{\url{https://scholar.google.com}} and LinkedIn\footnote{\url{https://www.linkedin.com}}, have expanded the reach of collaborations, allowing researchers to network online, share results, and identify potential collaborators around the world.
 However, these platforms focus primarily on social connectivity rather than intelligent matchmaking based on complementary expertise or shared goals.
 
-Recommender systems (\cite{Lu2012}) are \gls{ai} algorithms that make suggestions and recommendations about the most relevant items for a particular user.
-Nowadays, they are widely used in commercial contexts such as e-commerce and streaming platforms and have shown significant potential to address the challenge of matching individuals with relevant objects or entities (\cite{Hussien2021}).
+Recommender systems \cite{Lu2012} are \gls{ai} algorithms that make suggestions and recommendations about the most relevant items for a particular user.
+Nowadays, they are widely used in commercial contexts such as e-commerce and streaming platforms and have shown significant potential to address the challenge of matching individuals with relevant objects or entities \cite{Hussien2021}.
 
-In recent years, area of \gls{ai} such as \gls{ml} and \gls{dl} algorithms,  \glspl{kg}, and \glspl{llm} have emerged as powerful tools for developing intelligent and interpretable recommendation systems (\cite{Zhao2024}).
+In recent years, area of \gls{ai} such as \gls{ml} and \gls{dl} algorithms,  \glspl{kg}, and \glspl{llm} have emerged as powerful tools for developing intelligent and interpretable recommendation systems \cite{Zhao2024}.
 \glspl{kg} enable the representation of structured information about entities and their relationships, providing a basis for reasoning and generating insights.
 At the same time, \glspl{llm} have demonstrated remarkable abilities to process and understand complex textual information. 
 
 The Semantic Web, an extension of the World Wide Web for enhancing the current web plays a crucial role in this context.
 By embedding structured, machine-readable data into web resources, the Semantic Web allows information to be interconnected and queried seamlessly across diverse datasets.
-Standards such as the \gls{rdf} (\cite{Cyganiak14RCA}) and \gls{owl} (\cite{Deborah2004}) form the foundation of the Semantic Web, enabling interoperability and integration of data from various sources.
+Standards such as the \gls{rdf} \cite{Cyganiak14RCA} and \gls{owl} \cite{Deborah2004} form the foundation of the Semantic Web, enabling interoperability and integration of data from various sources.
 These capabilities are particularly valuable for applications requiring complex reasoning and decision-making.
 
 The combination of advanced \gls{ai} methodologies with Semantic Web technologies has opened new possibilities for enhancing recommender systems.
@@ -77,8 +77,8 @@ The main \gls{rq} is derived from the thesis statement and guides the investigat
 
 To address this question, the following subquestions are explored:
 \begin{itemize}
-	\item Awareness of the problem: \textit{how can research-related data (e.g., publications, topics, affiliations) be effectively modeled into a \gls{kg} to capture relationships among researchers?}
-	\item Suggestions: \textit{How can a \gls{kg} and \gls{llm}-based system be designed to efficiently retrieve relevant information from large, heterogeneous data sources to support personalized recommendations?}
+	\item Awareness of the problem: \textit{How can research-related data (e.g., publications, topics, affiliations) be modeled into a \gls{kg} for research collaborator recommendation?}
+	\item Suggestion: \textit{How can a \gls{kg} and \gls{llm}-based system be designed to efficiently retrieve relevant information from large, heterogeneous data sources to support personalized recommendations?}
 	\item Implementation: \textit{How can the system generate human-readable explanations for its research collaborator recommendations using the \gls{kg} and \gls{llm} outputs?}
 \end{itemize}
 
