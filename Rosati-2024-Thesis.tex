@@ -31,6 +31,24 @@
 
 \makeglossaries
 
+\setlength{\epigraphwidth}{.7\textwidth}
+\renewcommand{\epigraphflush}{flushright}
+\makeatletter
+% Taken and updated from http://mirrors.ctan.org/macros/latex/contrib/epigraph/epigraph.dtx
+\renewcommand{\@epitext}[1]{%
+  \begin{minipage}{\epigraphwidth}\begin{\textflush} \hspace*{0pt}#1\\
+    \ifdim\epigraphrule>\z@ \@epirule \else \vspace*{-.5\baselineskip} \fi
+  \end{\textflush}\end{minipage}}
+\makeatother
+
+
+% research questions
+\AfterEndPreamble{
+    \newcommand{\rqOne}{\textbf{\gls{rq}1}: \textit{How can research-related data (e.g., publications, topics, affiliations) be modeled into a \gls{kg} for research collaborator recommendation?}}
+    \newcommand{\rqTwo}{\textbf{\gls{rq}2}: \textit{How can a \gls{kg} and \gls{llm}-based system be designed to efficiently retrieve relevant information from large, heterogeneous data sources to support personalized recommendations?}}
+    \newcommand{\rqThree}{\textbf{\gls{rq}3}: \textit{How can the system generate human-readable explanations for its research collaborator recommendations using the \gls{kg} and \gls{llm} outputs?}}
+    \newcommand{\rqFour}{\textbf{\gls{rq}4}: \textit{How accurate and effective is the proposed sysetem in retrieveing relevant information about research projects and providing personalized research collaborator recommendations?}}
+}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -43,7 +61,7 @@
 
 % You thesis title
 % Citation command \thesisTitle
-\thesisTitle{A Hybrid AI Approach for Recommending Collaborators in European Research Projects}
+\thesisTitle{A Hybrid AI Approach for Recommending Collaborators in Research Projects}
 %-------------------------------------------------  
 
 % You supervisor's name Unicam or FHNW
@@ -235,7 +253,7 @@
 \newacronym{cf}{CF}{Collaborative Filtering}
 \newacronym{gbc}{GBC}{Gradient Boosted Classifier}
 \newacronym{auc}{AUC}{Area Under the Curve}
-\newacronym{rag}{RAG}{Retrieval-Augmented Recommendation}
+\newacronym{rag}{RAG}{Retrieval-Augmented Generation}
 \newacronym{map}{MAP}{Mean Average Precision}
 \newacronym{mrr}{MRR}{Mean Reciprocal Rank}
 \newacronym{ndcg}{NDCG}{Normalized Discounted Cumulative Gain}
@@ -260,6 +278,7 @@
 \newacronym{dingo}{DINGO}{Data Integration for Grant Ontology}
 \newacronym{fabio}{FaBiO}{FRBR-aligned Bibliographic Ontology}
 \newacronym{frapo}{FRAPO}{Funding, Research Administration and Projects Ontology}
+\newacronym{dpr}{DPR}{Dense Passage Retrieval}
 
 % PDF meta-data
 \hypersetup{pdftitle={\thesisTitle}}
@@ -274,12 +293,15 @@
 %----------------------------------------------------------------------------------------
 
 \titlePage
+%\clearpage
+%\input{chapters/quotation.tex}
+%\clearpage
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
-
-\input{01_Chapters/Abstract}
+\pagenumbering{roman}
+\input{chapters/Abstract.tex}
 
 \clearpage % Start a new page
 
@@ -305,19 +327,21 @@
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 \fillingPage{}
-\input{01_Chapters/Introduction} 
+\input{chapters/Introduction} 
 \fillingPage{}
-\input{01_Chapters/LiteratureReview}
+\input{chapters/LiteratureReview}
 \fillingPage{}
-\input{01_Chapters/ResearchDesign}
+\input{chapters/ResearchDesign}
 \fillingPage{}
-\input{01_Chapters/ResearchMethods}
+\input{chapters/DataAnalysis.tex}
 \fillingPage{}
-\input{01_Chapters/ArtifactDevelopment}
+\input{chapters/Knowledge-DrivenArchitecture.tex}
 \fillingPage{}
-\input{01_Chapters/Evaluation}
+\input{chapters/ArtifactDevelopment.tex}
 \fillingPage{}
-\input{01_Chapters/Conclusion}
+\input{chapters/Evaluation}
+\fillingPage{}
+\input{chapters/Conclusion}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -376,8 +400,8 @@
 %	FOREWORD / ACKNOWLEDGEMENTS (optional)
 %----------------------------------------------------------------------------------------
 
-\input{01_Chapters/Acknowledgments.tex}
-\input{01_Chapters/Ringraziamenti.tex}
+\input{chapters/Acknowledgments.tex}
+\input{chapters/Ringraziamenti.tex}
 
 \clearpage % Start a new page
 

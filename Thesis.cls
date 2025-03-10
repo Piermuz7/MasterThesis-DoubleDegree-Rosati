@@ -48,7 +48,7 @@
 \RequirePackage[utf8]{inputenc} % Allows the use of international characters 
 %%(e.g. Umlauts)
 
-\newcommand{\missingPackages}{04_Packages} % Define folder with missing packages
+\newcommand{\missingPackages}{packages} % Define folder with missing packages
 
 %----------------------------------------------------------------------------------------
 %	MARGINS
@@ -116,6 +116,7 @@
 \usepackage{pdflscape}
 \usepackage{epstopdf}
 \usepackage{array}
+\usepackage{tabularx}
 \usepackage{rotating}
 \usepackage{listings}
 \usepackage{blindtext}
@@ -129,6 +130,7 @@
 \usepackage{float}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
+\usepackage{epigraph} % quotations
 \renewcommand{\arraystretch}{1.2} %nicer tables
 \lstset{captionpos=b,
         frame=tb,
@@ -160,7 +162,7 @@
 
 %\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 \usepackage[style=numeric,sorting=nyt,backend=biber]{biblatex}
-
+\usepackage{enumitem}
 \DeclareLanguageMapping{british}{british-apa}
 
 %\addbibresource{Bibliography.bib}
@@ -297,13 +299,13 @@
     \begin{figure}
         {\begin{minipage}[t]{.45\linewidth}
             \begin{center}
-            \href{\unicamURL}{\includegraphics[height=3.20cm]{03_Figures/00_Logo/logo-unicam-notext.png}}
+            \href{\unicamURL}{\includegraphics[height=3.20cm]{figures/logo/logo-unicam-notext.png}}
             \end{center}
         \end{minipage}
         \hspace{.09\linewidth}
         \begin{minipage}[t]{.45\linewidth}
             \begin{center}
-            \href{\hswURL}{\includegraphics[height=2.38cm]{03_Figures/00_Logo/logo-fhnw-notext.png}}
+            \href{\hswURL}{\includegraphics[height=2.38cm]{figures/logo/logo-fhnw-notext.png}}
             \end{center}
         \end{minipage}
     \vspace{0.05cm}%
