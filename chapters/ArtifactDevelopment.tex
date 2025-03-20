@@ -25,6 +25,7 @@ The token limit represents the maximum number of tokens a model can handle in a 
 
 \begin{table}[htbp]
     \centering
+    \scriptsize
     \begin{tabularx}{\textwidth}{|X|X|X|}
       \hline
       \textbf{Model} & \textbf{Context Window} & \textbf{Max Output Tokens}\\
@@ -37,9 +38,18 @@ The token limit represents the maximum number of tokens a model can handle in a 
 \end{table}
 
 Finally, we containerized the entire system using \texttt{Docker} to ensure portability, reproducibility, and scalability across different environments.
-The technology stack used in the proposed Knowledge-Driven and Hybrid \gls{ai} Architecture for Research Collaboration is summarized in Table~\ref{tab:technology-stack}.
 Fig.~\ref{fig:proposed-system-graphRAG-technologies} provides a visual representation of the technologies used in the proposed system.
-The source code for the proposed system is available on GitHub at \url{https://github.com/Piermuz7/MasterThesisProject.git}.
+
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.8\textwidth]{figures/implementation/proposed-system-graphRAG-technologies.png}
+     \rule{35em}{0.5pt}
+    \caption{Technologies used in the proposed Knowledge-Driven and Hybrid AI Architecture for Research Collaboration}
+ \label{fig:proposed-system-graphRAG-technologies}
+\end{figure}
+
+The technology stack used in the proposed Knowledge-Driven and Hybrid \gls{ai} Architecture for Research Collaboration is summarized in Table~\ref{tab:technology-stack}.
+The source code of the proposed recommender system is available on GitHub at \url{https://github.com/Piermuz7/MasterThesisProject.git}.
 
 \begin{table}[htbp]
     \centering
@@ -75,19 +85,11 @@ The source code for the proposed system is available on GitHub at \url{https://g
     \label{tab:technology-stack}
 \end{table}
 
-\begin{figure}[htbp]
-    \centering
- \includegraphics[width=.9\textwidth]{figures/implementation/proposed-system-graphRAG-technologies.png}
-     \rule{35em}{0.5pt}
-    \caption{Technologies used in the proposed Knowledge-Driven and Hybrid AI Architecture for Research Collaboration}
- \label{fig:proposed-system-graphRAG-technologies}
-\end{figure}
-
 \section{Databases Population}\label{sec:databases-population}
 The first step is populating the databases, which involves importing the \gls{eurio} \gls{kg}, provided in \gls{rdf} N-Quad format, into GraphDB.
 This process ensures that the structured knowledge about EU-funded research projects is stored in a graph database, allowing for efficient querying and retrieval of relevant information.
 During the \acrlong{kg} Exploration (Sec.~\ref{sec:ontology-selection}), it was observed that not all projects within the \gls{eurio} dataset have associated participants.
-In other words, certain projects exist in the \gls{kg} without any recorded participants.
+In other words, several projects exist in the \gls{kg} without any recorded participants.
 Given that the goal of the system is to recommend research collaborators based on project involvement, it is crucial to ensure that only relevant data is processed in the embedding generation phase.
 To maintain efficiency and relevance, embeddings of title and abstract are computed only for projects that have at least one associated participant.
 This is achieved by filtering out projects without participants using the \gls{sparql} query shown in Listing~\ref{lst:projects-with-at-least-one-participants}.
@@ -114,9 +116,7 @@ This is achieved by filtering out projects without participants using the \gls{s
 The query \gls{sparql} returned 25,482 projects with at least one participant involved in each project.
 Of these projects, title and abstract embeddings were calculated and stored in the Chroma vector database.
 In this way, the vector database contains only meaningful representations of research projects with involved participants, avoiding unnecessary computations for projects without involved participant.
-Consequently, no storage space is wasted in the vector database.
-Since the \gls{kg} is too large to process in a single step, embedding storage in Chroma was performed in batches.
-Specifically, embeddings were stored 1,000 entities at a time to efficiently manage memory usage and avoid performance bottlenecks.
+Since the \gls{kg} is too large to process in a single step, embeddings were stored in Chroma in batches of 1,000 entities at a time to efficiently manage memory usage and avoid performance bottlenecks.
 
 \section{Building AI Agents and Tools}\label{sec:building-ai-agents}
 Once the \gls{kg} and related embeddings are stored in the databases, we need to implement the system's core functionalities.
@@ -125,22 +125,22 @@ As described in Sec.~\ref{sec:architecture-design}, the user interface is design
 To enable this interaction, we developed three main agents and five different tools.
 The agents are responsible for coordinating the workflow, generating responses, and managing the system's overall functionality.
 The tools, on the other hand, are designed to perform specific tasks, such as generating \gls{sparql} queries, extracting relevant information, and providing recommendations.
-Going into technical details, \textbf{LlamaIndex} is used to set a prompt to agents, which instructs agents to execute specific tools, respond according to a certain format, and so on.
+\textbf{LlamaIndex} is used to set a prompt to agents, which instructs agents to execute specific tools, respond according to a certain format, and so on.
 \textbf{Langchain}, on the other hand, is used exclusively for generating \gls{sparql} queries based on user input.
 The data returned from these queries will then be used in turn by the agents.
 The agents and tools are described in more detail below.
-For the sake of readability, only the prompt templates of the agents are given in the appendices.
-Also for these reasons, the tool names used in this thesis are not the same as those given in the prompt templates in the appendices.
-
+For readability, only the agents' prompt templates are provided in the appendices, and the tool names used in this thesis differ from those in the prompt templates.
 
 \subsection*{Project-Participants-Information Agent}
 The process starts with a user query, which is handled by a coordinator agent, also called master agent.
-This agent serves as the central orchestrator, executing a specific task, or assigning the query to specialized retrieval agents according to its specific requirements.
+This agent act as central orchestrator, executing specific tasks, or assigning the query to specialized retrieval agents according to its specific requirements.
 In other words, this agent is tasked with retrieving information on projects and participants.
-It is equipped with a template prompt that it must follow.
-The prompt, shown in the Appendix~\ref{app:ProjectParticipantsAgent}, sets the scope of the agent, making it explicit that it must answer purely related questions in the context of European projects.
+It is equipped with a prompt template that it must follow.
+The prompt, shown in Appendix~\ref{app:ProjectParticipantsAgent}, sets the scope of the master agent, making it explicit that it must answer purely related questions in the context of European projects.
 With this prompt, the agent is instructed on how to use its tools: \textit{Project information} and \textit{Project participants}.
-The first tool has example \gls{sparql} queries to generate a \gls{sparql} query from the user query.
+The first tool has its own prompt template, which contains example \gls{sparql} queries to generate a \gls{sparql} query from the user input.
+Once the query is generated, the agent will use it to query the \gls{kg} and retrieve the relevant information.
+The agent will then use the information to generate a response to the user query.
 For example, if the user asks for the relative information of a project entitled ``Knowledge-Based Information Agent with Social Competence and Human Interaction Capabilities'', the agent will use this tool to generate the \gls{sparql} query shown in Listing~\ref{lst:project-information-sparql-query}.
 
 \begin{lstlisting}[language=SPARQL, caption={\gls{sparql} query for getting information of a project entitled ``Knowledge-Based Information Agent with Social Competence and Human Interaction''}, label={lst:project-information-sparql-query}]
@@ -189,16 +189,16 @@ Fig.~\ref{fig:example-who-is-emanuela-merelli} shows an example of a user query 
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.8\textwidth]{figures/implementation/example-who-is-emanuela-merelli.png}
+ \includegraphics[width=.75\textwidth]{figures/implementation/example-who-is-emanuela-merelli.png}
      \rule{35em}{0.5pt}
     \caption{Example of a user query asking for information about a person named Emanuela Merelli}
  \label{fig:example-who-is-emanuela-merelli}
 \end{figure}
 
-Another example of a user query asking for information about a project entitled ``Topology-Driven Methods for Complex Systems'' is shown in Fig.~\ref{fig:example-general-info-about-topology-driven-methods-for-complex-systems-project}.
+Fig.~\ref{fig:example-general-info-about-topology-driven-methods-for-complex-systems-project} shows another example of a user query asking for information about a project entitled ``Topology-Driven Methods for Complex Systems''.
 This query is handled by the same agent, which uses the \textit{Project information} tool to generate the \gls{sparql} query to retrieve the project's metadata.
 The chatbot's response presents the abstract of the project and briefly explains which topics it focused on and the types of scientists involved.
-However, it does not mention the researchers involved, because the \textit{Participant information} tool was not used.
+However, it does not mention the researchers involved, because the \textit{Project participnats} tool was not used.
 Finally, the duration and two useful links related to the project are given.
 
 \begin{figure}[htbp]
@@ -209,14 +209,14 @@ Finally, the duration and two useful links related to the project are given.
  \label{fig:example-general-info-about-topology-driven-methods-for-complex-systems-project}
 \end{figure}
 
-Fig.~\ref{fig:example-participants-of-topology-driven-methods-for-complex-systems-project} shows an example of a user query asking for information about participants in the same project.
-This query is handled by the same agent, which uses the \textit{Project participants} tool to generate the \gls{sparql} query to retrieve the project's participants.
+Fig.~\ref{fig:example-participants-of-topology-driven-methods-for-complex-systems-project} shows an example of a user query asking for information about participants involved in the same project of Fig.~\ref{fig:example-general-info-about-topology-driven-methods-for-complex-systems-project}.
+This user input query is handled by the same agent, which will use the \textit{Project participants} tool to generate the \gls{sparql} query in order to retrieve the project's participants.
 In this example, the project coordinator and the 5 participants involved are listed.
-In addition, the organisation and its postal address where this participant is employed is given.
+Moreover, the organization where this participant is employed, along with its full postal address, is provided to ensure accurate identification and location details.
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.8\textwidth]{figures/implementation/example-participants-of-topology-driven-methods-for-complex-systems-project.png}
+ \includegraphics[width=.75\textwidth]{figures/implementation/example-participants-of-topology-driven-methods-for-complex-systems-project.png}
      \rule{35em}{0.5pt}
     \caption{Example of a user query asking for information about participants in a project entitled ``Topology-Driven Methods for Complex Systems''}
  \label{fig:example-participants-of-topology-driven-methods-for-complex-systems-project}
@@ -228,7 +228,7 @@ Otherwise, if the task is to suggest potential consortium organisations for a pr
 
 \subsection*{Potential Collaborators Agent}
 This agent recommends potential research collaborators based on a given project description and objectives.
-It is instructed via the prompt template in the Appendix~\ref{app:PotentialCollaboratorsAgent} in order to follow a structured process to identify relevant collaborators by leveraging existing project data, retrieving information about researchers, and refining its recommendations using web-based sources.
+It is instructed via the prompt template shown in Appendix~\ref{app:PotentialCollaboratorsAgent}, in order to follow a structured process to identify relevant collaborators by leveraging existing project data, retrieving information about researchers, and refining its recommendations using web-based sources.
 Unlike the master agent, this agent does not use prompts to generate \gls{sparql} queries from user input.
 The process begins with analyzing the given project description to extract its main concepts.
 This is a starting point to identify relevant past projects and researchers.
@@ -238,7 +238,8 @@ Once similar projects have been identified, the agent proceeds to find collabora
 This step involves extracting information about researchers who have contributed to the identified projects.
 The agent ensures that all project URIs obtained from the similarity search are used to gather a comprehensive list of potential collaborators.
 For each collaborator, key details such as their full name, affiliated organization, and past project involvement are retrieved.
-As mentioned earlier, the names of the tools in the thesis are not the same at code level. The process of how contributors are extracted to suggest consists of the \textit{Recommend collaborators} tool.
+As mentioned earlier, the names of the tools in the thesis are not the same at code level.
+The process of how contributors are extracted to suggest described so far, is equivalent to the \textit{Recommend collaborators} tool.
 After generating an initial list of potential collaborators, the agent uses the \textit{Search Web} tool to gather additional information about their research areas and expertise.
 To enhance the quality and relevance of the recommendations, the agent formulates a set of keywords summarizing each collaborator's research topics.
 This web search is performed only if potential collaborators have been found.
@@ -246,11 +247,6 @@ The final output consists of a structured list of recommended collaborators, eac
 This format provides clarity and usability for users looking for opportunities for research collaboration.
 If no similar projects or collaborators are found, the agent does not proceed with web searches.
 Instead, it provides a professional response explaining that no relevant matches were identified.
-
-An example of a user query asking for potential collaborators for a project description and objectives is shown in Fig.~\ref{fig:example-collaborators-recommendation}.
-The user query is handled by the \textit{Potential Collaborators Agent}, which uses the \textit{Recommend collaborators} tool to retrieve the potential collaborators.
-The chatbot's response presents a list of potential collaborators, including their full names, affiliated organizations, and past project involvements.
-Since the response is too long to fit in a single screenshot, only the first few collaborators are shown in the response.
 
 \begin{figure}[h]
     \centering
@@ -273,9 +269,14 @@ Since the response is too long to fit in a single screenshot, only the first few
     \label{fig:example-collaborators-recommendation}
 \end{figure}
 
+An example of a user query asking for potential collaborators for a project description and objectives is shown in Fig.~\ref{fig:example-collaborators-recommendation}.
+The user query is handled by the \textit{Potential Collaborators Agent}, which uses the \textit{Recommend collaborators} tool to retrieve the potential collaborators.
+The chatbot's response presents a list of potential collaborators, including their full names, affiliated organizations, and past project involvements.
+Since the response is too long to fit in a single screenshot, only the first few collaborators are shown in the response.
+
 \subsection*{Potential Consortium Organisations Agent}
-Finally, this agent recommends potential consortium organizations based on a given project description and objectives.
-It is instructed through the detailed prompt in the Appendix~\ref{app:PotentialConsortiumOrganisationsAgent} to suggest potential organisations that could form a consortium for a given project.
+Finally, this agent recommends potential consortia based on a given project description and objectives.
+It is instructed through the detailed prompt in Appendix~\ref{app:PotentialConsortiumOrganisationsAgent} to suggest potential organisations that could form a consortium for a given project.
 The agent follows a multi-step approach to identify relevant organisations based on similar projects and their associated participants.
 Its prompt provides a clear sequence of tasks that the agent must follow.
 First, it processes the user-provided project description and objectives to extract key concepts and requirements.
@@ -285,7 +286,7 @@ Once similar projects are found, it extracts the organisations involved in those
 After retrieving this information, the agent organizes the organisations into one or more consortium lists, ensuring that each consortium includes at least four organisations with distinct contributions, that no organisations are repeated within the same consortium, and that each organisation has a clearly defined role based on its past research.
 For each organisation, the agent specifies its postal address, explains its potential contribution to the project by linking it to specific project objectives, and lists its related works extracted from previous projects to justify its relevance.
 For the same reason as the consistency of tool names, the explanation given so far of the suggestion of consortia is equivalent to the \textit{Recommend consortium organisations} tool.
-Once the consortium lists are constructed, the agent may use the \textit{Search Web} tool to get additional details on the organisations' research areas.
+Once the consortia list is constructed, the agent may use the \textit{Search Web} tool to get additional details on the organisations' research areas.
 However, this step is only executed if similar projects and organisations are found.
 The prompt is a highly structured instruction set designed to guide the agent in generating well-justified and relevant consortium recommendations.
 It outlines the input format, the retrieval process, and the expected output structure.
@@ -295,7 +296,7 @@ The output format is strictly defined, requiring the agent to provide each organ
 As a matter of quality and consistency, the agent must avoid selecting overly similar organisations while assembling teams that provide complementary skills and expertise.
 If no relevant organisations are found, it must generate a professional response explaining the absence of suitable matches without invoking external knowledge.
 
-Fig.~\ref{fig:example-consortium-organisations-recommendation-question} shows an example of a user query asking for potential consortium organisations for a project description and objectives, that are the same as in Fig.~\ref{fig:example-collaborators-question}.
+Fig.~\ref{fig:example-consortium-organisations-recommendation-question} shows an example of a user query asking for potential consortium organisations for a project description and objectives, as those in Fig.~\ref{fig:example-collaborators-question}.
 
 \begin{figure}[htbp]
     \centering
@@ -313,14 +314,14 @@ There are two consortium lists, each containing five organisations with distinct
     \centering
     \begin{subfigure}{0.45\textwidth}
         \centering
-        \includegraphics[width=.7\textwidth]{figures/implementation/example-consortium-organisations-recommendation-answer-pt1.png}
+        \includegraphics[width=.8\textwidth]{figures/implementation/example-consortium-organisations-recommendation-answer-pt1.png}
         \caption{}
         \label{fig:example-consortium-organisations-recommendation-answer-pt1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.45\textwidth}
         \centering
-        \includegraphics[width=.6\textwidth]{figures/implementation/example-consortium-organisations-recommendation-answer-pt2.png}
+        \includegraphics[width=.8\textwidth]{figures/implementation/example-consortium-organisations-recommendation-answer-pt2.png}
         \caption{}
         \label{fig:example-consortium-organisations-recommendation-answer-pt2}
     \end{subfigure}

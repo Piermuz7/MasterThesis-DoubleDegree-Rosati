@@ -2,8 +2,8 @@ In the problem awareness phase, we addressed the first sub-research question:
 \begin{center}
     \rqOne
 \end{center}
-To establish a foundation for this study, we conducted a comprehensive literature review covering key areas such as research collaboration (Sec.~\ref{sec:research-collaboration}), the role of \glspl{kg} and ontologies in the research domain (Sec.\ref{sec:knowledge-graphs}), recommender systems tailored for research contexts (Sec.~\ref{sec:recommender-systems-in-research-field}), and the emerging field of Retrieval-Augmented Recommender Systems (Sec.~\ref{sec:retrieval-augmented-recommender-systems-in-research-field}).
-From the literature review conducted, existing knowledge graphs in the research field, such as \gls{mag}, \gls{s2ag}, Wikidata, \gls{orkg}, and VIVO ontology, were analyzed.
+To establish a foundation for this study, we conducted a comprehensive literature review covering key areas such as research collaboration (Sec.~\ref{sec:research-collaboration}), the role of \glspl{kg} and ontologies in the research domain (Sec.\ref{sec:knowledge-graphs}), \glspl{llm} and their applications (Sec.~\ref{sec:large-language-models}), \gls{rag} aproaches (Sec.~\ref{sec:retrieval-augmented-generation}), recommender systems tailored for research contexts (Sec.~\ref{sec:recommender-systems-in-research-field}), and the emerging field of Retrieval-Augmented Recommender Systems (Sec.~\ref{sec:retrieval-augmented-recommender-systems-in-research-field}).
+From the literature review conducted, existing \glspl{kg} in the research field, such as \gls{mag}, \gls{s2ag}, Wikidata, \gls{orkg}, and VIVO ontology, were analyzed.
 However, they present several limitations that impact their effectiveness in research collaborator recommendation such as:
 \begin{itemize}
     \item Lack of granular and up-to-date data: many of these \glspl{kg} rely on static datasets or periodic updates, making it challenging to capture evolving research trends, emerging collaborations, and newly published work in real time.
@@ -44,11 +44,9 @@ These include:
     \item \gls{skos}: facilitates controlled vocabularies and classification schemes.
 \end{itemize}
 
-The \gls{eurio} Ontology also incorporates reference data, such as countries, funding schemes, types of action, the EuroSciVoc taxonomy, and the NUTS classification, to enhance the semantic representation of research information.
+The \gls{eurio} ontology also incorporates reference data, such as countries, funding schemes, types of action, the EuroSciVoc taxonomy, and the NUTS classification, to enhance the semantic representation of research information.
 It leverages the \gls{owl} 2 to formally define the semantics of domain-specific terms used to describe \gls{cordis} entities (e.g., projects, organizations, etc.), their attributes (e.g., title, acronym, legal name, etc.), and their interrelations (e.g., the connection between a project and its participating organizations, etc.).
 
-\gls{eurio} is part of the EU's reference data assets, which include ontologies, taxonomies, and authority tables.
-These structured data assets improve the visibility, reusability, and accessibility of research information.
 The \gls{eurio} ontology defines multiple classes representing different concepts such as projects, organizations, funding schemes, grants, publications, and roles, along with associated data properties and object properties that define their relationships.
 Each class has a set of data properties that describe its attributes, and a set of object properties that define its connections to other classes.
 Each class, data property, and object property has several annotations but in general the main annotations for those are \textit{rdfs:label}, which provides a human-readable label for the entity, \textit{rdfs:comment}, which provides a human-readable description of the entity, and \textit{rdfs:isDefinedBy}, which provides a link to the ontology where the entity is defined.
@@ -100,7 +98,7 @@ An overview of the \gls{eurio} ontology is shown in the UML diagram in Fig.~\ref
 The dataset is structured in \gls{rdf} format and contains over 18 million \gls{rdf} triples, with a total size of approximately 5GB when serialized in the N-Quad Triples \gls{rdf} format.
 These structured triples enable the representation of relationships between projects, organizations, researchers, project publications, funding schemes, grants, countries, and other relevant entities making, the dataset a rich resource for \gls{kg}-based research.
 
-The \gls{eurio} dataset is available in multiple formats to ensure accessibility and ease of integration into different research workflows.
+The \gls{eurio} \gls{kg} is available in multiple formats to ensure accessibility and ease of integration into different research workflows.
 Supported formats include \gls{rdf}, \gls{ttl}, \gls{nq}, \gls{jsonld}, and \gls{nt}.
 The \gls{eurio} \gls{kg} used in this thesis is the latest version updated by the European Union on 08.11.2023, ensuring that the data remains relevant and accurate up to this date.
 
@@ -117,7 +115,7 @@ Figures~\ref{fig:fhnw-graphdb} and~\ref{fig:unicam-graphdb} show the subgraphs f
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.8\textwidth]{figures/architecture/graphdb-fhnw.png}
+ \includegraphics[width=.9\textwidth]{figures/architecture/graphdb-fhnw.png}
      \rule{35em}{0.5pt}
     \caption{FACHHOCHSCHULE NORDWESTSCHWEIZ subgraph in the \gls{eurio} \gls{kg}}
  \label{fig:fhnw-graphdb}
@@ -125,11 +123,12 @@ Figures~\ref{fig:fhnw-graphdb} and~\ref{fig:unicam-graphdb} show the subgraphs f
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.8\textwidth]{figures/architecture/graphdb-unicam.png}
+ \includegraphics[width=.9\textwidth]{figures/architecture/graphdb-unicam.png}
      \rule{35em}{0.5pt}
     \caption{University of Camerino subgraph in the \gls{eurio} \gls{kg}}
  \label{fig:unicam-graphdb}
 \end{figure}
+
 As can be seen from both figures, both the Fachhochschule Nordwestschweiz and the University of Camerino are instances of the \textbf{eurio:HigherOrSecondaryEducation} class and have the following six data properties: \textit{rdfs:label}, \textit{eurio:url}, \textit{eurio:vatNumber}, \textit{eurio:legalName}, \textit{eurio:rcn}, and \textit{eurio:identifier}.
 Furthermore, we can see that, taking Fachhochschule Nordwestschweiz as an example, it has several \textit{eurio:hasRole} relationships with different ``Org: FACHHOCHSCHULE NORDWESTSCHWEIZ'' entities.
 The \gls{kg} contains several such redundancies, also for other types of classes.
@@ -148,7 +147,7 @@ From the data properties of this node, we can easily see that the role of the FH
 
 Following this, we performed a more in-depth exploration using \gls{sparql} queries to retrieve and analyze various aspects of the \gls{kg}.
 This included examining the metadata of research projects, their abstract, start and end dates, project status, as well as the organizations involved, their roles, and the researchers affiliated with them.
-For example, Listing~\ref{lst:sparql_example_project1_data_properties} shows a \gls{sparql} query that retrieves the abstract, status, start date, and end date of a specific project titled ``BIM-based holistic tools for Energy-driven Renovation of existing Residences'', which was selected as a scenario example for this study in Sec.~\ref{sec:scenarios}.
+For example, Listing~\ref{lst:sparql_example_project1_data_properties} shows a \gls{sparql} query that retrieves the abstract, status, start date, and end date of a specific project titled ``BIM-based holistic tools for Energy-driven Renovation of existing Residences'', which was selected as a scenario example (Project \ref{project1}) for this study in Sec.~\ref{sec:scenarios}.
 The results of this query are shown in Fig.~\ref{fig:sparql_example_project1_data_properties}, providing detailed information about some project data properties.
 
 \begin{lstlisting}[language=SPARQL, caption={\gls{sparql} query for getting the abstract, status, start date, and end date of a project titled ``BIM-based holistic tools for Energy-driven Renovation of existing Residences''}, label=lst:sparql_example_project1_data_properties]
@@ -173,15 +172,14 @@ The results of this query are shown in Fig.~\ref{fig:sparql_example_project1_dat
 \end{figure}
 
 We also explored the consortium participants involved in the selected project by querying the \gls{kg} to retrieve the organizations and their roles in the project.
-Listing~\ref{lst:sparql_example_project1_consortium_participants} shows the \gls{sparql} query used to extract the consortium participants involved in the project titled ``BIM-based holistic tools for Energy-driven Renovation of existing Residences''.
+Listing~\ref{lst:sparql_example_project1_consortium_participants} shows the \gls{sparql} query used to extract the consortium participants involved in the project \ref{project1}.
 The results of this query are shown in Fig.~\ref{fig:sparql_example_project1_consortium_participants}, providing detailed information about the organizations and their roles in the project.
 As we can see, the consortium participants are the same as the ones listed in the scenario analysis in Sec.~\ref{sec:scenarios}.
 
 \begin{lstlisting}[language=SPARQL, caption={\gls{sparql} query for getting the consortium participants involved in a project titled ``BIM-based holistic tools for Energy-driven Renovation of existing Residences''}, label=lst:sparql_example_project1_consortium_participants]
     PREFIX eurio: <http://data.europa.eu/s66#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    SELECT DISTINCT  
-                    (COALESCE(?org, STRBEFORE(STRAFTER(?party_title, "Org: "), "/ Role:")) AS ?organisation) ?role_label
+    SELECT DISTINCT (COALESCE(?org, STRBEFORE(STRAFTER(?party_title, "Org: "), "/ Role:")) AS ?organisation) ?role_label
     WHERE {
         ?project a eurio:Project .
         ?project eurio:title "BIM-based holistic tools for Energy-driven Renovation of existing Residences".
@@ -202,12 +200,12 @@ As we can see, the consortium participants are the same as the ones listed in th
  \label{fig:sparql_example_project1_consortium_participants}
 \end{figure}
 
-During the exploration, we also investigated the people involved in research projects.
+During the exploration, we also investigated people involved in research projects.
 In the \gls{eurio} \gls{kg}, every project includes information about the organizations involved.
-Unfortunately, not all projects contain the \textit{eurio:isEmployedBy} relationship linking a \textbf{eurio:Role} to a \textbf{eurio:Organisation}.
+Unfortunately, not all projects have the \textit{eurio:isEmployedBy} relationship linking a \textbf{eurio:Role} to a \textbf{eurio:Organisation}.
 As a result, it is not always possible to retrieve details about the individuals associated with a given project, since their employment or involvement is not explicitly represented in all cases.
-
-The selected project, ``BIM-based holistic tools for Energy-driven Renovation of existing Residences'', is an example of a project where the people involved are not explicitly linked to the project.
+The selected project \ref{project1}, is an example of a project where the people involved are not explicitly linked to the project.
+Running the query in Listing~\ref{lst:sparql_example_project1_people} on the \gls{eurio} \gls{kg} did not return any results, indicating that the people involved in the project are not explicitly linked to the project.
 
 \begin{lstlisting}[language=SPARQL, caption={\gls{sparql} query for getting full name, organisation, telephone, and fax of the people involved in a project titled ``BIM-based holistic tools for Energy-driven Renovation of existing Residences''}, label=lst:sparql_example_project1_people]
     PREFIX eurio: <http://data.europa.eu/s66#>
@@ -228,8 +226,6 @@ The selected project, ``BIM-based holistic tools for Energy-driven Renovation of
     }
 \end{lstlisting}
 
-Running the query in Listing~\ref{lst:sparql_example_project1_people} on the \gls{eurio} \gls{kg} did not return any results, indicating that the people involved in the project are not explicitly linked to the project.
-
 Listing~\ref{lst:sparql_example_merelli_project_people} is the same query as Listing~\ref{lst:sparql_example_project1_people}, but for a different project titled ``Topology driven methods for complex systems''.
 The results of this query are shown in Fig.~\ref{fig:sparql_example_merelli_project_people}, providing detailed information about the people involved in the project, including their full name, organization, telephone, and fax.
 
@@ -248,8 +244,7 @@ The results of this query are shown in Fig.~\ref{fig:sparql_example_merelli_proj
         ?org rdfs:label ?org_name.
         ?role eurio:isInvolvedIn ?project.
         ?project a eurio:Project.
-        ?project eurio:title "Topology driven methods for complex systems".
-    }
+        ?project eurio:title "Topology driven methods for complex systems".}
 \end{lstlisting}
 
 \begin{figure}[htbp]
@@ -261,6 +256,15 @@ The results of this query are shown in Fig.~\ref{fig:sparql_example_merelli_proj
 \end{figure}
 
 The last person in the results of the query in Listing~\ref{lst:sparql_example_merelli_project_people} is Prof. Emanuela Merelli, who is affiliated with the University of Camerino, and Fig.~\ref{fig:example-person-prof-merelli} presents a visual representation of the \gls{eurio} \gls{kg}, specifically focusing on her class type as a \textbf{eurio:Person}.
+
+\begin{figure}[htbp]
+    \centering
+ \includegraphics[width=.9\textwidth]{figures/architecture/example-person-prof-merelli.png}
+     \rule{35em}{0.5pt}
+    \caption{An example of a person's profile in the \gls{eurio} \gls{kg}}
+ \label{fig:example-person-prof-merelli}
+\end{figure}
+
 At the center of the graph, her node connects to multiple entities representing affiliations, roles, projects, and contact details.
 The right panel provides metadata about her, including her given name, family name, research control number, and honorific title, indicating her academic status as ``Prof.''.
 From Emanuela Merelli's node, one connection leads to a contact details node, which contains her telephone number (+390737402567) and fax number (+390737402561), establishing the \textit{eurio:hasContactDetails} relationship.
@@ -271,13 +275,6 @@ Another significant connection in the graph extends from the role node to a purp
 The connection between the role and the project is represented by the \textit{eurio:isInvolvedIn} relationship, confirming her participation in the research activity.
 Additional purple nodes represent the classification of roles, distinguishing between general role types and specific person roles.
 
-\begin{figure}[htbp]
-    \centering
- \includegraphics[width=.9\textwidth]{figures/architecture/example-person-prof-merelli.png}
-     \rule{35em}{0.5pt}
-    \caption{An example of a person's profile in the \gls{eurio} \gls{kg}}
- \label{fig:example-person-prof-merelli}
-\end{figure}
 
 Through this query-based investigation, we were able to extract detailed information on how projects are interconnected, how participants are structured, and how different elements contribute to the overall knowledge representation within \gls{eurio}.
 This \gls{kg} exploration provided a comprehensive understanding of the dataset's richness and limitations, enabling a more informed approach in leveraging the \gls{kg} for our study.

@@ -136,6 +136,7 @@
 \usepackage{eurosym}
 \usetikzlibrary{shapes.geometric, arrows}
 \usepackage{epigraph} % quotations
+\usepackage{comment}
 \renewcommand{\arraystretch}{1.2} %nicer tables
 \lstset{captionpos=b,
         frame=tb,

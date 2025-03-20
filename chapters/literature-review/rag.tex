@@ -24,7 +24,7 @@ Fig.~\ref{fig:rag-components} shows the three main components of \gls{rag}:
 	
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.9\textwidth]{figures/literature-review/RAGcomponents.png}
+ \includegraphics[width=.7\textwidth]{figures/literature-review/RAGcomponents.png}
      \rule{35em}{0.5pt}
     \caption{\gls{rag} components (\textcite{singh2025})}
  \label{fig:rag-components}
@@ -61,7 +61,7 @@ However, it comes with challenges such as higher computational overhead and late
 \subsection*{Modular \gls{rag}}\label{sec:modular-rag}
 Modular \gls{rag} addresses the limitations of Na\"ive and Advanced \gls{rag} by incorporating flexible and composable components, enabling greater adaptability and optimization for specific use cases \cite{gao_retrieval-augmented_2024}.
 In contrast to the linear pipeline of traditional \gls{rag}, Modular \gls{rag} enables independent modification and replacement of retrieval, augmentation, and generation modules, making it highly customizable.
-According to \cite{singh2025}, key enhancements include hybrid retrieval strategies, where both sparse (e.g., BM25) and dense retrieval \cite{Karpukhin2020} (e.g., \gls{dpr}) techniques are combined for better query matching, and multi-source retrieval, which integrates structured (databases, knowledge graphs) and unstructured (documents, APIs) sources.
+According to \cite{singh2025}, key enhancements include hybrid retrieval strategies, where both sparse (e.g., BM25) and dense retrieval \cite{Karpukhin2020} (e.g., \gls{dpr}) techniques are combined for better query matching, and multi-source retrieval, which integrates structured (databases, \glspl{kg}) and unstructured (documents, APIs) sources.
 Moreover, modular \gls{rag} introduces new modules like adaptive search, memory, and task-specific adapters, along with new patterns such as iterative retrieval and dynamic module reconfiguration, enhancing flexibility and precision across diverse applications \cite{gao_retrieval-augmented_2024}.
 Modular \gls{rag} also supports dynamic query rewriting and multi-step reasoning, allowing iterative refinements to retrieval results.
 Its modular design makes it ideal for domain-specific tasks, such as financial analytics and scientific research, where different retrieval and augmentation techniques are needed.
@@ -69,7 +69,7 @@ However, this paradigm faces challenges in complex data integration, requiring h
 Fig.~\ref{fig:naive-advanced-modular-rag} illustrates the evolution of the three \gls{rag} paradigms just described, comparing Na\"ive, Advanced and Modular \gls{rag}, highlighting their key components, optimisations and structural differences.
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.9\textwidth]{figures/literature-review/naive-advanced-modular-rag.png}
+ \includegraphics[width=.75\textwidth]{figures/literature-review/naive-advanced-modular-rag.png}
      \rule{35em}{0.5pt}
     \caption{Na\"ive, Advanced and Modular \gls{rag} architectures (\textcite{gao_retrieval-augmented_2024})}
  \label{fig:naive-advanced-modular-rag}
@@ -88,7 +88,7 @@ Integrating graph-based retrieval with unstructured retrieval mechanisms adds co
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.7\textwidth]{figures/literature-review/graphRAG.png}
+ \includegraphics[width=.65\textwidth]{figures/literature-review/graphRAG.png}
      \rule{35em}{0.5pt}
     \caption{Graph\gls{rag} architecture (\textcite{singh2025})}
  \label{fig:graph-rag-architecture}
@@ -107,7 +107,7 @@ Despite these challenges, Agentic\gls{rag} is particularly well-suited for domai
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.9\textwidth]{figures/literature-review/multi-agent-agentic-rag.png}
+ \includegraphics[width=.8\textwidth]{figures/literature-review/multi-agent-agentic-rag.png}
      \rule{35em}{0.5pt}
     \caption{Multi-Agent Agentic\gls{rag} architecture (\textcite{singh2025})}
  \label{fig:multi-agent-agentic-rag}

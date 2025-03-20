@@ -1,8 +1,13 @@
 \chapter{Conclusion}\label{chap:conclusion}
 This work introduced an Agentic Graph \gls{rag} method that provides contextual and explainable recommendations for research collaborators.
 The proposed method combines \glspl{kg} and \glspl{llm} capabilities and has been developed following the Design Science research methodology.
-Experiments indicate that GPT-4o outperforms other \glspl{llm} in \gls{rag}-based recommendation metrics, demonstrating superior retrieval quality, contextual reasoning, and reduced hallucinations.
+To carry out this approach, a user interface in the form of a chatbot web application was developed.
+In particular, the development to manage the agent flow was realised via the LlamaIndex library.
+To enable \gls{sparql} queries to be generated from the user's text, the Langchain library was used instead.
+Regarding the evaluation of the artefact, experiments of both collaborators and consortia recommendations indicate that using this Agentic Graph \gls{rag} approach results in high quality retrieval, contextual reasoning and reduced hallucinations.
+However, aspects concerning consistency and context retrieval do not present relatively positive results, indicating that they should be improved.
 Recommendations are tailored to researchers' areas of expertise and project relevance, thus making them more effective than existing approaches. 
 This work contributes to hybrid \gls{ai} research approaches, in particular to the advancement of \gls{ai}-assisted research networks, where the ultimate goal is to increase opportunities for collaboration and facilitate interdisciplinary research connections in a scalable and automated way.
+
 Potential future research work revolves around the automatic updating of the \glspl{kg} (including information about Horizon Europe projects) to keep up with emerging research topics and thus keep the proposed approach relevant over time.
 In addition, the integration of academic \glspl{kg} could be a useful resource to enrich the \gls{eurio} knowledge base and thus add context regarding the recommendation of papers and researchers.

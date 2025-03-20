@@ -76,7 +76,7 @@ A detailed description of each agent using its own tools is given in Sec~\ref{se
 This component is responsible for retrieving relevant information from the \gls{eurio} \gls{kg} and the vector database.
 The agent workflow is always initiated by the master agent: the \textit{Project-Participants-Information Agent}.
 This agent is responsible for returning information about projects, such as the (e.g. project abstract), and also for returning information about the participants involved in that project (e.g. person full name, organization details).
-To perform the retrieval of this information, the agent was specified to follow a template prompt, in which it is instructed to generate \gls{sparql} queries to query the \gls{eurio} \gls{kg} from which to extract data.
+To perform the retrieval of this information, the agent was specified to follow a prompt template, in which it is instructed to generate \gls{sparql} queries to query the \gls{eurio} \gls{kg} from which to extract data.
 Depending on the task to be performed, the master agent will delegate that task to the agent responsible for that task, if necessary.
 
 \paragraph*{Augmentation Component.}
@@ -84,13 +84,12 @@ In addition to combining the user query, prompt templates, and information retri
 Cosine similarity was used as a metric for semantic search to determine the similarity of embeddings.
 In this component, the agents \textit{Potential Collaborators Agent} and \textit{Potential Consortium Organisations Agent} are responsible for creating the recommendations.
 The \textit{Potential Collaborators Agent} has the task of recommending research collaborators, given a project description as input.
-The \textit{Potential Consortium Organisations Agent} has the task of creating several consortia formed by various organisations, which contribute to the consortium in a complementary way, i.e. there will be no consortia with organisations specialising in the same research area.
+The \textit{Potential Consortium Organisations Agent} is tasked with creating several consortia formed by various organisations, which contribute to the consortium in a complementary way, i.e. there will be no consortia with organisations specialising in the same research area.
 These two agents use the \textit{recommend collaborators} tool, and the \textit{Recommend consortium organisations} tool, respectively, to accomplish the tasks previously described, and they too are instructed with specific prompt templates to follow to achieve their goal.
 In addition, both use the \textit{search web} tool, to enrich the information obtained, such as a researcher's areas of interest (satisfied \gls{appr}3), which are not present within the \gls{eurio} \gls{kg}.
 In this way, agents act autonomously and are able to make dynamic decisions, resulting in better results than a graph.
 
 \paragraph*{Generation Component.}
 Finally, the generation component combines all previously retrieved and augmented information with the pre-trained knowledge of the \gls{llm} to generate contextually accurate and consistent responses.
-In addition to providing relevant recommendations, this component ensures explainability by offering detailed justifications for suggested research collaborators, outlining the reasons behind their selection based on expertise, involvement in previous projects and research alignment.
+In addition to provide relevant recommendations, this component ensures explainability by offering detailed justifications for suggested research collaborators, outlining the reasons behind their selection based on expertise, involvement in previous projects and research alignment.
 It also describes how the proposed research consortia are composed, specifying the complementary roles of the participating organisations and their collective ability to achieve the project objectives.
-This increases transparency and trust in the recommendation process, making the system a valuable tool for making informed decisions in research collaborations.
