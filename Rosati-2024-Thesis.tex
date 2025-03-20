@@ -44,11 +44,54 @@
 
 % research questions
 \AfterEndPreamble{
-    \newcommand{\rqOne}{\textbf{\gls{rq}1}: \textit{How can research-related data (e.g., publications, topics, affiliations) be modeled into a \gls{kg} for research collaborator recommendation?}}
+    \newcommand{\rqOne}{\textbf{\gls{rq}1}: \textit{How can research-related data (e.g., projects, people, affiliations) be modeled into a \gls{kg} for research collaborator recommendation?}}
     \newcommand{\rqTwo}{\textbf{\gls{rq}2}: \textit{How can a \gls{kg} and \gls{llm}-based system be designed to efficiently retrieve relevant information from large, heterogeneous data sources to support personalized recommendations?}}
     \newcommand{\rqThree}{\textbf{\gls{rq}3}: \textit{How can the system generate human-readable explanations for its research collaborator recommendations using the \gls{kg} and \gls{llm} outputs?}}
-    \newcommand{\rqFour}{\textbf{\gls{rq}4}: \textit{How accurate and effective is the proposed sysetem in retrieveing relevant information about research projects and providing personalized research collaborator recommendations?}}
+    \newcommand{\rqFour}{\textbf{\gls{rq}4}: \textit{How accurate and effective is the proposed system in retrieving relevant information about research projects and providing personalized research collaborator recommendations?}}
 }
+% SPARQL lst sintax
+\lstset{breaklines=true}
+\definecolor{LightGray}{rgb}{0.97,0.97,0.97}
+\lstdefinelanguage{SPARQL}{
+  basicstyle=\footnotesize\ttfamily,
+  backgroundcolor=\color{LightGray},
+  columns=fullflexible,
+  breaklines=true,
+  sensitive=true,
+  % --------------------------
+  frame=bt,
+  aboveskip=1em,
+  belowskip=1em,
+  xleftmargin=.5em,
+  xrightmargin=.5em,
+  framexleftmargin=.5em,
+  framextopmargin=.5em,
+  framexbottommargin=.5em,
+  framexrightmargin=.5em,
+  % --------------------------
+  tabsize = 2,
+  showstringspaces=false,
+  morecomment=[l][\color{gray}]{\#},       % comments
+  morecomment=[n][\color{blue}]{<http}{>}, % uris
+  morestring=[b][\color{OliveGreen}]{\"},  % strings
+  % -------------------------- variables
+  keywordsprefix=?,
+  classoffset=0,
+  keywordstyle=\color{Sepia},
+  morekeywords={},
+  % -------------------------- prefixes
+  classoffset=1,
+  keywordstyle=\color{Purple},
+  morekeywords={rdf,rdfs,owl,xsd,purl, eurio},
+  % -------------------------- keywords
+  classoffset=2,
+  keywordstyle=\color{MidnightBlue},
+  morekeywords={
+    SELECT,CONSTRUCT,DESCRIBE,ASK,WHERE,FROM,NAMED,PREFIX,BASE,OPTIONAL,
+    FILTER,GRAPH,LIMIT,OFFSET,SERVICE,UNION,EXISTS,NOT,BINDINGS,MINUS,a
+  }
+}
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -279,6 +322,16 @@
 \newacronym{fabio}{FaBiO}{FRBR-aligned Bibliographic Ontology}
 \newacronym{frapo}{FRAPO}{Funding, Research Administration and Projects Ontology}
 \newacronym{dpr}{DPR}{Dense Passage Retrieval}
+\newacronym{bim}{BIM}{Building Information Modeling}
+\newacronym{lr}{LR}{Literature Requirement}
+\newacronym{appr}{APR}{Application Requirement}
+\newacronym{ar}{AR}{Answer Relevancy}
+\newacronym{cp}{CP}{Context Precision}
+\newacronym{cr}{CR}{Context Recall}
+\newacronym{cer}{CER}{Context Entity Recall}
+\newacronym{ss}{SS}{Answer Semantic Similarity}
+\newacronym{ac}{AC}{Answer Correctness}
+
 
 % PDF meta-data
 \hypersetup{pdftitle={\thesisTitle}}
@@ -301,7 +354,7 @@
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 \pagenumbering{roman}
-\input{chapters/Abstract.tex}
+\input{chapters/Abstract}
 
 \clearpage % Start a new page
 
@@ -333,11 +386,11 @@
 \fillingPage{}
 \input{chapters/ResearchDesign}
 \fillingPage{}
-\input{chapters/DataAnalysis.tex}
+\input{chapters/ScenariosAnalysis}
 \fillingPage{}
-\input{chapters/Knowledge-DrivenArchitecture.tex}
+\input{chapters/Knowledge-DrivenArchitecture}
 \fillingPage{}
-\input{chapters/ArtifactDevelopment.tex}
+\input{chapters/ArtifactDevelopment}
 \fillingPage{}
 \input{chapters/Evaluation}
 \fillingPage{}
@@ -372,11 +425,19 @@
 \listOfFigures
 
 %%----------------------------------------------------------------------------------------
+%%	LIST OF LISTINGS (optional)
+%%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\listOfListings
+
+%%----------------------------------------------------------------------------------------
 %%	LIST OF TABLES (optional)
 %%----------------------------------------------------------------------------------------
 
 \fillingPage{} 
 \listOfTables
+
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES (if appropriate)
@@ -387,21 +448,21 @@
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-% \fillingPage{} 
-% \input{02_Appendices/AppendixA}
+\fillingPage{} 
+\input{appendices/ProjectParticipantsAgent}
 
-% \fillingPage{} 
-% \input{02_Appendices/AppendixB}
+\fillingPage{} 
+\input{appendices/PotentialCollaboratorsAgent}
 
-%\fillingPage{} 
-%\input{02_Appendices/AppendixC}
+\fillingPage{}
+\input{appendices/PotentialConsortiumOrganisationsAgent}
 
 %----------------------------------------------------------------------------------------
 %	FOREWORD / ACKNOWLEDGEMENTS (optional)
 %----------------------------------------------------------------------------------------
 
-\input{chapters/Acknowledgments.tex}
-\input{chapters/Ringraziamenti.tex}
+\input{chapters/Acknowledgments}
+\input{chapters/Ringraziamenti}
 
 \clearpage % Start a new page
 

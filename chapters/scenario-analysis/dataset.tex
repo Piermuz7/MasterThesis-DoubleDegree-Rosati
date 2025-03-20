@@ -1,0 +1,35 @@
+In this study, the \gls{cordis} dataset \cite{CORDIS_FP7_2015,CORDIS_H2020_2015,CORDIS_RefData_2018} was chosen as the primary data source.
+\gls{cordis}\footnote{\url{https://cordis.europa.eu}} serves as the European Commission's primary public repository for distributing information about EU-funded research projects.
+This dataset is a critical resource for analyzing research trends, understanding research project collaborations, and identifying potential research partners.
+The chosen dataset consists of data representations of projects funded under two major European Union research initiatives:
+\begin{itemize}
+    \item The \gls{fp7} for Research and Technological Development\footnote{\url{https://cordis.europa.eu/programme/id/FP7}}, covering projects funded from 2007 to 2013.
+    \item The \gls{h2020} Programme for Research and Innovation\footnote{\url{https://cordis.europa.eu/programme/id/H2020}}, covering projects funded from 2014 to 2020.
+\end{itemize}
+
+The part of \gls{cordis} dataset of EU research projects under \gls{fp7}, consists of the public grant details for each project, including the following information: Record Control Number, project ID (grant agreement number), project acronym, project status, funding program, research topic, project title, start and end dates, project objectives, total project cost, maximum EC contribution (commitment), call ID, funding scheme (type of action), coordinating entity, coordinator's country, participants (listed in a semi-colon separated format), and participant countries (also in a semi-colon separated format).
+\gls{fp7} organisations contains a list of participating organizations, including the following details: project Record Control Number, project ID, project acronym, organization role, organization ID, organization name, organization short name, organization type, participation status (ended: true/false), EC contribution, and the organization's country.
+
+The part of \gls{cordis} dataset of EU research projects under \gls{h2020}, consists of six distinct subsets available in various formats:
+\begin{itemize}
+    \item \gls{h2020} projects: containing details on participating organisations, legal frameworks, topic classifications, project URLs, and categorization using the European Science Vocabulary.
+	\item \gls{h2020} project Intellectual Property Rights: includes patent data only for granted patents that are available in the European Patent Office database.
+	\item \gls{h2020} project deliverables: metadata and links to deliverables, with entries available since May 2019.
+	\item \gls{h2020} project publications: metadata and links to scientific publications, included since May 2019.
+	\item \gls{h2020} report summaries: periodic or final public summaries of projects, added since September 2018.
+	\item Principal Investigators in \gls{h2020} ERC projects: listing key researchers involved in European Research Council projects.
+\end{itemize}
+
+\subsubsection*{Dataset Limitations}
+Although the CORDIS dataset is a valuable resource for analysing research trends, project collaborations and the distribution of funding, certain limitations must be taken into account:
+
+\begin{itemize}
+	\item Data Integration Challenges: the dataset is distributed across multiple files in different formats (JSON, XML, CSV, XLSX), requiring careful preprocessing and linkage before meaningful insights can be extracted.
+	Establishing relationships between different files (e.g., linking projects to participants and deliverables) is not straightforward and necessitates additional data processing steps.
+	\item Inconsistent Data Representations: some fields are formatted differently in the various subsets of the data set.
+	For example, project participants may be listed as semicolon-separated values in some files, while in others they appear as separate records.
+	This complicates data consistency and automatic processing.
+	\item Missing or Incomplete Data: some projects lack details on funding schemes, research topics, or coordinator organizations.
+	Not all participant organizations have standardized names or unique identifiers, making entity resolution difficult when merging data.
+	Certain project deliverables or publications might be unavailable due to proprietary restrictions or missing metadata.
+\end{itemize}

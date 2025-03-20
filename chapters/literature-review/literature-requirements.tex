@@ -1,0 +1,27 @@
+The following \glspl{lr} were selected from the relevant works in the literature.
+Several \glspl{kg} exist in the research and scholarly fields, but no work uses them in the European research domain.
+The definition of an ontology and/or use of a \gls{kg} in this domain is necessary in order to allow semantic representation of European projects (\gls{lr}1).
+Among current research recommender systems, some exploit various filtering approaches including \gls{cbf}.
+Generating \gls{cbf} recommendation could be quite efficient (\gls{lr}2), for example if based on a project description or abstract, recommend potential collaborators, who have collaborated on a project with that description similar to the one specified.
+Unfortunately, some \gls{dl}-based recommender systems need data training to perform the assigned task.
+In some cases it may also be necessary to retrain the model.
+In these cases, generating recommendations without performing either training or other techniques such as fine-tuning helps to save computational power (\gls{lr}3).
+Regarding the hop reasoning perspective, retrieving relevant information dynamically, using models such as \glspl{gnn}, can require high computations on graphs, especially on large graphs (\gls{lr}4).
+Table~\ref{tab:literature-requirements} shows the list of \glspl{lr} and their corresponding description.
+
+\begin{table}[htbp]
+    \centering
+    \scriptsize
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{2cm}|X|}
+      \hline
+      \textbf{Literature Requirement} & \textbf{Description}\\
+        \hline
+        \gls{lr}1 & Definition of an ontology and/or use of a \gls{kg} in the European research domain \\
+        \gls{lr}2 & Exploitation of \gls{cbf} in research recommender systems \\
+        \gls{lr}3 & Generation of recommendations without training or fine-tuning \\
+        \gls{lr}4 & High computational power for dynamic retrieval of relevant information using \glspl{gnn} \\
+        \hline
+    \end{tabularx}
+    \caption{List of \acrfullpl{lr} and their corresponding description}
+    \label{tab:literature-requirements}
+\end{table}

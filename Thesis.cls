@@ -110,8 +110,12 @@
 \setcounter{bottomnumber}{9}
 \setcounter{totalnumber}{20}
 \setcounter{dbltopnumber}{9}
+\usepackage[dvipsnames]{xcolor} % https://en.wikibooks.org/wiki/LaTeX/Colors
 \usepackage{multirow}
 \usepackage{graphicx}
+\RequirePackage{caption}
+\captionsetup[subfigure]{labelformat=parens, labelsep=space, textfont=normalfont, labelfont=normalfont}
+\usepackage{subcaption}
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{epstopdf}
@@ -129,6 +133,7 @@
 \usepackage{booktabs} %nicer tables
 \usepackage{float}
 \usepackage{tikz}
+\usepackage{eurosym}
 \usetikzlibrary{shapes.geometric, arrows}
 \usepackage{epigraph} % quotations
 \renewcommand{\arraystretch}{1.2} %nicer tables
@@ -604,6 +609,30 @@
 }
 %----------------------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------------------
+%	LIST OF LISTINGS DESIGN
+%----------------------------------------------------------------------------------------
+\newcommand\listOfListings{
+    \btypeout{Listings}
+    
+    \addtotoc{Listings}
+    \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+        
+    \begin{spacing}{1}{
+        \setlength{\parskip}{1pt}
+        \if@twocolumn
+          \@restonecoltrue\onecolumn
+        \else
+          \@restonecolfalse
+        \fi
+        \chapter*{\lstlistlistingname
+          \@mkboth{\MakeUppercase\lstlistlistingname}
+                  {\MakeUppercase\lstlistlistingname}}
+        \@starttoc{lol}
+        \if@restonecol\twocolumn\fi
+        \cleardoublepage
+    }\end{spacing}
+}
 %----------------------------------------------------------------------------------------
 %	LIST OF TABLES DESIGN
 %----------------------------------------------------------------------------------------
