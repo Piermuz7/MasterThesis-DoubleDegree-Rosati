@@ -2,9 +2,9 @@ In the problem awareness phase, we addressed the first sub-research question:
 \begin{center}
     \rqOne
 \end{center}
-To establish a foundation for this study, we conducted a comprehensive literature review covering key areas such as research collaboration (Sec.~\ref{sec:research-collaboration}), the role of \glspl{kg} and ontologies in the research domain (Sec.\ref{sec:knowledge-graphs}), \glspl{llm} and their applications (Sec.~\ref{sec:large-language-models}), \gls{rag} aproaches (Sec.~\ref{sec:retrieval-augmented-generation}), recommender systems tailored for research contexts (Sec.~\ref{sec:recommender-systems-in-research-field}), and the emerging field of Retrieval-Augmented Recommender Systems (Sec.~\ref{sec:retrieval-augmented-recommender-systems-in-research-field}).
+To establish a foundation for this study, we conducted a comprehensive literature review covering key areas such as research collaboration (Sec.~\ref{sec:research-collaboration}), the role of \acrlongpl{kg} and ontologies in the research domain (Sec.\ref{sec:knowledge-graphs}), \acrlongpl{llm} and their applications (Sec.~\ref{sec:large-language-models}), \acrlongpl{rag} concepts and approaches (Sec.~\ref{sec:retrieval-augmented-generation}), recommender systems tailored for research contexts (Sec.~\ref{sec:recommender-systems-in-research-field}), and the emerging field of Retrieval-Augmented Recommender Systems (Sec.~\ref{sec:retrieval-augmented-recommender-systems-in-research-field}).
 From the literature review conducted, existing \glspl{kg} in the research field, such as \gls{mag}, \gls{s2ag}, Wikidata, \gls{orkg}, and VIVO ontology, were analyzed.
-However, they present several limitations that impact their effectiveness in research collaborator recommendation such as:
+However, these \glspl{kg} and ontologies, present several limitations that impact their effectiveness in research collaborator recommendation such as:
 \begin{itemize}
     \item Lack of granular and up-to-date data: many of these \glspl{kg} rely on static datasets or periodic updates, making it challenging to capture evolving research trends, emerging collaborations, and newly published work in real time.
     \item Limited contextual understanding: while these \glspl{kg} store structured information about authors, affiliations, and citations, they often lack deeper semantic connections, such as researchers' interdisciplinary expertise, project alignments, or implicit collaboration potential.
@@ -25,14 +25,13 @@ The cold-start problem further complicates this by preventing effective suggesti
 Additionally, many systems lack explainability, reducing user trust and interpretability, especially in critical decision-making contexts.
 Another challenge is the tendency to prioritize historical patterns over novel discoveries, restricting interdisciplinary connections.
 These limitations underscore the need for knowledge-aware recommender systems that integrate domain-specific semantics, contextual understanding, and explainable \gls{ai} techniques to enhance recommendation quality, fairness, and effectiveness.
-
 We will focus on the identified research gap, which is in the limitations of \gls{dl}-based recommendation systems in capturing users' preferences, handling diverse textual information, and providing explainable recommendations.
 These models often struggle to generalize to unseen scenarios and lack interpretability, making them less effective for tasks that require complex reasoning, such as recommendations from research collaborators.
 
 \subsection*{EURIO: EUropean Research Information Ontology}
 The \gls{eurio} ontology, developed by the Publications Office of the European Union\footnote{\url{https://op.europa.eu/en/}}, is a data model which conceptualizes, formally encodes, and makes available in an open, structured, and machine-readable format data about research projects funded by the EU's framework programmes for research and innovation.
 \gls{cordis}, as described in Sec.~\ref{sec:dataset}, is responsible for publishing the results of these projects, while \gls{eurio} provides a semantic model that enhances transparency, reusability, and accessibility.
-The \gls{eurio} ontology is built on top of well-known ontologies and vocabularies to ensure interoperability and semantic richness.
+\gls{eurio} is built on top of well-known ontologies and vocabularies to ensure interoperability and semantic richness.
 These include:
 \begin{itemize}
     \item \gls{dc}: used for metadata elements such as titles, descriptions, and identifiers.
@@ -47,10 +46,12 @@ These include:
 The \gls{eurio} ontology also incorporates reference data, such as countries, funding schemes, types of action, the EuroSciVoc taxonomy, and the NUTS classification, to enhance the semantic representation of research information.
 It leverages the \gls{owl} 2 to formally define the semantics of domain-specific terms used to describe \gls{cordis} entities (e.g., projects, organizations, etc.), their attributes (e.g., title, acronym, legal name, etc.), and their interrelations (e.g., the connection between a project and its participating organizations, etc.).
 
-The \gls{eurio} ontology defines multiple classes representing different concepts such as projects, organizations, funding schemes, grants, publications, and roles, along with associated data properties and object properties that define their relationships.
+\gls{eurio} defines multiple classes representing different concepts such as projects, organizations, funding schemes, grants, publications, and roles, along with associated data properties and object properties that define their relationships.
 Each class has a set of data properties that describe its attributes, and a set of object properties that define its connections to other classes.
 Each class, data property, and object property has several annotations but in general the main annotations for those are \textit{rdfs:label}, which provides a human-readable label for the entity, \textit{rdfs:comment}, which provides a human-readable description of the entity, and \textit{rdfs:isDefinedBy}, which provides a link to the ontology where the entity is defined.
+
 For example, the title, description, start date, end date, and funding amount are data properties of the \textbf{Project} class.
+The ontology also defines relationships between classes, such as \textbf{is funded by}, the association between a project and its grant (Fig.~\ref{fig:is-funded-by}).
 
 \begin{figure}[htbp]
     \centering
@@ -60,7 +61,6 @@ For example, the title, description, start date, end date, and funding amount ar
  \label{fig:is-funded-by}
 \end{figure}
 
-The ontology also defines relationships between classes, such as \textbf{is funded by}, the association between a project and its grant (Fig.~\ref{fig:is-funded-by}).
 Another example or relationship is \textbf{is employed by}, which links a person, in particular a \textbf{Person Role} to an \text{Organisation}.
 The ontology also provides object property descrptions, for example the \textbf{has involved party} relationship, which links a \textbf{Project} to a \textbf{Role}, is inverse of \textbf{is involved in}, which links a \textbf{Role} to a \textbf{Project} (Fig.~\ref{fig:is-involved-in-has-involved-party}).
 
@@ -71,7 +71,7 @@ The ontology also provides object property descrptions, for example the \textbf{
     \caption{The ``has involved party'' and ``is involved in'' relationships}
  \label{fig:is-involved-in-has-involved-party}
 \end{figure}
-
+\newpage
 This object property descriptions can be very useful for querying the \gls{kg} to extract relevant information in a structured manner.
 Moreover, the ontology defines a hierarchy of classes.
 For example, the \textbf{Organisation} class is a superclass of several subclasses such as \textbf{For Profit Organisation}, \textbf{Funding Agency}, \textbf{Higher Or Secondary Education}, \textbf{Research Organisation}, and \textbf{SME} (Small and Medium Enterprise) (Fig.~\ref{fig:organisation-class-hierarchy}).
@@ -93,6 +93,7 @@ An overview of the \gls{eurio} ontology is shown in the UML diagram in Fig.~\ref
     \caption{A graphical representation of the \gls{eurio} ontology (from \url{https://op.europa.eu/en/web/eu-vocabularies/eurio})}
  \label{fig:eurio-ontology}
 \end{figure}
+\newpage
 
 \subsection*{Data Availability and Formats}
 The dataset is structured in \gls{rdf} format and contains over 18 million \gls{rdf} triples, with a total size of approximately 5GB when serialized in the N-Quad Triples \gls{rdf} format.
@@ -128,7 +129,7 @@ Figures~\ref{fig:fhnw-graphdb} and~\ref{fig:unicam-graphdb} show the subgraphs f
     \caption{University of Camerino subgraph in the \gls{eurio} \gls{kg}}
  \label{fig:unicam-graphdb}
 \end{figure}
-
+\newpage
 As can be seen from both figures, both the Fachhochschule Nordwestschweiz and the University of Camerino are instances of the \textbf{eurio:HigherOrSecondaryEducation} class and have the following six data properties: \textit{rdfs:label}, \textit{eurio:url}, \textit{eurio:vatNumber}, \textit{eurio:legalName}, \textit{eurio:rcn}, and \textit{eurio:identifier}.
 Furthermore, we can see that, taking Fachhochschule Nordwestschweiz as an example, it has several \textit{eurio:hasRole} relationships with different ``Org: FACHHOCHSCHULE NORDWESTSCHWEIZ'' entities.
 The \gls{kg} contains several such redundancies, also for other types of classes.
@@ -257,6 +258,10 @@ The results of this query are shown in Fig.~\ref{fig:sparql_example_merelli_proj
 
 The last person in the results of the query in Listing~\ref{lst:sparql_example_merelli_project_people} is Prof. Emanuela Merelli, who is affiliated with the University of Camerino, and Fig.~\ref{fig:example-person-prof-merelli} presents a visual representation of the \gls{eurio} \gls{kg}, specifically focusing on her class type as a \textbf{eurio:Person}.
 
+At the center of the graph, her node connects to multiple entities representing affiliations, roles, projects, and contact details.
+The right panel provides metadata about her, including her given name, family name, research control number, and honorific title, indicating her academic status as ``Prof.''.
+From Emanuela Merelli's node, one connection leads to a contact details node, which contains her telephone number (+390737402567) and fax number (+390737402561), establishing the \textit{eurio:hasContactDetails} relationship.
+
 \begin{figure}[htbp]
     \centering
  \includegraphics[width=.9\textwidth]{figures/architecture/example-person-prof-merelli.png}
@@ -265,9 +270,6 @@ The last person in the results of the query in Listing~\ref{lst:sparql_example_m
  \label{fig:example-person-prof-merelli}
 \end{figure}
 
-At the center of the graph, her node connects to multiple entities representing affiliations, roles, projects, and contact details.
-The right panel provides metadata about her, including her given name, family name, research control number, and honorific title, indicating her academic status as ``Prof.''.
-From Emanuela Merelli's node, one connection leads to a contact details node, which contains her telephone number (+390737402567) and fax number (+390737402561), establishing the \textit{eurio:hasContactDetails} relationship.
 Another key connection links her to the ``Universit\`a degli Studi di Camerino'', represented as a green node, with the \textit{eurio:isEmployedBy} relationship, signifying her affiliation with this institution.
 Her professional involvement is further detailed through an orange node representing her role, which is bidirectionally linked to her node through the \textit{eurio:hasRole} and \textit{eurio:isRoleOf} relationships.
 This \textbf{eurio:PersonRole} node serves as an intermediary between her and the projects she is involved in.

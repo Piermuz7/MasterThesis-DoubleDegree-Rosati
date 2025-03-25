@@ -1,30 +1,29 @@
 \acrfull{rag} improves \glspl{llm} by integrating real-time data retrieval into the generative process \cite{singh2025}.
 Unlike static \glspl{llm} that rely on pre-trained knowledge, \gls{rag} dynamically retrieves relevant external information, improving response accuracy, contextual relevance and updateability \cite{Fan2024, singh2025}.
 
+\begin{figure}[htbp]
+  \centering
+\includegraphics[width=.7\textwidth]{figures/literature-review/rag-no-rag-example.png}
+   \rule{35em}{0.5pt}
+  \caption{An example of the limitations of \glspl{llm} without retrieval mechanisms (top) and the benefits of \gls{rag} with real-time data retrieval (bottom) (\textcite{Fan2024})}
+\label{fig:rag-no-rag-example}
+\end{figure}
+
 When a user's query requires information beyond the training data of a \gls{llm}, such as real-time knowledge or unseen facts, the model's response may be outdated or incomplete.
 In such cases, standard \glspl{llm} without external retrieval mechanisms struggle to provide accurate answers, as illustrated in the upper part of the Fig.~\ref{fig:rag-no-rag-example}.
 Here, the model fails to answer a simple fact-based question about the winner of the 2023 Women's World Cup due to its training data cutoff.
 However, with \gls{rag}, as shown in the lower part of the image, the system retrieves relevant information from an external database before generating a response.
 This enables the model to produce up-to-date and contextually accurate answers by grounding its output in real-world knowledge.
-
-\begin{figure}[htbp]
-    \centering
- \includegraphics[width=.7\textwidth]{figures/literature-review/rag-no-rag-example.png}
-     \rule{35em}{0.5pt}
-    \caption{An example of the limitations of \glspl{llm} without retrieval mechanisms (top) and the benefits of \gls{rag} with real-time data retrieval (bottom) (\textcite{Fan2024})}
- \label{fig:rag-no-rag-example}
-\end{figure}
-
 Fig.~\ref{fig:rag-components} shows the three main components of \gls{rag}:
 \begin{itemize}
     \item \textbf{Retrieval}: queries external sources such as knowledge bases, APIs or vector databases, using dense vector search and advanced transformer-based models to improve accuracy.
-	\item \textbf{Augmentation}: processes, extracts and synthesises the retrieved data to align it with the user's query.
-	\item \textbf{Generation}: combines the retrieved information with the \gls{llm}'s internal knowledge to produce coherent and contextually relevant answers. 
+    \item \textbf{Augmentation}: processes, extracts and synthesises the retrieved data to align it with the user's query.
+    \item \textbf{Generation}: combines the retrieved information with the \gls{llm}'s internal knowledge to produce coherent and contextually relevant answers. 
 \end{itemize}
 	
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=.7\textwidth]{figures/literature-review/RAGcomponents.png}
+ \includegraphics[width=.65\textwidth]{figures/literature-review/RAGcomponents.png}
      \rule{35em}{0.5pt}
     \caption{\gls{rag} components (\textcite{singh2025})}
  \label{fig:rag-components}
@@ -63,10 +62,10 @@ Modular \gls{rag} addresses the limitations of Na\"ive and Advanced \gls{rag} by
 In contrast to the linear pipeline of traditional \gls{rag}, Modular \gls{rag} enables independent modification and replacement of retrieval, augmentation, and generation modules, making it highly customizable.
 According to \cite{singh2025}, key enhancements include hybrid retrieval strategies, where both sparse (e.g., BM25) and dense retrieval \cite{Karpukhin2020} (e.g., \gls{dpr}) techniques are combined for better query matching, and multi-source retrieval, which integrates structured (databases, \glspl{kg}) and unstructured (documents, APIs) sources.
 Moreover, modular \gls{rag} introduces new modules like adaptive search, memory, and task-specific adapters, along with new patterns such as iterative retrieval and dynamic module reconfiguration, enhancing flexibility and precision across diverse applications \cite{gao_retrieval-augmented_2024}.
-Modular \gls{rag} also supports dynamic query rewriting and multi-step reasoning, allowing iterative refinements to retrieval results.
+It also supports dynamic query rewriting and multi-step reasoning, allowing iterative refinements to retrieval results.
 Its modular design makes it ideal for domain-specific tasks, such as financial analytics and scientific research, where different retrieval and augmentation techniques are needed.
 However, this paradigm faces challenges in complex data integration, requiring handling of unstructured, semi-structured, and structured data; system orchestration, demanding precise workflow management across modular components; and component selection and optimization, ensuring individual modules are fine-tuned and effectively integrated for optimal performance.
-Fig.~\ref{fig:naive-advanced-modular-rag} illustrates the evolution of the three \gls{rag} paradigms just described, comparing Na\"ive, Advanced and Modular \gls{rag}, highlighting their key components, optimisations and structural differences.
+Fig.~\ref{fig:naive-advanced-modular-rag} illustrates the three \gls{rag} paradigms just described, Na\"ive, Advanced and Modular \gls{rag}, highlighting their key components, optimisations and structural differences.
 \begin{figure}[htbp]
     \centering
  \includegraphics[width=.75\textwidth]{figures/literature-review/naive-advanced-modular-rag.png}

@@ -1,5 +1,9 @@
 \glspl{llm} have emerged as a transformative innovation in \gls{nlp}, leveraging \gls{dl} techniques to understand, generate, and manipulate human language with unprecedented accuracy.
 Fig.~\ref{fig:llms-over-the-years} shows the increasing trend in the number of \glspl{llm} releases and the names of some significant \glspl{llm} proposed from 2019 to 2024.
+\glspl{llm}, such as OpenAI's GPT series \cite{Radford2018ImprovingLU}, Google's BERT \cite{Devlin2019BERTPO}, and more recent iterations like GPT-4, are typically built on transformer architectures \cite{Vaswani2017}.
+The transformer model introduced a self-attention mechanism that efficiently captures contextual relationships between words across large textual sequences, overcoming limitations of earlier models like \glspl{rnn} and \glspl{lstm} in handling long-range dependencies.
+These models are pre-trained on massive corpora containing diverse text from books, articles, and web sources, allowing them to generalize linguistic patterns, syntax, semantics, and even factual knowledge embedded in the data.
+According to \textcite{Chang2024}, \glspl{llm} perform a wide range of tasks in \gls{nlp}, often achieving state-of-the-art results across various benchmarks.
 
 \begin{figure}[htbp]
     \centering
@@ -9,10 +13,6 @@ Fig.~\ref{fig:llms-over-the-years} shows the increasing trend in the number of \
  \label{fig:llms-over-the-years}
 \end{figure}
 
-\glspl{llm}, such as OpenAI's GPT series \cite{Radford2018ImprovingLU}, Google's BERT \cite{Devlin2019BERTPO}, and more recent iterations like GPT-4, are typically built on transformer architectures \cite{Vaswani2017}.
-The transformer model introduced a self-attention mechanism that efficiently captures contextual relationships between words across large textual sequences, overcoming limitations of earlier models like \glspl{rnn} and \glspl{lstm} in handling long-range dependencies.
-These models are pre-trained on massive corpora containing diverse text from books, articles, and web sources, allowing them to generalize linguistic patterns, syntax, semantics, and even factual knowledge embedded in the data.
-According to \textcite{Chang2024}, \glspl{llm} perform a wide range of tasks in \gls{nlp}, often achieving state-of-the-art results across various benchmarks.
 Fig.~\ref{fig:llms-overview} provides a broader overview of the organization of \glspl{llm}, categorizing them into seven distinct branches: pre-training, fine-tuning, efficiency, inference, evaluation, applications, and challenges.
 These branches reflect the key aspects of the development, deployment, and evaluation of \glspl{llm}.
 Pre-training focuses on the foundational step of training models on vast, diverse corpora to learn language representations.
@@ -27,12 +27,12 @@ These branches collectively define the lifecycle and scope of advancements in \g
 
 \begin{figure}[htbp]
     \centering
- \includegraphics[width=0.8\textwidth]{figures/literature-review/llms-overview.png}
+ \includegraphics[width=.8\textwidth]{figures/literature-review/llms-overview.png}
      \rule{35em}{0.5pt}
     \caption{An overview of \glspl{llm} divided into seven branches: pre-training, fine-tuning, efficiency, evaluation, challenges, inference, and applications. (\textcite{Naveed2023})}
  \label{fig:llms-overview}
 \end{figure}
-
+\newpage
 This adaptability has made \glspl{llm} suitable for tasks requiring contextual reasoning, dialogue systems, and even code generation, as seen in models like Codex \cite{Chen2021EvaluatingLL}, which powers tools such as GitHub Copilot\footnote{\url{https://github.com/features/copilot}}.
 The applications of \glspl{llm} span numerous domains, reflecting their versatility and broad impact.
 In industry, \glspl{llm} power conversational agents, customer service bots, and content creation tools.

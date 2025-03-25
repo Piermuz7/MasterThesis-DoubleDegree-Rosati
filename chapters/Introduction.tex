@@ -1,11 +1,13 @@
 \chapter{Introduction}\label{chap:intro}
 
+\begin{comment}
 This chapter presents the thesis' foundation such as: background, challenges, and goals of the study.
 It begins with the Background (Sec.~\ref{sec:background}), which provides a research collaboration overview, its importance in advancing scientific discovery, the role of digital tools and finally the recommender systems in facilitating such collaborations.
 The chapter then moves to the problem statement (Sec.~\ref{sec:problem-statement}), highlighting the limitations of traditional approaches and existing \gls{ai} methods in identifying potential research collaborators, such as their lack of interpretability, contextual understanding, and ability to generalize across diverse scenarios.
 Sec.~\ref{sec:thesis-statement} defines the thesis statement, which outlines the proposed solution: a recommender system integrating knowledge graphs and large language models to deliver accurate, explainable, and context-aware recommendations.
 The research gap (Sec.~\ref{sec:research-gap}) identifies shortcomings in current methods, emphasizing the unexplored potential of combining knowledge graphs with retrieval-augmented large language models to enhance precision and explainability.
 The chapter also illustrates research questions (Sec.~\ref{sec:research-questions}) in order to guide the investigation and concludes with a thesis structure (Sec. \ref{sec:thesis-structure}), offering a roadmap for the subsequent chapters of the document.
+\end{comment}
 
 \section{Background}\label{sec:background}
 Research collaboration is the process where researchers from various fields, institutions, or disciplines, work together in order to achieve shared scientific objectives \cite{KATZ19971}.
@@ -54,27 +56,35 @@ Moreover, many recommender systems struggle with explainability, offering predic
 Some recommendation models tend to prioritize historical patterns over new discoveries, limiting their ability to facilitate serendipitous connections between researchers from diverse disciplines \cite{Jagadishwari2023,Iana2021}.
 These challenges highlight the need for more sophisticated and knowledge-aware recommender systems that can integrate domain-specific semantics, contextual understanding, and explainable \gls{ai} techniques to improve the quality and fairness of recommendations.
 %
+\begin{comment}
 \section{Thesis Statement}\label{sec:thesis-statement}
 This thesis proposes the design and development of a recommendation system that leverages the power of \glspl{kg} and \glspl{llm} to provide accurate and explainable recommendations for identifying potential research collaborators.
 By integrating \glspl{kg}, which provide a structured and interconnected representation of domain-specific information, with the contextual understanding and generative capabilities of \glspl{llm}, the system aims to address key challenges of research collaboration recommendations.
 These include understanding complex academic relationships between researchers, research projects and areas of interest of researchers, the forming of research consortia, and explaining the motivations behind recommendations.
 The proposed system leverage the strengths of both technologies to retrieve and analyze relevant academic data, dynamically adapt to user preferences, and provide personalized and well-justified recommendations, thus enhancing the process of finding and connecting with suitable research collaborators.
-%
-\section{Research Gap}\label{sec:research-gap}
-\input{chapters/literature-review/research-gap.tex}
+\end{comment}
+\gls{dl} models for recommender systems exhibit critical limitations in capturing the preferences and diverse textual side information of users.
+They often struggle with generalizing to unseen recommendation scenarios and explaining the reasoning behind their predictions \cite{Zhao2024}.
+This lack of explainability and adaptability reduces their effectiveness in tasks requiring complex reasoning, such as research collaborator recommendations.
+
+\glspl{llm} have emerged as transformative tools due to their exceptional natural language understanding and generation capabilities, enabling them to understand complex patterns and provide human-like reasoning.
+When combined with \gls{rag}, \glspl{llm} can overcome the limitations of \gls{dl} models by integrating external knowledge sources, reducing hallucinations, and providing contextually enriched, explainable, and accurate recommendations \cite{Deldjoo2024}.
+A valid research direction combining \glspl{kg} and \glspl{llm} has been successfully explored in works such as \cite{Yang2024, Pan2024}.
+
+This combination represents a promising approach for addressing the challenge of explainability in recommending research collaborators, particularly by aligning recommendations with explicit user queries and leveraging diverse, up-to-date knowledge bases.
+However, the \glspl{llm} and \gls{rag}'s integration in this specific context remains underexplored, it is an opportunity to fill this gap and advance the field.
 %
 \section{Research Questions}\label{sec:research-questions}
-The main \gls{rq} is derived from the thesis statement and guides the investigation:
+The main research question is derived from the thesis statement and guides the investigation:
 \begin{center}
 	\textit{How can a \gls{kg} and \gls{llm}-based approach enhance the process of suggesting collaborators for research projects?}
 \end{center}
 
-To address this question, the following subquestions are explored:
+To address this question, the following \glspl{srq} are explored:
 \begin{itemize}
 	\item \rqOne
 	\item \rqTwo
 	\item \rqThree
-	\item \rqFour
 \end{itemize}
 
 %\begin{itemize}
