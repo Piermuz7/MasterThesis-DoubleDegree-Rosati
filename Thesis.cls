@@ -435,6 +435,32 @@
 }}\\[1cm]}
 
 %----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\newcommand\abstractItaPage{
+
+    \btypeout{Abstract Page}
+    
+    \addtotoc{Abstract (Italian version)} % Add the "Abstract" page entry to the Contents
+    \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+    
+    \markboth{}{} % Add "Abstract" to fancy header
+}
+
+% defined by myself
+\newcommand{\abstractita}[1]{
+\addtotoc{Abstract (Italian version)} % Add the "Abstract" page entry to the Contents
+\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+\markboth{Abstract (Italian version)}{} % Add "Abstract" to fancy header
+\newpage
+\noindent
+\fbox{\parbox{.98\linewidth}{
+\vspace{-5mm}
+\section*{Abstract (Italian version)}
+\par
+#1
+}}\\[1cm]}
+
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	Statement PAGE DESIGN
